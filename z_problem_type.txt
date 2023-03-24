@@ -1,0 +1,6 @@
+1. dalal sort
+  1365b
+
+
+  
+2.local maxima minima

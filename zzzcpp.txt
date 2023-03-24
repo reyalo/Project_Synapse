@@ -1,0 +1,291 @@
+###___________________________PowerFul Tools__________________________###
+
+0. without ceil(just add n-1)
+
+1.goto done:;(same as assembly)
+
+2.char() // string s=s+'a'+2;error show. correct s = s+char('a'+2);
+
+3.auto   // not to be declare type,set automatically
+
+4. Binary search          //It is only for checking answer for random input. not for array. 
+                          // .result will get stuck in r.but original result is r+1(once upon a time was mid)
+    ll l=1,r=1e18,m;
+    while (l<=r)
+    {
+      m = (l+r)/2;
+      // here determine result for value m.
+
+      result < given_result ? l = m + 1 : r = m - 1;
+
+    }
+    cout<<r+1<<endl;
+  
+  4.1 lower/upper_bound(a.bn,a.en,val) return the index less then val
+
+3.whose arg type double(sqrt,.....),if call with integer value,add 1.0* it make these integer to double
+      E.g. sqrt(1.0 * m[i] * m[i]
+
+4.one scanf must all scanf.
+
+7.when input 10e5 time double data,must scanf because fastio not work here.
+
+8.!! 
+9. while(--c) if(c) valid but while(c--) if(c) not valid
+10. circle:
+    (1+25)%26          // return prev value;
+
+
+###___________________________Number Theory__________________________###
+
+1.mod by m
+    1.map[0] be careful   
+    2.map[m/2] be careful 
+
+2. large number always string input
+
+3.perfect number vs(vector string);
+vs perfect_num = {"6", "28", "496", "8128", "33550336", "8589869056", "137438691328", "2305843008139952128", "2658455991569831744654692615953842176"};
+
+
+
+
+###__________________________Vector all______________________________###
+
+
+>>Vector Tricks:
+ vector<int> arr(n+1);
+
+arr[n] = INT_MAX; //! Its very very important for an array that means taken an extra element and set this INT_MIN or INT_MAX
+
+>> 2D vector
+    vector<vector<int>> a(row, vi(0));// row = row number
+    
+    vector<vector<int>> matrix(r, vector<int>(c, default_value));
+
+    //example of a fixed 2d vector a[n][n] with default_value -1;
+      vvi a(n, vi(n,-1));
+
+ 
+
+  
+
+1.pair <int,int> 
+    vii pair_int_int_array_example
+    loop(
+      cin>>x>>y;
+      pair_variable.pb(mp(x,y));
+    )
+    travarsing
+    sort(pair_variable.begin(),pair_variable.end())  // sort according to first element
+    loop(
+      pair_variable.fi //show first element
+      pair_variable.se // show second element
+    )
+1.2 sort(a.begin(),a.begin()+2*n,[](iii x,iii y){ // for triple integer
+      return x.fi.se<y.fi.se;
+    });
+1.3 n = unique(a.begin(), a.end()) - a.begin(); // remove contiguous element
+		a.resize(n);  // create new size array.
+
+2. vector as stack  
+  vi a;
+  a.back()                  //access top/last element
+  a.pop_back()              // pop top/last element
+  a.pb()                    // push element
+  a.erase(aa.bn+x,aa.bn+x+1);          // erasing
+
+3. vector rotate
+    rotate(a.bn,a.bn+3,a.bn+n); // if array starting from 0 index
+
+    rotate(a.bn+1,a.bn+1+ix,a.bn+1+n); // if array starting from 1 index a.bn replace a.bn+1
+
+
+
+###______________________________String __all_________________________________
+
+	string s="we shall over come";
+	stirng t = "shall";
+
+1. Inteeger <--> string
+    stoi()                     // only for int not ll
+    to_string()
+2. s.insert(pos,"string")
+
+2.1 t=s.substring(pos,len);    // pos=position ,len = length;
+
+3. int pos = s.find(t,pos+1); //if no match return -1; // for next occurrence
+
+4. s.erase(pos,length)
+5. s.back() //last character return 
+
+6. s.pop_back() // delete last character
+   s.erase(s.bn) // delete first character
+
+7.1 getline(cin>>ws, s);  // taking with space
+
+  2.stirng s,temp_s;
+
+    cin>>temp_s;
+    getline(cin,s);
+    s=temp_s+s;
+
+  3.scanf(" %[^\n]s",s); // for only c
+
+8.  fflush(stdin);    // clear buffer in c
+    int fflush(FILE * ostream);     //clear buffer in cpp
+
+
+
+
+
+9. string to ll/double:{
+  
+  #include <sstream>
+  string s = "12345.5";
+  stringstream stringNumber(s);
+  double x = 0;
+  stringNumber >> x;
+ }
+
+10. specific character count
+c=count(s.bn,s.en,'1');
+
+
+
+11. string to word   // it can over come more than one space
+    
+    string s,wrd;
+    getline(cin>>ws,s);
+
+    istringstream ss(s);
+    while(ss>>wrd)cout<<wrd<<el;
+    
+12. printf string in cpp
+    printf("%s",s.c_str());
+
+13. string all lowercase
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
+
+###_END STRIG_###
+
+
+
+####_MAP_###
+
+
+
+1. Mapping: map<index,Value> // its power is it can randomly set array-index;
+
+2. 	int n;   										// total number of value input
+    cin>>n;  
+    mii mpi; 										// define a map<int,int> which name mpi
+    mitr it; 										// define a iterator
+    
+    
+    for (int i = 0; i < n; i++)                      // taking input map value
+    {
+      cin>>tmp;
+      mpi[tmp]++;
+    }
+    for ( it = mpi.begin(); it != mpi.end(); it++)   // iterating or travarsing every value
+    {
+      cout<<it->fi<<" "<<it->se<<endl;
+    }
+    cout<<"size of map "<<mpi.size()<<endl;          // size of map
+
+3.  mp.find(b)!=mp.end() // searching map element
+ 
+
+
+####_END MAP_###
+
+
+
+@dynamic array int *array = new int[n];n = size of array;
+                    int *array{ new int[length]{} }; // intializing with 0;
+                    delete[] array;
+                    
+@reverse sort: sort(ar,ar+n,greater<int>()); 
+@vector sort: sort(v.begin(),v.end());                // It also sort vector string
+@partial sort:sort(arr.begin()+st,arr.begin()+ed+1);   // st= vector part start index,ed= vector part stop index
+@find out max :max(a,b);
+
+
+
+@ memset globally could not work
+@ if globally two 2D array delcared and memset one,one could(modal) affect another.
+
+@ Memset
+    1.It only works for 0,-1,char;
+    2.memset(a,-1/0/true/"t",sizeof(a)); // here a is array or string and true use only for bool array
+
+@max: max_element(arr,arr+26) = return max element address.// be careful on arr+26,
+      *max_element(arr,arr+26) = return max element Value.
+@ Multiple return:
+  1.struct/class
+  2.tuple
+
+
+  
+@call by 2D function
+
+int **array;
+array = new int *[10];
+for(int i = 0; i <10; i++)
+    array[i] = new int[10];
+void passFunc(int **a)
+{
+    // ...
+}
+
+double pi=2*acos(0.0);
+double pi=acos(-1.0);
+mod=abs();
+fabs();
+
+@ xor(^) 1->0,0->1 . here 1 can dominate
+
+@ BITSET COUNT
+  bitset<16> b;//number of total bit
+  b =15;
+  cout<<b.count();
+ 
+
+###_______struct______
+1.struct point
+{
+  int w, p, id;
+};
+2.sort(points.begin(), points.end(), [](point a, point b)
+         { return a.p < b.p; });
+
+@@@
+
+ternary operator:
+(s[i]=='B'?b:bb).pb(a[i]);
+@@@
+
+@@@
+cout << fixed << setprecision(2) <<"Case " << i << ": " << sum << endl;//  output = 4.44
+
+
+@@@ mod niye joto kota:
+  1. if an array[arr[mod]] of mod size then array index access korte hobe evabe : (n-1)%mod
+  
+  2.mod of all number is:
+    result = n%mod;
+    if(result<0) result+=mod;
+
+
+### segment calculation(https://codeforces.com/blog/entry/76352)
+### powerful stack using https://codeforces.com/problemset/problem/1104/B
+    
+    
+### Manually update vscode:
+    1.first download latest version from official site.
+    2.open terminal inside download folder
+    3.sudo dpkg -i code_1.62.3-1637137107_amd64.deb
+
+
+

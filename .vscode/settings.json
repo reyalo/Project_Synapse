@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "random": "cpp"
+  },
+  "editor.tabSize": 2,
+  "editor.fontSize": 15
+}
