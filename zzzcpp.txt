@@ -112,7 +112,7 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
     to_string()
 2. s.insert(pos,"string")
 
-2.1 t=s.substring(pos,len);    // pos=position ,len = length;
+2.1 t=s.substr(pos,len);    // pos=position ,len = length;
 
 3. int pos = s.find(t,pos+1); //if no match return -1; // for next occurrence
 
@@ -122,9 +122,9 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 6. s.pop_back() // delete last character
    s.erase(s.bn) // delete first character
 
-7.1 getline(cin>>ws, s);  // taking with space
+7.1 getline(cin>>ws, s);  // taking with space method 1
 
-  2.stirng s,temp_s;
+  2.stirng s,temp_s;      // taking with space method 2
 
     cin>>temp_s;
     getline(cin,s);
@@ -134,6 +134,8 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 
 8.  fflush(stdin);    // clear buffer in c
     int fflush(FILE * ostream);     //clear buffer in cpp
+
+    fflush(stdout) or cout << flush  //scanf-printf or cout
 
 
 
@@ -167,7 +169,9 @@ c=count(s.bn,s.en,'1');
 13. string all lowercase
     transform(s.begin(), s.end(), s.begin(), ::tolower);
 
-###_END STRIG_###
+
+
+###_____________________END STRING_________________________###
 
 
 

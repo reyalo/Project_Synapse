@@ -132,10 +132,6 @@ enum
 };
 // vi month={31,28,31,30,31,30,31,31,30,31,30,31};
 
-//data show
-void show(vi a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
-void show_mp(mii a){for(auto x:a)cout<<x.ft<<sp<<x.sd;cout<<el;}
-
 /**Debug tools**/
 #define debt(x) cerr << (#x) << "=" << x << sp << sp  // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
 #define deb(x) cout << (#x) << "=" << x << el << endl // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
@@ -159,11 +155,68 @@ void sieve()
     
     // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
 }
+int leap_year_count(int n,int m){  //n>m or n<m
+      int a=n/4-n/100+n/400;
+      int b=m/4-m/100+m/400;
+      
+      return abs(a-b);
+}
 
 
 void solve()
 {
-  
+
+
+  //! data input start 
+
+  int dd1,dd2,mm1,mm2,yy1,yy2;
+  string s,t;
+  cin>>s;
+  t=s.substr(0, 4);
+  yy1=stoi(t);
+  t=s.substr(5, 2);
+  mm1=stoi(t);
+  t=s.substr(8, 2);
+  dd1=stoi(t);
+
+  cin>>s;
+  t=s.substr(0, 4);
+  yy2=stoi(t);
+  t=s.substr(5, 2);
+  mm2=stoi(t);
+  t=s.substr(8, 2);
+  dd2=stoi(t);
+
+  if(yy1>yy2)swap(yy1,yy2),swap(mm1,mm2),swap(dd1,dd2);
+  else if(yy1==yy2&&mm1>mm2)swap(yy1,yy2),swap(mm1,mm2),swap(dd1,dd2);
+  else if(yy1==yy2&&mm1==mm2&&dd1>dd2)swap(yy1,yy2),swap(mm1,mm2),swap(dd1,dd2);
+
+
+
+  //! core part start 
+
+  vi month={0,31,28,31,30,31,30,31,31,30,31,30,31};
+  fi(1,13)month[i]+=month[i-1];
+
+
+  int frac_day1=month[mm1-1]+dd1;       // first year fractional day calc
+  int frac_day2=month[mm2-1]+dd2;       // second year fractional day calc
+
+
+  if(mm1==2&&dd1==29)frac_day1--;       // if leap year then 1 extra already added,it occurs ambiguity
+  if(mm2==2&&dd2==29)frac_day2--;
+
+
+  frac_day1=365-frac_day1;
+
+  ll td=(yy2-yy1-1)*365+frac_day1+frac_day2+leap_year_count(yy1,yy2);         // it also work for same year
+
+  cout<<td<<el;
+
+
+
+
+
 
 
 }
