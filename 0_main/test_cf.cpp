@@ -15,8 +15,8 @@ typedef pair<int, int> ii;
 typedef pair<int, double> idd;
 typedef pair<double, int> ddi;
 typedef pair<ll, ll> llll;
-typedef pair<ii, int> iii;
-typedef pair<ii, int> iii;
+// typedef pair<ii, int> iii;
+typedef pair<int, ii> iii;
 typedef pair<int, string> is;
 typedef vector<int> vi;
 typedef vector<char> vc;
@@ -33,6 +33,8 @@ typedef vector<vi> vvi;   // 2d vector
 typedef vector<vl> vvl;   // 2d vector
 typedef vector<vii> vvii;
 typedef map<int, int> mii;
+typedef map<int, ii> miii;
+typedef map<int, vi> mivi;
 typedef map<ll, ll> mll;
 typedef map<int, string> mis;
 typedef map<string, int> msi;
@@ -67,19 +69,20 @@ typedef map<ll, ll>::iterator mlitr;
 #define als(x) (x).begin(), (x).end()
 #define RALL(x) (x).rbegin(), (x).rend()
 #define SZ(x) (int)(x).size()
-#define frin(b) for (auto i = (0); (i) < (b); ++(i))
-#define fri(a, b) for (auto i = (a); (i) < (b); ++(i))
-#define fric(a, b, c) for (auto i = (a); (i) < (b); (i) += (c))
+#define frin(b) for (ll i = (0); (i) < (b); ++(i))
+#define fri(a, b) for (ll i = (a); (i) < (b); ++(i))
+#define fric(a, b, c) for (ll i = (a); (i) < (b); (i) += (c))
 #define frit(a) for (auto i = (a.bn); (i) != (a.en); ++(i))
 #define fritr(a) for (auto i = (a.rbn); (i) != (a.ren); ++(i))
-#define rfi(a, b) for (auto i = (a); (i) >= (b); --(i))
-#define frjn(b) for (auto j = (0); (j) < (b); ++(j))
-#define frj(a, b) for (auto j = (a); (j) < (b); ++(j))
-#define frjc(a, b, c) for (auto j = (a); (j) < (b); (j) += (c))
-#define rfj(a, b) for (auto j = (a); (j) >= (b); --(j))
-#define frk(a, b) for (auto k = (a); (k) < (b); ++(k))
+#define rfi(a, b) for (ll i = (a); (i) >= (b); --(i))
+#define frjn(b) for (ll j = (0); (j) < (b); ++(j))
+#define frj(a, b) for (ll j = (a); (j) < (b); ++(j))
+#define frjc(a, b, c) for (ll j = (a); (j) < (b); (j) += (c))
+#define rfj(a, b) for (ll j = (a); (j) >= (b); --(j))
+#define frk(a, b) for (ll k = (a); (k) < (b); ++(k))
 #define FOR(a, b, c) for (auto a = (b); (a) < (c); ++(a))
 #define F0R(a, b) FOR(a, 0, (b))
+#define fx(a) for(auto x:a)
 
 // testing for-loop default parameter
 #define FUNC_CHOOSER(_f1, _f2, _f3, _f4, ...) _f4
@@ -115,6 +118,12 @@ typedef map<ll, ll>::iterator mlitr;
 #define all(vec) (vec).begin(), (vec).end()
 #define sqr(x) ((x) * (x))
 #define find_dist(a, b) sqrt(sqr(a.x - b.x) + sqr(a.y - b.y))
+#define maxe(vec) *max_element(all(vec))
+#define maxi(vec) max_element(all(vec))-vec.bn
+#define mine(vec) *min_element(all(vec))
+#define mini(vec) min_element(all(vec))-vec.bn
+#define lobi(vec,b) lower_bound(vec.begin(), vec.end(), b) - vec.begin()-1  // return -1 for no match
+#define upbi(vec,b) upper_bound(vec.begin(), vec.end(), b) - vec.begin()   // return n for no match
 
 /**Define Bitwise operation**/
 #define cbit(n, pos) (n & (1 << (pos)))
@@ -134,7 +143,7 @@ enum
 
 //data show
 void show(vi a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
-void show_mp(mii a){for(auto x:a)cout<<x.ft<<sp<<x.sd;cout<<el;}
+void show_mp(mii a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 
 /**Debug tools**/
 #define debt(x) cerr << (#x) << "=" << x << sp << sp  // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
@@ -149,7 +158,7 @@ ll power(ll a,ll b){
   while(b--)ans*=a;
   return ans;
 }
-#define m_prime 100010  // it provide <m*m all primes
+#define m_prime 1000010  // it provide <m*m all primes
 vl primes;bool siv[m_prime];
 void sieve()
 {
@@ -159,13 +168,44 @@ void sieve()
     
     // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
 }
+ll lcm(ll a,ll b){return (a*b)/__gcd(a,b);}
 
-
-void solve()
+int power_of_prime(ll p,ll n){  // p=prime number,n=for which number
+  int cnt=0;
+  while (n%p==0&&n>1){n/=p,cnt++;}
+  return cnt;
+}
+long combi(int n,int k)
 {
-  
+    long ans=1;
+    k=k>n-k?n-k:k;
+    int j=1;
+    for(;j<=k;j++,n--)
+    {
+        if(n%j==0)ans*=n/j;
+        else if(ans%j==0)ans=ans/j*n;
+        else ans=(ans*n)/j;
+    }
+    return ans;
+}
 
 
+
+
+void solve() {
+    ll n,ans=1;
+
+    cin>>n;
+    for(ll i=2;i*i<=n;i++){
+      if(n%i==0){
+        ans*=i;
+        while(n%i==0)n/=i;
+      }
+    }
+    if(n!=1)ans*=n;
+    cout<<ans<<el;
+
+    
 }
 
 int main()
@@ -180,7 +220,6 @@ int main()
       // clock_t z = clock();
     int _;cin >> _;while (_--){
     // int _;scanf("%d",&_);while (_--){
-
     solve();
 
     // cout << "Run Time : " << fixed << setprecision(6) << ((double)(clock() - z) / CLOCKS_PER_SEC);

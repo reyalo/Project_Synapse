@@ -94,7 +94,8 @@ int leap_year_count(int n,int m){  //n>m or n<m
 
 
 
-//!1___________two_pointer_bee_cha_method___________
+//!1___________two_pointer_bee_cha_method___________(one element include in calculation in many time)
+
 //! 1.1 right const speed
 void func(){  //! constant speed head propagate is more easy then constant tail
   
@@ -125,7 +126,7 @@ void func(){  //! constant speed head propagate is more easy then constant tail
     // cout<<i<<sp<<sum<<el;
   }
   
-
+  //!2. Segment count or max/min segment size count(one element not include next calculation)
   //! constant tail
   fi(n){
     // it is more sensitive.be careful r<n check and lrs check inside while loop.
@@ -135,7 +136,28 @@ void func(){  //! constant speed head propagate is more easy then constant tail
     
   }
   cout<<ans<<endl;
+
+  //! left fixed(constant tail) and right increase as possible
+  fi(n){
+    int r=i;
+    tmp_value=current_index value or anything else;
+
+    while (r+1<n && contdition ) update tmp_vlaue,r++;
+
+    cnt++;
+    i=r;
+
+  }
+
+  //! it may be replace use of while
+
+  cnt=1;
+  fi(start_pos,n-1){
+    if(a[i]!=a[i+1])break;
+    cnt++;
+  }
 }
+  
 
 
 void two_Pointer2(){
