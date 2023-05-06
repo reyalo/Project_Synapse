@@ -69,11 +69,11 @@ typedef map<string, string> mss;
 #define mod_number 10000007;
 
 /**Define function and object**/
-#define srt(vec) sort(vec.begin(), vec.end())
-#define rsrt(vec) sort(vec.rbegin(), vec.rend())
-#define csrt(vec, C) sort(vec.begin(), vec.end(), C)
-#define rvrs(vec) reverse(vec.begin(), vec.end())
-#define all(vec) (vec).begin(), (vec).end()
+#define srt(aaaaa) sort(aaaaa.begin(), aaaaa.end())
+#define rsrt(aaaaa) sort(aaaaa.rbegin(), aaaaa.rend())
+#define csrt(aaaaa, C) sort(aaaaa.begin(), aaaaa.end(), C)
+#define rvrs(aaaaa) reverse(aaaaa.begin(), aaaaa.end())
+#define all(aaaaa) (aaaaa).begin(), (aaaaa).end()
 
 
 /**Define Bitwise operation**/
@@ -218,15 +218,24 @@ void prime_fact_psm(){
   }
 }
 
+ll decimalToOctal(ll n)
+{
+  ll remainder;
+  ll octal = 0, i = 1;
 
-
-
-
-
+  while (n != 0)
+  {
+        remainder = n % 9;
+        n = n / 9;
+        octal = octal + (remainder * i);
+        i = i * 10;
+  }
+  return octal;
+}
 
 void eye() {
     
-    
+  
     
 }
 

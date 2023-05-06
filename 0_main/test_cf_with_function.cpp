@@ -16,6 +16,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> ii;
 typedef pair<ll, ll> llll;
+typedef pair<double, double> ddd;
 typedef pair<ii, int> iii;
 typedef vector<int> vi;
 typedef vector<char> vc;
@@ -181,6 +182,12 @@ ll factorial(ll n)
     fact *= n--;
   return fact;
 }
+
+ll log_2(ll n){
+  ll i;
+  for (i = 0; (1ll << i) <= n; i++);
+  return i;
+}
 //! 3.2.1
 long long C(int n, int r) {
     if(r > n - r) r = n - r; // because C(n, r) == C(n, n - r)
@@ -246,6 +253,41 @@ int bin_to_dec2(string s){  // it is more correct
   int ans=0;
   rvrs(s);
   fi(31){ans+=pow(2,i)*(s[i]-'0');}
+  return ans;
+}
+
+ll decimalToOctal(ll n)
+{
+  ll remainder;
+  ll octal = 0, i = 1;
+
+  while (n != 0)
+  {
+        remainder = n % 9;
+        n = n / 9;
+        octal = octal + (remainder * i);
+        i = i * 10;
+  }
+  return octal;
+}
+
+//! long_division
+
+void long_division(int a,int b){
+  vi frac_digit;
+  fi(b){
+    a=a*10;
+    frac_digit.pb(a / b);
+    a=a%b;
+  }
+}
+
+//! quadratic root
+  ddd quadratic_root(int a,int b,int c){
+  ddd ans;
+  double d=sqrt(1.0*b*b-1.0*4*a*c);
+  ans.ft=(-b+d)/(1.0*2*a);
+  ans.sd=(-b-d)/(1.0*2*a);
   return ans;
 }
 
@@ -525,10 +567,11 @@ void KMP(string text, string pattern) {
 
 void solve()
 {
-    fi(10)cout<<i<<sp;
-    cout<<el;
-    fj(1,10,3)cout<<j<<sp;
-    cout<<el;
+    ll n,l;
+    cin>>n>>l;
+    vi a(n),b(n);
+    fi(n)cin>>a[i];
+    fi(n)cin>>b[i];
 
     
 

@@ -14,6 +14,7 @@ typedef unsigned long long ull;
 typedef pair<int, int> ii;
 typedef pair<int, double> idd;
 typedef pair<double, int> ddi;
+typedef pair<double, double> ddd;
 typedef pair<ll, ll> llll;
 // typedef pair<ii, int> iii;
 typedef pair<int, ii> iii;
@@ -69,17 +70,17 @@ typedef map<ll, ll>::iterator mlitr;
 #define als(x) (x).begin(), (x).end()
 #define RALL(x) (x).rbegin(), (x).rend()
 #define SZ(x) (int)(x).size()
-#define frin(b) for (ll i = (0); (i) < (b); ++(i))
-#define fri(a, b) for (ll i = (a); (i) < (b); ++(i))
-#define fric(a, b, c) for (ll i = (a); (i) < (b); (i) += (c))
+#define frin(b) for (auto i = (0); (i) < (b); ++(i))
+#define fri(a, b) for (auto i = (a); (i) < (b); ++(i))
+#define fric(a, b, c) for (auto i = (a); (i) < (b); (i) += (c))
 #define frit(a) for (auto i = (a.bn); (i) != (a.en); ++(i))
 #define fritr(a) for (auto i = (a.rbn); (i) != (a.ren); ++(i))
-#define rfi(a, b) for (ll i = (a); (i) >= (b); --(i))
-#define frjn(b) for (ll j = (0); (j) < (b); ++(j))
-#define frj(a, b) for (ll j = (a); (j) < (b); ++(j))
-#define frjc(a, b, c) for (ll j = (a); (j) < (b); (j) += (c))
-#define rfj(a, b) for (ll j = (a); (j) >= (b); --(j))
-#define frk(a, b) for (ll k = (a); (k) < (b); ++(k))
+#define rfi(a, b) for (auto i = (a); (i) >= (b); --(i))
+#define frjn(b) for (auto j = (0); (j) < (b); ++(j))
+#define frj(a, b) for (auto j = (a); (j) < (b); ++(j))
+#define frjc(a, b, c) for (auto j = (a); (j) < (b); (j) += (c))
+#define rfj(a, b) for (auto j = (a); (j) >= (b); --(j))
+#define frk(a, b) for (auto k = (a); (k) < (b); ++(k))
 #define FOR(a, b, c) for (auto a = (b); (a) < (c); ++(a))
 #define F0R(a, b) FOR(a, 0, (b))
 #define fx(a) for(auto x:a)
@@ -124,12 +125,15 @@ typedef map<ll, ll>::iterator mlitr;
 #define mini(vec) min_element(all(vec))-vec.bn
 #define lobi(vec,b) lower_bound(vec.begin(), vec.end(), b) - vec.begin()-1  // return -1 for no match
 #define upbi(vec,b) upper_bound(vec.begin(), vec.end(), b) - vec.begin()   // return n for no match
+#define inp(a) fi(a.sz)cin>>a[i]
 
 /**Define Bitwise operation**/
 #define cbit(n, pos) (n & (1 << (pos)))
 // #define cbit(n, pos) (1 & (n >> (pos)))
-#define bon(n, pos) (n | (1 << (pos)))
-#define boff(n, pos) (n & ~(1 << (pos)))
+// #define bon(n, pos) (n | (1 << (pos)))
+#define bon(n, pos) (n | (1LL << (pos)))
+// #define boff(n, pos) (n & ~(1 << (pos)))
+#define boff(n, pos) (n & ~(1LL << (pos)))
 #define btog(n, pos) (n ^ (1 << (pos)))
 
 /**Define color**/
@@ -175,11 +179,11 @@ int power_of_prime(ll p,ll n){  // p=prime number,n=for which number
   while (n%p==0&&n>1){n/=p,cnt++;}
   return cnt;
 }
-long combi(int n,int k)
+ll combi(ll n,ll k)
 {
-    long ans=1;
+    ll ans=1;
     k=k>n-k?n-k:k;
-    int j=1;
+    ll j=1;
     for(;j<=k;j++,n--)
     {
         if(n%j==0)ans*=n/j;
@@ -189,24 +193,64 @@ long combi(int n,int k)
     return ans;
 }
 
-
-
-
-void solve() {
-    ll n,ans=1;
-
-    cin>>n;
-    for(ll i=2;i*i<=n;i++){
-      if(n%i==0){
-        ans*=i;
-        while(n%i==0)n/=i;
-      }
-    }
-    if(n!=1)ans*=n;
-    cout<<ans<<el;
-
-    
+void presum(vi &a){
+  fi(1,a.sz)a[i]+=a[i-1];
 }
+
+ll decimalToOctal(ll n)
+{
+  ll remainder;
+  ll octal = 0, i = 1;
+
+  while (n != 0)
+  {
+        remainder = n % 9;
+        n = n / 9;
+        octal = octal + (remainder * i);
+        i = i * 10;
+  }
+  return octal;
+}
+
+ddd quadratic_root(int a,int b,int c){
+  ddd ans;
+  double d=sqrt(1.0*b*b-1.0*4*a*c);
+  ans.ft=(-b+d)/(1.0*2*a);
+  ans.sd=(-b-d)/(1.0*2*a);
+  return ans;
+}
+int sumdigit(string s){
+  int sum=0;
+  fi(s.sz){
+    sum+=s[i]-'0';
+  }
+  return sum;
+}
+
+
+void solve()
+{
+  int l,r;
+  cin>>l>>r;
+  vl a;
+  ll ref=2e9;
+  fi(32){
+    fj(21){
+      ll x = pow(2, i);
+      ll y = pow(3, j);
+      if(x<=ref&&y<=ref)a.pb(x*y);
+    }
+  }
+  srt(a);
+  // fi(a.sz)cout<<a[i]<<sp;
+  // cout<<el;
+  // cout<<a.sz<<el;
+  int idx1=upbi(a,r);
+  int idx2=lobi(a,l);
+
+  cout<<idx1-idx2-1<<el;
+}
+
 
 int main()
 {

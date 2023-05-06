@@ -1,4 +1,4 @@
-###___________________________PowerFul Tools__________________________###
+###___________________________PowerFul Tools__________________________### editor zoom(ctrl + '+')
 
 0. without ceil(just add n-1)
 
@@ -21,7 +21,9 @@
     }
     cout<<r+1<<endl;
   
-  4.1 lower/upper_bound(a.bn,a.en,val) return the index less then val
+  4.1 lower/upper_bound(a.bn,a.en,val)-a.bn return the index less then val
+      if no match return n (upper)
+      if no macth return 0 (lower)
 
 3.whose arg type double(sqrt,.....),if call with integer value,add 1.0* it make these integer to double
       E.g. sqrt(1.0 * m[i] * m[i]
@@ -34,6 +36,13 @@
 9. while(--c) if(c) valid but while(c--) if(c) not valid
 10. circle:
     (1+25)%26          // return prev value;
+
+
+11. overlap check: 
+        ----------                 
+-------             ----------
+
+not overlap : if(c_h < given_l||c_l> given_h)
 
 
 ###___________________________Number Theory__________________________###
@@ -50,7 +59,13 @@ vs perfect_num = {"6", "28", "496", "8128", "33550336", "8589869056", "137438691
 
 
 
+
 ###__________________________Vector all______________________________###
+
+
+
+
+
 
 
 >>Vector Tricks:
@@ -93,7 +108,7 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
   a.back()                  //access top/last element
   a.pop_back()              // pop top/last element
   a.pb()                    // push element
-  a.erase(aa.bn+x,aa.bn+x+1);          // erasing
+  a.erase(a.bn+x,a.bn+x+1);          // erasing
 
 3. vector rotate
     rotate(a.bn,a.bn+3,a.bn+n); // if array starting from 0 index
@@ -102,7 +117,18 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 
 
 
+
+
+
+
 ###______________________________String __all_________________________________
+
+
+
+
+
+
+
 
 	string s="we shall over come";
 	stirng t = "shall";
@@ -113,6 +139,7 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 2. s.insert(pos,"string")
 
 2.1 t=s.substr(pos,len);    // pos=position ,len = length;
+    t=s.substr(pos)         // create substr position to last
 
 3. int pos = s.find(t,pos+1); //if no match return -1; // for next occurrence
 
@@ -175,7 +202,7 @@ c=count(s.bn,s.en,'1');
 
 
 
-####_MAP_###
+//!####_______________________MAP_______________________________###
 
 
 
@@ -201,8 +228,16 @@ c=count(s.bn,s.en,'1');
 3.  mp.find(b)!=mp.end() // searching map element
  
 
+4.erase map first and last element
+    while (a.size() > m) {
+			a.erase(--a.end());
+		}
+    while (a.size() > m) {
+			a.erase(a.begin());
+		}
 
-####_END MAP_###
+
+####____________________________END MAP_________________________###
 
 
 
@@ -292,4 +327,14 @@ cout << fixed << setprecision(2) <<"Case " << i << ": " << sum << endl;//  outpu
     3.sudo dpkg -i code_1.62.3-1637137107_amd64.deb
 
 
+
+### cycle array:
+    vi a(2*n);
+    fi(n)cin>>a[i],a[i+n]=a[i];
+
+### most distance between two same elelment 
+    fi(2*n){
+          a[i]==mn?cnt=0:cnt++;
+          mx=max(mx,cnt);
+    }
 

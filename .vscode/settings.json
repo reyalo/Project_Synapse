@@ -4,5 +4,19 @@
     "random": "cpp"
   },
   "editor.tabSize": 2,
-  "editor.fontSize": 15
+  // "editor.fontSize": 15,
+  "editor.fontSize": 23,
+  "editor.tokenColorCustomizations": {
+    "[Sublime Text 4 Theme]": {
+      "textMateRules": [
+        {
+          "scope": "comment",
+          "settings": {
+            // "foreground": "#fffcee"
+            "foreground": "#74705d"
+          }
+        }
+      ]
+    }
+  }
 }
