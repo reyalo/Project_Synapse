@@ -28,7 +28,7 @@ typedef vector<llll> vll;
 typedef vector<ii> vii;
 typedef vector<idd> vid;
 typedef vector<ddi> vdi;
-typedef vector<is> vis;
+// typedef vector<is> vis;
 typedef vector<iii> viii; // variable.fi.fi,variable.fi.se,variable.se
 typedef vector<vi> vvi;   // 2d vector
 typedef vector<vl> vvl;   // 2d vector
@@ -147,6 +147,7 @@ enum
 
 //data show
 void show(vi a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
+void showl(vl a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
 void show_mp(mii a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 
 /**Debug tools**/
@@ -230,25 +231,13 @@ int sumdigit(string s){
 
 void solve()
 {
-  int l,r;
-  cin>>l>>r;
-  vl a;
-  ll ref=2e9;
-  fi(32){
-    fj(21){
-      ll x = pow(2, i);
-      ll y = pow(3, j);
-      if(x<=ref&&y<=ref)a.pb(x*y);
-    }
+  int n,x;
+  vi a(n);
+  inp(a);
+  fi(n){
+    fj(i,n)cout<<a[i]<<sp;
+    cout<<el;
   }
-  srt(a);
-  // fi(a.sz)cout<<a[i]<<sp;
-  // cout<<el;
-  // cout<<a.sz<<el;
-  int idx1=upbi(a,r);
-  int idx2=lobi(a,l);
-
-  cout<<idx1-idx2-1<<el;
 }
 
 
@@ -261,11 +250,12 @@ int main()
   f_output
 #endif
     // sieve();
-      // clock_t z = clock();
+
     int _;cin >> _;while (_--){
+    // int _=1;while (_--){
     // int _;scanf("%d",&_);while (_--){
     solve();
 
-    // cout << "Run Time : " << fixed << setprecision(6) << ((double)(clock() - z) / CLOCKS_PER_SEC);
+    // cout << fixed << setprecision(6) ;
   }
 }
