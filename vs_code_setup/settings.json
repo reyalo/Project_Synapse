@@ -1,0 +1,236 @@
+{
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  // "editor.autoIndent": true,
+  "emmet.triggerExpansionOnTab": true,
+  // "php.suggest.basic": false,
+  "emmet.includeLanguages": {
+    "blade": "html"
+  },
+  "prettier.eslintIntegration": true,
+  "beautify.language": {
+    "js": {
+      "type": ["javascript", "json", "jsonc"],
+      "filename": [".jshintrc", ".jsbeautifyrc"]
+    },
+    "css": ["css", "less", "scss"],
+    "html": ["htm", "html", "blade"]
+  },
+
+  //!------Formatter------->
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+
+  //! --------- Terminal Style ---------
+
+  "workbench.colorCustomizations": {
+    // "editor.background": "#32323299",
+    "terminal.foreground": "#00ff15",
+    "terminalCursor.foreground": "#04d3b7",
+    "terminalCursor.background": "#000000",
+    "terminalCursor.Blinking": true,
+    // "terminal.ansiBlack": "#1D2021",
+    // "terminal.ansiBrightBlack": "#665C54",
+    // "terminal.ansiBrightBlue": "#0D6678",
+    // "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#eeff00",
+    // "terminal.ansiBrightGreen": "#ff1e00",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#ff1e00",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#fd0000",
+    "terminal.ansiBrightYellow": "#ecfd00",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#FB543F",
+
+    "terminal.ansiRed": "#ff1e00",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#FAC03B"
+  },
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "JetBrainsMonoMedium Nerd Font",
+  "terminal.integrated.cursorBlinking": "",
+  "terminal.integrated.cursorStyle": "",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "terminal.integrated.fontLigatures": "",
+  //   "terminal.integrated.fontHeight": ,
+  //   "terminal.integrated.shell.osx": "/bin/bash",
+  // "terminal.integrated.shellArgs.windows": ["-l"],
+  // "vscode_custom_css.imports":["C:/Users/vs-code-custom.css"],
+  // "vscode_custom_css.policy": true,
+
+  //! ---------End of Terminal Style ---------
+  "code-runner.runInTerminal": true,
+  "kite.showWelcomeNotificationOnStartup": false,
+
+  //! For intelephense error 1009
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.files.associations": ["*.php", "*.phtml"],
+  "blade.format.enable": true,
+  // "intelephense.diagnostics.undefinedTypes":false,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+    "blade"
+  ],
+  "auto-close-tag.disableOnLanguage": [],
+  "auto-rename-tag.activationOnLanguage": [
+    "*",
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "blade"
+  ],
+  "C_Cpp.updateChannel": "Insiders",
+  "cmake.configureOnOpen": true,
+  "python.languageServer": "Default",
+  "terminal.integrated.inheritEnv": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "http.proxySupport": "off",
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": null,
+  "editor.fontSize": 13,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "testMate.cpp.log.userId": "b5bd7072c9ad912ff8da6a9dc17989170dbb99fa",
+  "testMate.cpp.log.logSentry": "enable",
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    }
+  ],
+  // "clang.executable":"clang",
+
+  //! For focus on terminal after running code,
+  "code-runner.preserveFocus": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "vscode-edge-devtools.mirrorEdits": true,
+  "files.autoSave": "afterDelay",
+  "liveSassCompile.settings.includeItems": [],
+  "workbench.activityBar.visible": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.timeout": 1000,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // code runner with timeout-1
+    "cpp": "cd $dir && timeout 5s g++ $fileName -o $fileNameWithoutExt && timeout 5s $dir$fileNameWithoutExt",
+    // code runner without timeout-2
+    // "cpp": "timeout 5s g++ $fullFileName -o $fileNameWithoutExt && timeout 5s ./$fileNameWithoutExt",
+    // code runner with timeout-3
+    // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  "dotnetAcquisitionExtension.existingDotnetPath": [],
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "settingsSync.ignoredExtensions": [],
+  "editor.renderWhitespace": "none",
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "editor.indentSize": "tabSize",
+  "arduino.useArduinoCli": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairsHorizontal": false,
+  "workbench.colorTheme": "Sublime Text 4 Theme",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.renderControlCharacters": false
+
+  // for sublime text
+}

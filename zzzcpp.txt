@@ -44,6 +44,16 @@
 
 not overlap : if(c_h < given_l||c_l> given_h)
 
+12. blank space count
+    fi(n){
+    if(s[i]=='*'){
+      if(l)ab.pb(l);
+      l=0;
+    }
+    else l++;
+  }
+  if(l)ab.pb(l);
+
 
 ###___________________________Number Theory__________________________###
 
@@ -198,15 +208,31 @@ c=count(s.bn,s.en,'1');
 
 
 
+
+
+
+
+
+
+
+
+
 ###_____________________END STRING_________________________###
-
-
 
 //!####_______________________MAP_______________________________###
 
 
 
+
+
+
+
+
+
 1. Mapping: map<index,Value> // its power is it can randomly set array-index;
+
+1.1 map key check
+    mm.count(key);
 
 2. 	int n;   										// total number of value input
     cin>>n;  
@@ -235,9 +261,18 @@ c=count(s.bn,s.en,'1');
     while (a.size() > m) {
 			a.erase(a.begin());
 		}
+    
+
+
+
+
+
 
 
 ####____________________________END MAP_________________________###
+
+
+
 
 
 
