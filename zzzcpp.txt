@@ -1,4 +1,15 @@
+for cp:
+1.try not to make dynamic vector/array; it take more time
+2.such pair hold i<j, etar mane holo same pair jeno duibar er beshi na hoy     <>
+3. array max element 1e5 hole, ceck array size 1e5 er upor e nite hobe
+4. ii type array,set,map or anything, 
+    sort also according to second value
+    just negative second value
+
 ###___________________________PowerFul Tools__________________________### editor zoom(ctrl + '+')
+
+=> mod value 1~n:
+    (given_v-1)%n+1;
 
 0. without ceil(just add n-1)
 
@@ -55,6 +66,11 @@ not overlap : if(c_h < given_l||c_l> given_h)
   if(l)ab.pb(l);
 
 
+13. min from many element
+  if (min({nht, nho, nmt, nmo}) < 0)
+            return false;
+
+<>
 ###___________________________Number Theory__________________________###
 
 1.mod by m
@@ -65,6 +81,36 @@ not overlap : if(c_h < given_l||c_l> given_h)
 
 3.perfect number vs(vector string);
 vs perfect_num = {"6", "28", "496", "8128", "33550336", "8589869056", "137438691328", "2305843008139952128", "2658455991569831744654692615953842176"};
+
+4. a.2^k mod m ==0 , K(max)=log2(m)
+
+5.iteration number like n,n/2,n/3,n/4,n/5,n/6,n/7,n/8,n/9.......
+  It is called harmonic series
+  complexity nlogn
+
+6. unimodal permutation ( increasing and decreasing);
+  n!-2^(n-1)
+
+7. let two int number P and Q,
+    if( P % Q == 0 ) then, P = p1^a1 * p2^a2 * p3^a3  and Q = p1^b1 * p2^b2 * p3^b3, 
+    it can say, bi <= ai <> it must be true,
+    
+
+
+
+
+
+
+###__________________________Combinatrics & Permutation______________________________###
+
+
+1. how many six digits number can be form where digits are in non-decending Order
+
+Soln: (number of Different digits + total place -1) C (total Place)
+
+
+
+
 
 
 
@@ -79,45 +125,27 @@ vs perfect_num = {"6", "28", "496", "8128", "33550336", "8589869056", "137438691
 
 
 >>Vector Tricks:
- vector<int> arr(n+1);
+  original queue is more fast than vector made queue 
 
 arr[n] = INT_MAX; //! Its very very important for an array that means taken an extra element and set this INT_MIN or INT_MAX
 
 >> 2D vector
     vector<vector<int>> a(row, vi(0));// row = row number
     
-    vector<vector<int>> matrix(r, vector<int>(c, default_value));
-
     //example of a fixed 2d vector a[n][n] with default_value -1;
       vvi a(n, vi(n,-1));
-
- 
-
-  
-
-1.pair <int,int> 
-    vii pair_int_int_array_example
-    loop(
-      cin>>x>>y;
-      pair_variable.pb(mp(x,y));
-    )
-    travarsing
-    sort(pair_variable.begin(),pair_variable.end())  // sort according to first element
-    loop(
-      pair_variable.fi //show first element
-      pair_variable.se // show second element
-    )
+1.1 vector as queue:
+    v.erase(v.bn);
+    
+    
 1.2 sort(a.begin(),a.begin()+2*n,[](iii x,iii y){ // for triple integer
       return x.fi.se<y.fi.se;
     });
+<>
 1.3 n = unique(a.begin(), a.end()) - a.begin(); // remove contiguous element
 		a.resize(n);  // create new size array.
 
 2. vector as stack  
-  vi a;
-  a.back()                  //access top/last element
-  a.pop_back()              // pop top/last element
-  a.pb()                    // push element
   a.erase(a.bn+x,a.bn+x+1);          // erasing
 
 3. vector rotate
@@ -138,7 +166,10 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 
 
 
-
+trending:
+    Subsequence problem of n^2 can be solve by nlogn time.
+    just use set/vector for every character occurrence indeces
+    
 
 	string s="we shall over come";
 	stirng t = "shall";
@@ -150,7 +181,8 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 
 2.1 t=s.substr(pos,len);    // pos=position ,len = length;
     t=s.substr(pos)         // create substr position to last
-
+    see eg.1
+    
 3. int pos = s.find(t,pos+1); //if no match return -1; // for next occurrence
 
 4. s.erase(pos,length)
@@ -177,7 +209,7 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 
 
 
-
+<>
 9. string to ll/double:{
   
   #include <sstream>
@@ -207,8 +239,17 @@ c=count(s.bn,s.en,'1');
     transform(s.begin(), s.end(), s.begin(), ::tolower);
 
 
+14. n = unique(a.begin(), a.end()) - a.begin(); // remove contiguous element
+		a.resize(n);  // create new size array.
 
-
+    ###raw_code:
+    int ch=0,n=s.sz;string s="AABBAABB",t;
+    fi(n){
+      if(ch!=s[i]){
+        ch=s[i];
+        t+=s[i];
+      }
+    }
 
 
 
@@ -252,7 +293,7 @@ c=count(s.bn,s.en,'1');
     cout<<"size of map "<<mpi.size()<<endl;          // size of map
 
 3.  mp.find(b)!=mp.end() // searching map element
- 
+
 
 4.erase map first and last element
     while (a.size() > m) {
@@ -276,12 +317,243 @@ c=count(s.bn,s.en,'1');
 
 
 
+
+
+####____________________________ SET _________________________###
+
+multiset:
+    st.erase(x)// delete all occurrence
+    st.erase(st.find(x)) delte single element
+
+
+
+
+
+####____________________________END SET_________________________###
+
+
+
+####____________________________FUNCTION & LAMBDA___________________####
+
+
+
+1.  auto func_name = []  (int a, int b) -> int {
+      retrun a+b;
+    };
+
+same as:
+  int func_name(int a,int b){
+    return a+b;
+  }
+
+2.
+    auto func_name = []  (int a, int b){
+      retrun a+b;
+    };
+
+same as:
+  auto func_name(int a,int b){
+    return a+b;
+  }
+
+
+###___________________________________BINARY_SSERCH________________________####
+
+int l=-1,r=1e10; // l and r maximum 1 out of bound
+
+1.
+  while(l+1<r){    <>
+    int md=(l+r)/2;
+    if(fn(md)){
+      l=md;
+    }else r=md;
+  }
+ans=l;
+
+2.while(l<=r){                     <>
+  int md=(l+r)/2;
+  if(fn(md)){
+    ans=md;
+    l=md+1;
+  }else r=md-1;
+}
+ans1=ans;
+ans2=r;
+
+3. while(l<r){                       <>
+  int md=(l+r+1)/2;    // be careful adding 1 otherwise it fall in infinte
+  if(fn(md)){
+    l=md;
+  }else r=md-1;
+}
+ans1=l;
+ans2=r;
+
+
+characteristic of method 1:
+break: l+1=r
+l    : l tense to valid ans
+r    : r tense to least invalid ans and always hold invalid ans
+
+
+characteristic of method 2:
+break: l>r or l-1=r  
+l    : l tense to least invalid ans and finaly hold invalid ans
+r    : r tense to valid ans
+
+
+characteristic of method 3:
+break: l==r 
+l    : l tense to valid ans 
+r    : r tense to valid ans
+md   : md=(l+r+1)/2
+
+
+*** some succesful brilliant code:
+  1.
+  l=-1,r=n+1                // l and r out boundary
+  cond->l+l<r                 <>
+  https://codeforces.com/contest/1183/submission/221021073
+
+
+*** fractional binary search e (expression)< 10^-6 erokom thakle<>
+    break condition diba 
+    code:
+
+    if((md-l)/max(1.0,md)<=0.0000001)   // 10^-6 er jonno
+    break;
+
+
+####___________________________________END_BINARY_SEARCH_______________________________####
+
+
+
+
+
+
+####___________________________________DP_______________________________####
+
+dp table two type: 1. dp[x][n+1] give final ans, 2.sp[x][n+1] give final result
+
+
+
+0.type 1:
+  1.first base case design.
+  2.for every i, update all index jegulute i theke kuno na kuno vabe jaua jay.
+  3.updat can be min,max or number of away.
+
+
+type 2:
+  => number of choice in each day k;
+  => can not take same task two consecutive day;
+  
+  1. first base case dp[0][0],dp[0][1],dp[0][2].........dp[0][k];
+  2. then 2D array dp[n][k+1]     // k+1 need when nothing is select in i days
+  3. remember teqnique or see before code
+type 3:
+  => take (weight/coin/number of stone) one time from set A ={a1,a2,a3};
+  => update from upper cell,corner cell(upper left cell);
+
+
+type 4:
+  => take (weight/coin/number of stone) k time from set A ={a1,a2,a3},K ={k1,k2,k3};
+  => update from upper cell,
+      corner cell(upper left cell) using for loop of coin (a1*k1);
+
+tpye 5:
+  => take (weight/coin/number of stone) any number of time from set A ={a1,a2,a3};
+  => update from upper cell,left cell,corner cell(upper left cell);
+
+
+type 6: 1D two turn ( game theroy)
+  => problem https://codeforces.com/problemset/problem/1418/C show first,
+
+
+
+
+
+
+1.when dp can be apply???
+  e.g. 1 2 3 4 5 an array and every combination should be check
+  then there should be 2^n times check. For n>20 it is veru huge.
+  YAAA :) the soulution is DP :)
+
+example: 
+befor see this must understand the algorithm
+
+not optimized:
+https://codeforces.com/problemset/submission/698/217978400
+
+optimized:
+https://codeforces.com/problemset/submission/698/217979190
+
+https://codeforces.com/problemset/submission/1380/223096943
+
+
+type1:
+      template
+        https://atcoder.jp/contests/dp/submissions/45991949 (just k change)
+
+      e.g.
+        https://atcoder.jp/contests/dp/tasks/dp_a
+        https://atcoder.jp/contests/dp/tasks/dp_b
+
+type2:
+    template:
+      https://atcoder.jp/contests/dp/submissions/45992687
+    e.g.
+      https://atcoder.jp/contests/dp/tasks/dp_c
+
+tpye5:
+    template:
+      https://atcoder.jp/contests/dp/submissions/46191563 (1D)
+    e.g.
+      https://atcoder.jp/contests/dp/tasks/dp_k
+
+
+      
+
+
+####___________________________________END_DP_______________________________####
+
+
+
+
+####___________________________________THE_GREAT_OBSERVATION_______________________________####
+
+  prerequesties:
+    1. problem should ad-hoc
+    2. problems difficulty should be in range of easy.
+    
+
+  step:
+    1. puro problem porte hobe koyekbar
+    2. just ekta sutur naal ber koro, baki ta emnitei ber hoye jabe;
+    3. prothome general test case niye chinta koro, last e conrner case niye chinta koro
+    4. onnekkhon vabar por o jodi sutar naal na pau tahole abar puro problem ta poro,
+    5. brain e cycle steal calau ( fake smoking, pen rotation in finger....) ta na hole brain e jaam bedhe jabe,matha betha suru korbe,ebong brain effectiveness kome jabe
+    6. problem 100% solve hote hobe emon kuno baddobadhokota nei, tobe % joto barano jay toto valo.
+    7. kuno task vabte gele jodi mathay jaam hoye jay, tahole otake small task e vaag kore nau,
+    8. code joto venge venge likha jay toto venge venge likhbe,
+    9. 
+
+
+
+
+
+
+
+
+
+
+
+####___________________________________END_THE_GREAT_OBSERVATION_______________________________####
+
+
 @dynamic array int *array = new int[n];n = size of array;
                     int *array{ new int[length]{} }; // intializing with 0;
                     delete[] array;
                     
-@reverse sort: sort(ar,ar+n,greater<int>()); 
-@vector sort: sort(v.begin(),v.end());                // It also sort vector string
 @partial sort:sort(arr.begin()+st,arr.begin()+ed+1);   // st= vector part start index,ed= vector part stop index
 @find out max :max(a,b);
 
@@ -304,21 +576,12 @@ c=count(s.bn,s.en,'1');
   
 @call by 2D function
 
-int **array;
-array = new int *[10];
-for(int i = 0; i <10; i++)
-    array[i] = new int[10];
-void passFunc(int **a)
-{
-    // ...
-}
 
 double pi=2*acos(0.0);
 double pi=acos(-1.0);
 mod=abs();
 fabs();
 
-@ xor(^) 1->0,0->1 . here 1 can dominate
 
 @ BITSET COUNT
   bitset<16> b;//number of total bit
@@ -332,24 +595,10 @@ fabs();
   int w, p, id;
 };
 2.sort(points.begin(), points.end(), [](point a, point b)
-         { return a.p < b.p; });
-
-@@@
-
-ternary operator:
-(s[i]=='B'?b:bb).pb(a[i]);
-@@@
-
-@@@
-cout << fixed << setprecision(2) <<"Case " << i << ": " << sum << endl;//  output = 4.44
+        { return a.p < b.p; });
 
 
-@@@ mod niye joto kota:
-  1. if an array[arr[mod]] of mod size then array index access korte hobe evabe : (n-1)%mod
-  
-  2.mod of all number is:
-    result = n%mod;
-    if(result<0) result+=mod;
+
 
 
 ### segment calculation(https://codeforces.com/blog/entry/76352)
@@ -363,6 +612,37 @@ cout << fixed << setprecision(2) <<"Case " << i << ": " << sum << endl;//  outpu
 
 
 
+
+<>### sliding window:
+    
+    template:
+
+    int cnt = 0,l=0;
+    fi(n)
+    {
+      if(s[i] != ss[i])   // head increase
+        cnt++;
+
+      if(i>=k){
+        
+        l++;     // tail decrease
+
+      }
+      
+      if(i>=k-1){
+        ans = min(ans, cnt);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
 ### cycle array:
     vi a(2*n);
     fi(n)cin>>a[i],a[i+n]=a[i];
@@ -373,3 +653,49 @@ cout << fixed << setprecision(2) <<"Case " << i << ": " << sum << endl;//  outpu
           mx=max(mx,cnt);
     }
 
+
+
+
+
+
+
+
+eg.1:
+  int pos=-1;
+  fi(s.sz){
+    i=s.find(t,i);
+    if(i==-1)break;
+    a[i+1]=1;
+  }
+  while(1){
+    pos=s.find(t,pos+1);
+    if(pos==-1)break;
+    a[pos+1]=1;
+  }
+
+  
+//!similar task:
+e.g.
+fi(n){
+  ix=i;
+  while(ix+1<n&&s[ix+1]==s[ix])ix++;
+  
+  i=ix;
+}
+
+
+ix=0;
+fi(n){
+  if(s[i]==s[ix])cnt++;
+
+  else cnt=0,ix=i,i--;
+
+}
+
+
+###__________________________________________error________________________________________________
+
+1. runtime error:
+      It is two type:
+      1.cause for positive indexing ( soln: calculate max index can occur)
+      2.cause for negative indexing ( soln: it for int overflow, use long long)

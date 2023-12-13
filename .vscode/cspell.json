@@ -5,8 +5,10 @@
   "mitr",
   "fric",
   "frjc",
+  "frkc",
   "frin",
   "frjn",
+  "frkn",
   "frri",
   "frrj",
   "fritr",
@@ -14,6 +16,8 @@
   "csrt",
   "rvrs",
   "rsrt",
+  "srts",
+  "rsrts",
   "cbit",
   "btog",
   "kathi",
@@ -25,6 +29,9 @@
   "vvii",
   "lobi",
   "upbi",
-  "maxe"
+  "presum",
+  "maxe",
+  "nexp",
+  "bigmod"
 
   ] }

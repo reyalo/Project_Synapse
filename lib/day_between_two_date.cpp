@@ -171,6 +171,7 @@ void solve()
 
   int dd1,dd2,mm1,mm2,yy1,yy2;
   string s,t;
+  // cout<<"Please Insert First date Like 2222:12:12 : ";
   cin>>s;
   t=s.substr(0, 4);
   yy1=stoi(t);
@@ -179,6 +180,7 @@ void solve()
   t=s.substr(8, 2);
   dd1=stoi(t);
 
+  // cout<<"Please Insert Second date Like 2222:12:12 : ";
   cin>>s;
   t=s.substr(0, 4);
   yy2=stoi(t);
@@ -211,31 +213,28 @@ void solve()
 
   ll td=(yy2-yy1-1)*365+frac_day1+frac_day2+leap_year_count(yy1,yy2);         // it also work for same year
 
+  cout<<el<<"Number of Days are: ";
   cout<<td<<el;
 
 
-
-
-
-
-
-}
+}                       
 
 int main()
 {
   fastio;
 
-#ifndef ONLINE_JUDGE
-  f_input
-  f_output
-#endif
+// #ifndef ONLINE_JUDGE
+//   f_input
+//   f_output
+// #endif
     // sieve();
       // clock_t z = clock();
-    int _;cin >> _;while (_--){
+    // int _;cin >> _;while (_--){
+      // while(1){
     // int _;scanf("%d",&_);while (_--){
 
     solve();
 
     // cout << "Run Time : " << fixed << setprecision(6) << ((double)(clock() - z) / CLOCKS_PER_SEC);
-  }
+  // }
 }

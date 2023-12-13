@@ -1,0 +1,771 @@
+Contest,  Problem,  Difficulty,  Name,  Codeforces URL
+
+
+112,  A,  800,  Petya and Strings,  https://codeforces.com/problemset/problem/112/A
+136,  A,  800,  Presents,  https://codeforces.com/problemset/problem/136/A
+144,  A,  800,  Arrival of the General,  https://codeforces.com/problemset/problem/144/A
+151,  A,  800,  Soft Drinking,  https://codeforces.com/problemset/problem/151/A
+1629,  A,  800,  Download More RAM,  https://codeforces.com/problemset/problem/1629/A
+1631,  A,  800,  Min Max Swap,  https://codeforces.com/problemset/problem/1631/A
+1632,  A,  800,  ABC,  https://codeforces.com/problemset/problem/1632/A
+1635,  A,  800,  Min Or Sum,  https://codeforces.com/problemset/problem/1635/A
+1635,  B,  800,  Avoid Local Maximums,  https://codeforces.com/problemset/problem/1635/B
+1637,  A,  800,  Sorting Parts,  https://codeforces.com/problemset/problem/1637/A
+1651,  A,  800,  Playoff,  https://codeforces.com/problemset/problem/1651/A
+1651,  B,  800,  Prove Him Wrong,  https://codeforces.com/problemset/problem/1651/B
+1657,  B,  800,  XY Sequence,  https://codeforces.com/problemset/problem/1657/B
+1686,  A,  800,  Everything Everywhere All But One,  https://codeforces.com/problemset/problem/1686/A
+1691,  A,  800,  Beat The Odds,  https://codeforces.com/problemset/problem/1691/A
+1692,  A,  800,  Marathon,  https://codeforces.com/problemset/problem/1692/A
+1692,  B,  800,  All Distinct,  https://codeforces.com/problemset/problem/1692/B
+1692,  B,  800,  All Distinct,  https://codeforces.com/problemset/problem/1692/B
+1692,  C,  800,  Where's the Bishop?,  https://codeforces.com/problemset/problem/1692/C
+1694,  A,  800,  Creep,  https://codeforces.com/problemset/problem/1694/A
+1798,  A,  800,  Showstopper,  https://codeforces.com/problemset/problem/1798/A
+1805,  A,  800,  We Need the Zero,  https://codeforces.com/problemset/problem/1805/A
+1805,  A,  800,  We Need the Zero,  https://codeforces.com/problemset/problem/1805/A
+1805,  B,  800,  The String Has a Target,  https://codeforces.com/problemset/problem/1805/B
+1805,  B,  800,  The String Has a Target,  https://codeforces.com/problemset/problem/1805/B
+1807,  A,  800,  Plus or Minus,  https://codeforces.com/problemset/problem/1807/A
+1807,  B,  800,  Grab the Candies,  https://codeforces.com/problemset/problem/1807/B
+1807,  C,  800,  Find and Replace,  https://codeforces.com/problemset/problem/1807/C
+1809,  A,  800,  Garland,  https://codeforces.com/problemset/problem/1809/A
+1811,  A,  800,  Insert Digit,  https://codeforces.com/problemset/problem/1811/A
+233,  A,  800,  Perfect Permutation,  https://codeforces.com/problemset/problem/233/A
+255,  A,  800,  Greg's Workout,  https://codeforces.com/problemset/problem/255/A
+262,  A,  800,  Roma and Lucky Numbers,  https://codeforces.com/problemset/problem/262/A
+263,  A,  800,  Beautiful Matrix,  https://codeforces.com/problemset/problem/263/A
+265,  A,  800,  Colorful Stones (Simplified Edition),  https://codeforces.com/problemset/problem/265/A
+266,  B,  800,  Queue at the School,  https://codeforces.com/problemset/problem/266/B
+268,  A,  800,  Games,  https://codeforces.com/problemset/problem/268/A
+302,  A,  800,  Eugeny and Array,  https://codeforces.com/problemset/problem/302/A
+330,  A,  800,  Cakeminator,  https://codeforces.com/problemset/problem/330/A
+339,  A,  800,  Helpful Maths,  https://codeforces.com/problemset/problem/339/A
+34,  A,  800,  Reconnaissance 2,  https://codeforces.com/problemset/problem/34/A
+361,  A,  800,  Levko and Table,  https://codeforces.com/problemset/problem/361/A
+363,  A,  800,  Soroban,  https://codeforces.com/problemset/problem/363/A
+378,  A,  800,  Playing with Dice,  https://codeforces.com/problemset/problem/378/A
+4,  A,  800,  Watermelon,  https://codeforces.com/problemset/problem/4/A
+432,  A,  800,  Choosing Teams,  https://codeforces.com/problemset/problem/432/A
+443,  A,  800,  Anton and Letters,  https://codeforces.com/problemset/problem/443/A
+469,  A,  800,  I Wanna Be the Guy,  https://codeforces.com/problemset/problem/469/A
+49,  A,  800,  Sleuth,  https://codeforces.com/problemset/problem/49/A
+490,  A,  800,  Team Olympiad,  https://codeforces.com/problemset/problem/490/A
+510,  A,  800,  Fox And Snake,  https://codeforces.com/problemset/problem/510/A
+71,  A,  800,  Way Too Long Words,  https://codeforces.com/problemset/problem/71/A
+152,  A,  900,  Marks,  https://codeforces.com/problemset/problem/152/A
+152,  A,  900,  Marks,  https://codeforces.com/problemset/problem/152/A
+160,  A,  900,  Twins,  https://codeforces.com/problemset/problem/160/A
+1807,  D,  900,  Odd Queries,  https://codeforces.com/problemset/problem/1807/D
+194,  A,  900,  Exams,  https://codeforces.com/problemset/problem/194/A
+208,  A,  900,  Dubstep,  https://codeforces.com/problemset/problem/208/A
+276,  A,  900,  Lunch Rush,  https://codeforces.com/problemset/problem/276/A
+276,  A,  900,  Lunch Rush,  https://codeforces.com/problemset/problem/276/A
+313,  A,  900,  Ilya and Bank Account,  https://codeforces.com/problemset/problem/313/A
+318,  A,  900,  Even Odds,  https://codeforces.com/problemset/problem/318/A
+337,  A,  900,  Puzzles,  https://codeforces.com/problemset/problem/337/A
+337,  A,  900,  Puzzles,  https://codeforces.com/problemset/problem/337/A
+373,  A,  900,  Collecting Beats is Fun,  https://codeforces.com/problemset/problem/373/A
+376,  A,  900,  Lever,  https://codeforces.com/problemset/problem/376/A
+408,  A,  900,  Line to Cashier,  https://codeforces.com/problemset/problem/408/A
+439,  A,  900,  Devu, the Singer and Churu, the Joker,  https://codeforces.com/problemset/problem/439/A
+451,  A,  900,  Game With Sticks,  https://codeforces.com/problemset/problem/451/A
+496,  A,  900,  Minimum Difficulty,  https://codeforces.com/problemset/problem/496/A
+501,  A,  900,  Contest,  https://codeforces.com/problemset/problem/501/A
+106,  A,  1000,  Card Game,  https://codeforces.com/problemset/problem/106/A
+108,  A,  1000,  Palindromic Times,  https://codeforces.com/problemset/problem/108/A
+114,  A,  1000,  Cifera,  https://codeforces.com/problemset/problem/114/A
+114,  A,  1000,  Cifera,  https://codeforces.com/problemset/problem/114/A
+118,  A,  1000,  String Task,  https://codeforces.com/problemset/problem/118/A
+122,  A,  1000,  Lucky Division,  https://codeforces.com/problemset/problem/122/A
+143,  A,  1000,  Help Vasilisa the Wise 2,  https://codeforces.com/problemset/problem/143/A
+1632,  B,  1000,  Roof Construction,  https://codeforces.com/problemset/problem/1632/B
+165,  A,  1000,  Supercentral Point,  https://codeforces.com/problemset/problem/165/A
+1691,  B,  1000,  Shoe Shuffling,  https://codeforces.com/problemset/problem/1691/B
+1798,  B,  1000,  Three Sevens,  https://codeforces.com/problemset/problem/1798/B
+1809,  B,  1000,  Points on Plane,  https://codeforces.com/problemset/problem/1809/B
+1809,  B,  1000,  Points on Plane,  https://codeforces.com/problemset/problem/1809/B
+1811,  B,  1000,  Conveyor Belts,  https://codeforces.com/problemset/problem/1811/B
+230,  A,  1000,  Dragons,  https://codeforces.com/problemset/problem/230/A
+265,  B,  1000,  Roadside Trees (Simplified Edition),  https://codeforces.com/problemset/problem/265/B
+339,  B,  1000,  Xenia and Ringroad,  https://codeforces.com/problemset/problem/339/B
+35,  A,  1000,  Shell Game,  https://codeforces.com/problemset/problem/35/A
+359,  A,  1000,  Table,  https://codeforces.com/problemset/problem/359/A
+385,  A,  1000,  Bear and Raspberry,  https://codeforces.com/problemset/problem/385/A
+389,  A,  1000,  Fox and Number Game,  https://codeforces.com/problemset/problem/389/A
+404,  A,  1000,  Valera and X,  https://codeforces.com/problemset/problem/404/A
+43,  A,  1000,  Football,  https://codeforces.com/problemset/problem/43/A
+441,  A,  1000,  Valera and Antique Items,  https://codeforces.com/problemset/problem/441/A
+447,  B,  1000,  DZY Loves Strings,  https://codeforces.com/problemset/problem/447/B
+447,  B,  1000,  DZY Loves Strings,  https://codeforces.com/problemset/problem/447/B
+447,  B,  1000,  DZY Loves Strings,  https://codeforces.com/problemset/problem/447/B
+462,  A,  1000,  Appleman and Easy Task,  https://codeforces.com/problemset/problem/462/A
+476,  A,  1000,  Dreamoon and Stairs,  https://codeforces.com/problemset/problem/476/A
+479,  A,  1000,  Expression,  https://codeforces.com/problemset/problem/479/A
+499,  A,  1000,  Watching a movie,  https://codeforces.com/problemset/problem/499/A
+499,  B,  1000,  Lecture,  https://codeforces.com/problemset/problem/499/B
+499,  B,  1000,  Lecture,  https://codeforces.com/problemset/problem/499/B
+56,  A,  1000,  Bar,  https://codeforces.com/problemset/problem/56/A
+58,  A,  1000,  Chat room,  https://codeforces.com/problemset/problem/58/A
+69,  A,  1000,  Young Physicist,  https://codeforces.com/problemset/problem/69/A
+75,  A,  1000,  Life Without Zeros,  https://codeforces.com/problemset/problem/75/A
+1692,  D,  1100,  The Clock,  https://codeforces.com/problemset/problem/1692/D
+1807,  G1,  1100,  Subsequence Addition (Easy Version),  https://codeforces.com/problemset/problem/1807/G1
+1807,  G2,  1100,  Subsequence Addition (Hard Version),  https://codeforces.com/problemset/problem/1807/G2
+1811,  C,  1100,  Restore the Array,  https://codeforces.com/problemset/problem/1811/C
+1811,  C,  1100,  Restore the Array,  https://codeforces.com/problemset/problem/1811/C
+186,  A,  1100,  Comparing Strings,  https://codeforces.com/problemset/problem/186/A
+224,  A,  1100,  Parallelepiped,  https://codeforces.com/problemset/problem/224/A
+257,  A,  1100,  Sockets,  https://codeforces.com/problemset/problem/257/A
+259,  B,  1100,  Little Elephant and Magic Square,  https://codeforces.com/problemset/problem/259/B
+259,  B,  1100,  Little Elephant and Magic Square,  https://codeforces.com/problemset/problem/259/B
+296,  A,  1100,  Yaroslav and Permutations,  https://codeforces.com/problemset/problem/296/A
+300,  A,  1100,  Array,  https://codeforces.com/problemset/problem/300/A
+355,  A,  1100,  Vasya and Digital Root,  https://codeforces.com/problemset/problem/355/A
+362,  B,  1100,  Petya and Staircases,  https://codeforces.com/problemset/problem/362/B
+370,  A,  1100,  Rook, Bishop and King,  https://codeforces.com/problemset/problem/370/A
+456,  A,  1100,  Laptops,  https://codeforces.com/problemset/problem/456/A
+467,  B,  1100,  Fedor and New Game,  https://codeforces.com/problemset/problem/467/B
+483,  A,  1100,  Counterexample ,  https://codeforces.com/problemset/problem/483/A
+1000,  A,  1200,  Codehorses T-shirts,  https://codeforces.com/problemset/problem/1000/A
+1006,  B,  1200,  Polycarp's Practice,  https://codeforces.com/problemset/problem/1006/B
+1006,  C,  1200,  Three Parts of the Array,  https://codeforces.com/problemset/problem/1006/C
+1006,  C,  1200,  Three Parts of the Array,  https://codeforces.com/problemset/problem/1006/C
+1011,  B,  1200,  Planning The Expedition,  https://codeforces.com/problemset/problem/1011/B
+1011,  B,  1200,  Planning The Expedition,  https://codeforces.com/problemset/problem/1011/B
+1013,  B,  1200,  And,  https://codeforces.com/problemset/problem/1013/B
+1015,  B,  1200,  Obtaining the String,  https://codeforces.com/problemset/problem/1015/B
+1017,  B,  1200,  The Bits,  https://codeforces.com/problemset/problem/1017/B
+1023,  A,  1200,  Single Wildcard Pattern Matching,  https://codeforces.com/problemset/problem/1023/A
+1023,  A,  1200,  Single Wildcard Pattern Matching,  https://codeforces.com/problemset/problem/1023/A
+1023,  C,  1200,  Bracket Subsequence,  https://codeforces.com/problemset/problem/1023/C
+1027,  B,  1200,  Numbers on the Chessboard,  https://codeforces.com/problemset/problem/1027/B
+1027,  B,  1200,  Numbers on the Chessboard,  https://codeforces.com/problemset/problem/1027/B
+1028,  B,  1200,  Unnatural Conditions,  https://codeforces.com/problemset/problem/1028/B
+1029,  B,  1200,  Creating the Contest,  https://codeforces.com/problemset/problem/1029/B
+1029,  B,  1200,  Creating the Contest,  https://codeforces.com/problemset/problem/1029/B
+1029,  B,  1200,  Creating the Contest,  https://codeforces.com/problemset/problem/1029/B
+1029,  B,  1200,  Creating the Contest,  https://codeforces.com/problemset/problem/1029/B
+1029,  B,  1200,  Creating the Contest,  https://codeforces.com/problemset/problem/1029/B
+1032,  B,  1200,  Personalized Cup,  https://codeforces.com/problemset/problem/1032/B
+1042,  B,  1200,  Vitamins,  https://codeforces.com/problemset/problem/1042/B
+1043,  B,  1200,  Lost Array,  https://codeforces.com/problemset/problem/1043/B
+1051,  A,  1200,  Vasya And Password,  https://codeforces.com/problemset/problem/1051/A
+1051,  A,  1200,  Vasya And Password,  https://codeforces.com/problemset/problem/1051/A
+1064,  B,  1200,  Equations of Mathematical Magic,  https://codeforces.com/problemset/problem/1064/B
+1068,  B,  1200,  LCM,  https://codeforces.com/problemset/problem/1068/B
+1075,  B,  1200,  Taxi drivers and Lyft,  https://codeforces.com/problemset/problem/1075/B
+1075,  B,  1200,  Taxi drivers and Lyft,  https://codeforces.com/problemset/problem/1075/B
+1076,  A,  1200,  Minimizing the String,  https://codeforces.com/problemset/problem/1076/A
+1076,  B,  1200,  Divisor Subtraction,  https://codeforces.com/problemset/problem/1076/B
+1082,  A,  1200,  Vasya and Book,  https://codeforces.com/problemset/problem/1082/A
+1084,  B,  1200,  Kvass and the Fair Nut,  https://codeforces.com/problemset/problem/1084/B
+1091,  B,  1200,  New Year and the Treasure Geolocation,  https://codeforces.com/problemset/problem/1091/B
+1097,  B,  1200,  Petr and a Combination Lock,  https://codeforces.com/problemset/problem/1097/B
+1097,  B,  1200,  Petr and a Combination Lock,  https://codeforces.com/problemset/problem/1097/B
+1099,  C,  1200,  Postcard,  https://codeforces.com/problemset/problem/1099/C
+1099,  C,  1200,  Postcard,  https://codeforces.com/problemset/problem/1099/C
+1100,  C,  1200,  NN and the Optical Illusion,  https://codeforces.com/problemset/problem/1100/C
+1102,  C,  1200,  Doors Breaking and Repairing,  https://codeforces.com/problemset/problem/1102/C
+1104,  B,  1200,  Game with string,  https://codeforces.com/problemset/problem/1104/B
+1104,  B,  1200,  Game with string,  https://codeforces.com/problemset/problem/1104/B
+1118,  B,  1200,  Tanya and Candies,  https://codeforces.com/problemset/problem/1118/B
+1121,  B,  1200,  Mike and Children,  https://codeforces.com/problemset/problem/1121/B
+1121,  B,  1200,  Mike and Children,  https://codeforces.com/problemset/problem/1121/B
+1130,  B,  1200,  Two Cakes,  https://codeforces.com/problemset/problem/1130/B
+1131,  C,  1200,  Birthday,  https://codeforces.com/problemset/problem/1131/C
+1133,  B,  1200,  Preparation for International Women's Day,  https://codeforces.com/problemset/problem/1133/B
+1133,  C,  1200,  Balanced Team,  https://codeforces.com/problemset/problem/1133/C
+1133,  C,  1200,  Balanced Team,  https://codeforces.com/problemset/problem/1133/C
+1140,  B,  1200,  Good String,  https://codeforces.com/problemset/problem/1140/B
+1140,  D,  1200,  Minimum Triangulation,  https://codeforces.com/problemset/problem/1140/D
+1143,  B,  1200,  Nirvana,  https://codeforces.com/problemset/problem/1143/B
+1149,  A,  1200,  Prefix Sum Primes,  https://codeforces.com/problemset/problem/1149/A
+1153,  B,  1200,  Serval and Toy Bricks,  https://codeforces.com/problemset/problem/1153/B
+1154,  B,  1200,  Make Them Equal,  https://codeforces.com/problemset/problem/1154/B
+1155,  B,  1200,  Game with Telephone Numbers,  https://codeforces.com/problemset/problem/1155/B
+1174,  B,  1200,  Ehab Is an Odd Person,  https://codeforces.com/problemset/problem/1174/B
+1184,  A1,  1200,  Heidi Learns Hashing (Easy),  https://codeforces.com/problemset/problem/1184/A1
+1185,  B,  1200,  Email from Polycarp,  https://codeforces.com/problemset/problem/1185/B
+1185,  B,  1200,  Email from Polycarp,  https://codeforces.com/problemset/problem/1185/B
+1185,  C1,  1200,  Exam in BerSU (easy version),  https://codeforces.com/problemset/problem/1185/C1
+1185,  C1,  1200,  Exam in BerSU (easy version),  https://codeforces.com/problemset/problem/1185/C1
+1191,  B,  1200,  Tokitsukaze and Mahjong,  https://codeforces.com/problemset/problem/1191/B
+1191,  B,  1200,  Tokitsukaze and Mahjong,  https://codeforces.com/problemset/problem/1191/B
+1196,  B,  1200,  Odd Sum Segments,  https://codeforces.com/problemset/problem/1196/B
+1200,  B,  1200,  Block Adventure,  https://codeforces.com/problemset/problem/1200/B
+1203,  B,  1200,  Equal Rectangles,  https://codeforces.com/problemset/problem/1203/B
+1203,  B,  1200,  Equal Rectangles,  https://codeforces.com/problemset/problem/1203/B
+1205,  A,  1200,  Almost Equal,  https://codeforces.com/problemset/problem/1205/A
+1207,  B,  1200,  Square Filling,  https://codeforces.com/problemset/problem/1207/B
+1213,  C,  1200,  Book Reading,  https://codeforces.com/problemset/problem/1213/C
+1213,  C,  1200,  Book Reading,  https://codeforces.com/problemset/problem/1213/C
+1213,  C,  1200,  Book Reading,  https://codeforces.com/problemset/problem/1213/C
+1214,  C,  1200,  Bad Sequence,  https://codeforces.com/problemset/problem/1214/C
+1214,  C,  1200,  Bad Sequence,  https://codeforces.com/problemset/problem/1214/C
+1221,  C,  1200,  Perfect Team,  https://codeforces.com/problemset/problem/1221/C
+1227,  B,  1200,  Box,  https://codeforces.com/problemset/problem/1227/B
+1227,  B,  1200,  Box,  https://codeforces.com/problemset/problem/1227/B
+1245,  B,  1200,  Restricted RPS,  https://codeforces.com/problemset/problem/1245/B
+1257,  C,  1200,  Dominated Subarray,  https://codeforces.com/problemset/problem/1257/C
+1257,  C,  1200,  Dominated Subarray,  https://codeforces.com/problemset/problem/1257/C
+1270,  B,  1200,  Interesting Subarray,  https://codeforces.com/problemset/problem/1270/B
+1272,  B,  1200,  Snow Walking Robot,  https://codeforces.com/problemset/problem/1272/B
+1272,  C,  1200,  Yet Another Broken Keyboard,  https://codeforces.com/problemset/problem/1272/C
+1272,  C,  1200,  Yet Another Broken Keyboard,  https://codeforces.com/problemset/problem/1272/C
+1272,  C,  1200,  Yet Another Broken Keyboard,  https://codeforces.com/problemset/problem/1272/C
+1277,  B,  1200,  Make Them Odd,  https://codeforces.com/problemset/problem/1277/B
+1277,  B,  1200,  Make Them Odd,  https://codeforces.com/problemset/problem/1277/B
+1294,  B,  1200,  Collecting Packages,  https://codeforces.com/problemset/problem/1294/B
+1305,  B,  1200,  Kuroni and Simple Strings,  https://codeforces.com/problemset/problem/1305/B
+1311,  B,  1200,  WeirdSort,  https://codeforces.com/problemset/problem/1311/B
+1311,  B,  1200,  WeirdSort,  https://codeforces.com/problemset/problem/1311/B
+1311,  B,  1200,  WeirdSort,  https://codeforces.com/problemset/problem/1311/B
+1315,  C,  1200,  Restoring Permutation,  https://codeforces.com/problemset/problem/1315/C
+1327,  B,  1200,  Princesses and Princes,  https://codeforces.com/problemset/problem/1327/B
+1328,  C,  1200,  Ternary XOR,  https://codeforces.com/problemset/problem/1328/C
+1334,  A,  1200,  Level Statistics,  https://codeforces.com/problemset/problem/1334/A
+1339,  B,  1200,  Sorted Adjacent Differences,  https://codeforces.com/problemset/problem/1339/B
+1343,  C,  1200,  Alternating Subsequence,  https://codeforces.com/problemset/problem/1343/C
+1343,  C,  1200,  Alternating Subsequence,  https://codeforces.com/problemset/problem/1343/C
+1352,  B,  1200,  Same Parity Summands,  https://codeforces.com/problemset/problem/1352/B
+1352,  C,  1200,  K-th Not Divisible by n,  https://codeforces.com/problemset/problem/1352/C
+1354,  B,  1200,  Ternary String,  https://codeforces.com/problemset/problem/1354/B
+1354,  B,  1200,  Ternary String,  https://codeforces.com/problemset/problem/1354/B
+1355,  A,  1200,  Sequence with Digits,  https://codeforces.com/problemset/problem/1355/A
+1355,  B,  1200,  Young Explorers,  https://codeforces.com/problemset/problem/1355/B
+1362,  B,  1200,  Johnny and His Hobbies,  https://codeforces.com/problemset/problem/1362/B
+1363,  A,  1200,  Odd Selection,  https://codeforces.com/problemset/problem/1363/A
+1363,  A,  1200,  Odd Selection,  https://codeforces.com/problemset/problem/1363/A
+1364,  A,  1200,  XXXXX,  https://codeforces.com/problemset/problem/1364/A
+1369,  B,  1200,  AccurateLee,  https://codeforces.com/problemset/problem/1369/B
+1369,  B,  1200,  AccurateLee,  https://codeforces.com/problemset/problem/1369/B
+1371,  B,  1200,  Magical Calendar,  https://codeforces.com/problemset/problem/1371/B
+1375,  B,  1200,  Neighbor Grid,  https://codeforces.com/problemset/problem/1375/B
+1375,  B,  1200,  Neighbor Grid,  https://codeforces.com/problemset/problem/1375/B
+1375,  B,  1200,  Neighbor Grid,  https://codeforces.com/problemset/problem/1375/B
+1384,  A,  1200,  Common Prefixes,  https://codeforces.com/problemset/problem/1384/A
+1385,  C,  1200,  Make It Good,  https://codeforces.com/problemset/problem/1385/C
+1385,  C,  1200,  Make It Good,  https://codeforces.com/problemset/problem/1385/C
+1385,  C,  1200,  Make It Good,  https://codeforces.com/problemset/problem/1385/C
+1392,  C,  1200,  Omkar and Waterslide,  https://codeforces.com/problemset/problem/1392/C
+1399,  C,  1200,  Boats Competition,  https://codeforces.com/problemset/problem/1399/C
+1399,  C,  1200,  Boats Competition,  https://codeforces.com/problemset/problem/1399/C
+1399,  C,  1200,  Boats Competition,  https://codeforces.com/problemset/problem/1399/C
+1406,  B,  1200,  Maximum Product,  https://codeforces.com/problemset/problem/1406/B
+1409,  C,  1200,  Yet Another Array Restoration,  https://codeforces.com/problemset/problem/1409/C
+1409,  C,  1200,  Yet Another Array Restoration,  https://codeforces.com/problemset/problem/1409/C
+1420,  B,  1200,  Rock and Lever,  https://codeforces.com/problemset/problem/1420/B
+1428,  B,  1200,  Belted Rooms,  https://codeforces.com/problemset/problem/1428/B
+1433,  D,  1200,  Districts Connection,  https://codeforces.com/problemset/problem/1433/D
+1433,  D,  1200,  Districts Connection,  https://codeforces.com/problemset/problem/1433/D
+1437,  B,  1200,  Reverse Binary Strings,  https://codeforces.com/problemset/problem/1437/B
+1454,  C,  1200,  Sequence Transformation,  https://codeforces.com/problemset/problem/1454/C
+1454,  C,  1200,  Sequence Transformation,  https://codeforces.com/problemset/problem/1454/C
+1455,  B,  1200,  Jumps,  https://codeforces.com/problemset/problem/1455/B
+1455,  B,  1200,  Jumps,  https://codeforces.com/problemset/problem/1455/B
+1455,  B,  1200,  Jumps,  https://codeforces.com/problemset/problem/1455/B
+1455,  B,  1200,  Jumps,  https://codeforces.com/problemset/problem/1455/B
+1455,  B,  1200,  Jumps,  https://codeforces.com/problemset/problem/1455/B
+1472,  D,  1200,  Even-Odd Game,  https://codeforces.com/problemset/problem/1472/D
+1472,  D,  1200,  Even-Odd Game,  https://codeforces.com/problemset/problem/1472/D
+1472,  D,  1200,  Even-Odd Game,  https://codeforces.com/problemset/problem/1472/D
+1485,  B,  1200,  Replace and Keep Sorted,  https://codeforces.com/problemset/problem/1485/B
+1487,  B,  1200,  Cat Cycle,  https://codeforces.com/problemset/problem/1487/B
+1490,  D,  1200,  Permutation Transformation,  https://codeforces.com/problemset/problem/1490/D
+1491,  B,  1200,  Minimal Cost,  https://codeforces.com/problemset/problem/1491/B
+1495,  A,  1200,  Diamond Miner,  https://codeforces.com/problemset/problem/1495/A
+1495,  A,  1200,  Diamond Miner,  https://codeforces.com/problemset/problem/1495/A
+1495,  A,  1200,  Diamond Miner,  https://codeforces.com/problemset/problem/1495/A
+1495,  A,  1200,  Diamond Miner,  https://codeforces.com/problemset/problem/1495/A
+1495,  A,  1200,  Diamond Miner,  https://codeforces.com/problemset/problem/1495/A
+1495,  A,  1200,  Diamond Miner,  https://codeforces.com/problemset/problem/1495/A
+1497,  B,  1200,  M-arrays,  https://codeforces.com/problemset/problem/1497/B
+1497,  C1,  1200,  k-LCM (easy version),  https://codeforces.com/problemset/problem/1497/C1
+1504,  B,  1200,  Flip the Bits,  https://codeforces.com/problemset/problem/1504/B
+1510,  K,  1200,  King's Task,  https://codeforces.com/problemset/problem/1510/K
+1510,  K,  1200,  King's Task,  https://codeforces.com/problemset/problem/1510/K
+1510,  K,  1200,  King's Task,  https://codeforces.com/problemset/problem/1510/K
+1512,  C,  1200,  A-B Palindrome,  https://codeforces.com/problemset/problem/1512/C
+1512,  C,  1200,  A-B Palindrome,  https://codeforces.com/problemset/problem/1512/C
+1512,  C,  1200,  A-B Palindrome,  https://codeforces.com/problemset/problem/1512/C
+1512,  C,  1200,  A-B Palindrome,  https://codeforces.com/problemset/problem/1512/C
+1512,  D,  1200,  Corrupted Array,  https://codeforces.com/problemset/problem/1512/D
+1514,  B,  1200,  AND 0, Sum Big,  https://codeforces.com/problemset/problem/1514/B
+1520,  D,  1200,  Same Differences,  https://codeforces.com/problemset/problem/1520/D
+1527,  B1,  1200,  Palindrome Game (easy version),  https://codeforces.com/problemset/problem/1527/B1
+1527,  B1,  1200,  Palindrome Game (easy version),  https://codeforces.com/problemset/problem/1527/B1
+1530,  C,  1200,  Pursuit,  https://codeforces.com/problemset/problem/1530/C
+1530,  C,  1200,  Pursuit,  https://codeforces.com/problemset/problem/1530/C
+1530,  C,  1200,  Pursuit,  https://codeforces.com/problemset/problem/1530/C
+1537,  C,  1200,  Challenging Cliffs,  https://codeforces.com/problemset/problem/1537/C
+1539,  C,  1200,  Stable Groups,  https://codeforces.com/problemset/problem/1539/C
+1541,  B,  1200,  Pleasant Pairs,  https://codeforces.com/problemset/problem/1541/B
+1546,  B,  1200,  AquaMoon and Stolen String,  https://codeforces.com/problemset/problem/1546/B
+1546,  B,  1200,  AquaMoon and Stolen String,  https://codeforces.com/problemset/problem/1546/B
+1553,  C,  1200,  Penalty,  https://codeforces.com/problemset/problem/1553/C
+1559,  C,  1200,  Mocha and Hiking,  https://codeforces.com/problemset/problem/1559/C
+1578,  E,  1200,  Easy Scheduling,  https://codeforces.com/problemset/problem/1578/E
+1581,  B,  1200,  Diameter of Graph,  https://codeforces.com/problemset/problem/1581/B
+1582,  C,  1200,  Grandma Capa Knits a Scarf,  https://codeforces.com/problemset/problem/1582/C
+1582,  C,  1200,  Grandma Capa Knits a Scarf,  https://codeforces.com/problemset/problem/1582/C
+1583,  B,  1200,  Omkar and Heavenly Tree,  https://codeforces.com/problemset/problem/1583/B
+1592,  B,  1200,  Hemose Shopping,  https://codeforces.com/problemset/problem/1592/B
+1594,  C,  1200,  Make Them Equal,  https://codeforces.com/problemset/problem/1594/C
+1594,  C,  1200,  Make Them Equal,  https://codeforces.com/problemset/problem/1594/C
+1598,  C,  1200,  Delete Two Elements,  https://codeforces.com/problemset/problem/1598/C
+1598,  C,  1200,  Delete Two Elements,  https://codeforces.com/problemset/problem/1598/C
+1608,  B,  1200,  Build the Permutation,  https://codeforces.com/problemset/problem/1608/B
+1613,  C,  1200,  Poisoned Dagger,  https://codeforces.com/problemset/problem/1613/C
+1619,  C,  1200,  Wrong Addition,  https://codeforces.com/problemset/problem/1619/C
+1619,  C,  1200,  Wrong Addition,  https://codeforces.com/problemset/problem/1619/C
+1635,  C,  1200,  Differential Sorting,  https://codeforces.com/problemset/problem/1635/C
+1637,  C,  1200,  Andrew and Stones,  https://codeforces.com/problemset/problem/1637/C
+1641,  A,  1200,  Great Sequence,  https://codeforces.com/problemset/problem/1641/A
+1641,  A,  1200,  Great Sequence,  https://codeforces.com/problemset/problem/1641/A
+1647,  B,  1200,  Madoka and the Elegant Gift,  https://codeforces.com/problemset/problem/1647/B
+1650,  C,  1200,  Weight of the System of Nested Segments,  https://codeforces.com/problemset/problem/1650/C
+1656,  C,  1200,  Make Equal With Mod,  https://codeforces.com/problemset/problem/1656/C
+1657,  C,  1200,  Bracket Sequence Deletion,  https://codeforces.com/problemset/problem/1657/C
+1669,  E,  1200,  2-Letter Strings,  https://codeforces.com/problemset/problem/1669/E
+1669,  E,  1200,  2-Letter Strings,  https://codeforces.com/problemset/problem/1669/E
+1669,  G,  1200,  Fall Down,  https://codeforces.com/problemset/problem/1669/G
+1671,  C,  1200,  Dolce Vita,  https://codeforces.com/problemset/problem/1671/C
+1671,  C,  1200,  Dolce Vita,  https://codeforces.com/problemset/problem/1671/C
+1674,  D,  1200,  A-B-C Sort,  https://codeforces.com/problemset/problem/1674/D
+1679,  B,  1200,  Stone Age Problem,  https://codeforces.com/problemset/problem/1679/B
+1679,  B,  1200,  Stone Age Problem,  https://codeforces.com/problemset/problem/1679/B
+1679,  B,  1200,  Stone Age Problem,  https://codeforces.com/problemset/problem/1679/B
+1681,  C,  1200,  Double Sort,  https://codeforces.com/problemset/problem/1681/C
+1692,  E,  1200,  Binary Deque,  https://codeforces.com/problemset/problem/1692/E
+1694,  B,  1200,  Paranoid String,  https://codeforces.com/problemset/problem/1694/B
+1703,  E,  1200,  Mirror Grid,  https://codeforces.com/problemset/problem/1703/E
+171,  A,  1200,  Mysterious numbers - 1,  https://codeforces.com/problemset/problem/171/A
+172,  B,  1200,  Pseudorandom Sequence Period,  https://codeforces.com/problemset/problem/172/B
+177,  B2,  1200,  Rectangular Game,  https://codeforces.com/problemset/problem/177/B2
+177,  D1,  1200,  Encrypting Messages,  https://codeforces.com/problemset/problem/177/D1
+180,  F,  1200,  Mathematical Analysis Rocks!,  https://codeforces.com/problemset/problem/180/F
+186,  B,  1200,  Growing Mushrooms,  https://codeforces.com/problemset/problem/186/B
+194,  B,  1200,  Square,  https://codeforces.com/problemset/problem/194/B
+203,  A,  1200,  Two Problems,  https://codeforces.com/problemset/problem/203/A
+208,  D,  1200,  Prizes, Prizes, more Prizes,  https://codeforces.com/problemset/problem/208/D
+216,  A,  1200,  Tiling with Hexagons,  https://codeforces.com/problemset/problem/216/A
+222,  A,  1200,  Shooshuns and Sequence ,  https://codeforces.com/problemset/problem/222/A
+234,  A,  1200,  Lefthanders and Righthanders ,  https://codeforces.com/problemset/problem/234/A
+239,  A,  1200,  Two Bags of Potatoes,  https://codeforces.com/problemset/problem/239/A
+254,  A,  1200,  Cards with Numbers,  https://codeforces.com/problemset/problem/254/A
+255,  B,  1200,  Code Parsing,  https://codeforces.com/problemset/problem/255/B
+262,  B,  1200,  Roma and Changing Signs,  https://codeforces.com/problemset/problem/262/B
+264,  A,  1200,  Escape from Stones,  https://codeforces.com/problemset/problem/264/A
+27,  A,  1200,  Next Test,  https://codeforces.com/problemset/problem/27/A
+285,  B,  1200,  Find Marble,  https://codeforces.com/problemset/problem/285/B
+285,  C,  1200,  Building Permutation,  https://codeforces.com/problemset/problem/285/C
+292,  B,  1200,  Network Topology,  https://codeforces.com/problemset/problem/292/B
+298,  B,  1200,  Sail,  https://codeforces.com/problemset/problem/298/B
+302,  B,  1200,  Eugeny and Play List,  https://codeforces.com/problemset/problem/302/B
+304,  A,  1200,  Pythagorean Theorem II,  https://codeforces.com/problemset/problem/304/A
+31,  A,  1200,  Worms Evolution,  https://codeforces.com/problemset/problem/31/A
+315,  B,  1200,  Sereja and Array,  https://codeforces.com/problemset/problem/315/B
+327,  A,  1200,  Flipping Game,  https://codeforces.com/problemset/problem/327/A
+327,  B,  1200,  Hungry Sequence,  https://codeforces.com/problemset/problem/327/B
+340,  A,  1200,  The Wall,  https://codeforces.com/problemset/problem/340/A
+342,  A,  1200,  Xenia and Divisors,  https://codeforces.com/problemset/problem/342/A
+342,  A,  1200,  Xenia and Divisors,  https://codeforces.com/problemset/problem/342/A
+344,  B,  1200,  Simple Molecules,  https://codeforces.com/problemset/problem/344/B
+350,  A,  1200,  TL,  https://codeforces.com/problemset/problem/350/A
+353,  A,  1200,  Domino,  https://codeforces.com/problemset/problem/353/A
+361,  B,  1200,  Levko and Permutation,  https://codeforces.com/problemset/problem/361/B
+366,  B,  1200,  Dima and To-do List,  https://codeforces.com/problemset/problem/366/B
+379,  B,  1200,  New Year Present,  https://codeforces.com/problemset/problem/379/B
+385,  B,  1200,  Bear and Strings,  https://codeforces.com/problemset/problem/385/B
+385,  B,  1200,  Bear and Strings,  https://codeforces.com/problemset/problem/385/B
+387,  B,  1200,  George and Round,  https://codeforces.com/problemset/problem/387/B
+400,  B,  1200,  Inna and New Matrix of Candies,  https://codeforces.com/problemset/problem/400/B
+401,  B,  1200,  Sereja and Contests,  https://codeforces.com/problemset/problem/401/B
+408,  B,  1200,  Garland,  https://codeforces.com/problemset/problem/408/B
+412,  C,  1200,  Pattern,  https://codeforces.com/problemset/problem/412/C
+413,  A,  1200,  Data Recovery,  https://codeforces.com/problemset/problem/413/A
+424,  B,  1200,  Megacity,  https://codeforces.com/problemset/problem/424/B
+431,  B,  1200,  Shower Line,  https://codeforces.com/problemset/problem/431/B
+432,  B,  1200,  Football Kit,  https://codeforces.com/problemset/problem/432/B
+432,  B,  1200,  Football Kit,  https://codeforces.com/problemset/problem/432/B
+432,  B,  1200,  Football Kit,  https://codeforces.com/problemset/problem/432/B
+432,  B,  1200,  Football Kit,  https://codeforces.com/problemset/problem/432/B
+433,  B,  1200,  Kuriyama Mirai's Stones,  https://codeforces.com/problemset/problem/433/B
+439,  B,  1200,  Devu, the Dumb Guy,  https://codeforces.com/problemset/problem/439/B
+445,  A,  1200,  DZY Loves Chessboard,  https://codeforces.com/problemset/problem/445/A
+454,  B,  1200,  Little Pony and Sort by Shift,  https://codeforces.com/problemset/problem/454/B
+454,  B,  1200,  Little Pony and Sort by Shift,  https://codeforces.com/problemset/problem/454/B
+456,  B,  1200,  Fedya and Maths,  https://codeforces.com/problemset/problem/456/B
+459,  A,  1200,  Pashmak and Garden,  https://codeforces.com/problemset/problem/459/A
+461,  A,  1200,  Appleman and Toastman,  https://codeforces.com/problemset/problem/461/A
+463,  A,  1200,  Caisa and Sugar,  https://codeforces.com/problemset/problem/463/A
+466,  A,  1200,  Cheap Travel,  https://codeforces.com/problemset/problem/466/A
+474,  B,  1200,  Worms,  https://codeforces.com/problemset/problem/474/B
+482,  A,  1200,  Diverse Permutation,  https://codeforces.com/problemset/problem/482/A
+489,  A,  1200,  SwapSort,  https://codeforces.com/problemset/problem/489/A
+489,  B,  1200,  BerSU Ball,  https://codeforces.com/problemset/problem/489/B
+492,  B,  1200,  Vanya and Lanterns,  https://codeforces.com/problemset/problem/492/B
+514,  A,  1200,  Chewbaсca and Number,  https://codeforces.com/problemset/problem/514/A
+522,  A,  1200,  Reposts,  https://codeforces.com/problemset/problem/522/A
+523,  A,  1200,  Rotate, Flip and Zoom,  https://codeforces.com/problemset/problem/523/A
+546,  B,  1200,  Soldier and Badges,  https://codeforces.com/problemset/problem/546/B
+552,  B,  1200,  Vanya and Books,  https://codeforces.com/problemset/problem/552/B
+554,  B,  1200,  Ohana Cleans Up,  https://codeforces.com/problemset/problem/554/B
+560,  B,  1200,  Gerald is into Art,  https://codeforces.com/problemset/problem/560/B
+560,  B,  1200,  Gerald is into Art,  https://codeforces.com/problemset/problem/560/B
+569,  B,  1200,  Inventory,  https://codeforces.com/problemset/problem/569/B
+574,  A,  1200,  Bear and Elections,  https://codeforces.com/problemset/problem/574/A
+574,  A,  1200,  Bear and Elections,  https://codeforces.com/problemset/problem/574/A
+583,  B,  1200,  Robot's Task,  https://codeforces.com/problemset/problem/583/B
+591,  B,  1200,  Rebranding,  https://codeforces.com/problemset/problem/591/B
+591,  B,  1200,  Rebranding,  https://codeforces.com/problemset/problem/591/B
+592,  A,  1200,  PawnChess,  https://codeforces.com/problemset/problem/592/A
+593,  A,  1200,  2Char,  https://codeforces.com/problemset/problem/593/A
+606,  A,  1200,  Magic Spheres,  https://codeforces.com/problemset/problem/606/A
+612,  B,  1200,  HDD is Outdated Technology,  https://codeforces.com/problemset/problem/612/B
+625,  B,  1200,  War of the Corporations,  https://codeforces.com/problemset/problem/625/B
+630,  B,  1200,  Moore's Law,  https://codeforces.com/problemset/problem/630/B
+630,  R,  1200,  Game,  https://codeforces.com/problemset/problem/630/R
+631,  B,  1200,  Print Check,  https://codeforces.com/problemset/problem/631/B
+632,  A,  1200,  Grandma Laura and Apples,  https://codeforces.com/problemset/problem/632/A
+637,  B,  1200,  Chat Order,  https://codeforces.com/problemset/problem/637/B
+639,  A,  1200,  Bear and Displayed Friends,  https://codeforces.com/problemset/problem/639/A
+645,  A,  1200,  Amity Assessment,  https://codeforces.com/problemset/problem/645/A
+651,  B,  1200,  Beautiful Paintings,  https://codeforces.com/problemset/problem/651/B
+659,  C,  1200,  Tanya and Toys,  https://codeforces.com/problemset/problem/659/C
+660,  A,  1200,  Co-prime Array,  https://codeforces.com/problemset/problem/660/A
+682,  B,  1200,  Alyona and Mex,  https://codeforces.com/problemset/problem/682/B
+690,  D1,  1200,  The Wall (easy),  https://codeforces.com/problemset/problem/690/D1
+690,  D1,  1200,  The Wall (easy),  https://codeforces.com/problemset/problem/690/D1
+701,  B,  1200,  Cells Not Under Attack,  https://codeforces.com/problemset/problem/701/B
+708,  A,  1200,  Letters Cyclic Shift,  https://codeforces.com/problemset/problem/708/A
+714,  B,  1200,  Filya and Homework,  https://codeforces.com/problemset/problem/714/B
+717,  C,  1200,  Potions Homework,  https://codeforces.com/problemset/problem/717/C
+722,  B,  1200,  Verse Pattern,  https://codeforces.com/problemset/problem/722/B
+725,  B,  1200,  Food on the Plane,  https://codeforces.com/problemset/problem/725/B
+729,  B,  1200,  Spotlights,  https://codeforces.com/problemset/problem/729/B
+729,  B,  1200,  Spotlights,  https://codeforces.com/problemset/problem/729/B
+740,  B,  1200,  Alyona and flowers,  https://codeforces.com/problemset/problem/740/B
+743,  A,  1200,  Vladik and flights,  https://codeforces.com/problemset/problem/743/A
+743,  B,  1200,  Chloe and the sequence ,  https://codeforces.com/problemset/problem/743/B
+743,  B,  1200,  Chloe and the sequence ,  https://codeforces.com/problemset/problem/743/B
+749,  B,  1200,  Parallelogram is Back,  https://codeforces.com/problemset/problem/749/B
+754,  A,  1200,  Lesha and array splitting,  https://codeforces.com/problemset/problem/754/A
+765,  C,  1200,  Table Tennis Game 2,  https://codeforces.com/problemset/problem/765/C
+769,  B,  1200,  News About Credit,  https://codeforces.com/problemset/problem/769/B
+774,  C,  1200,  Maximum Number,  https://codeforces.com/problemset/problem/774/C
+776,  B,  1200,  Sherlock and his girlfriend,  https://codeforces.com/problemset/problem/776/B
+779,  C,  1200,  Dishonest Sellers,  https://codeforces.com/problemset/problem/779/C
+787,  A,  1200,  The Monster,  https://codeforces.com/problemset/problem/787/A
+794,  B,  1200,  Cutting Carrot,  https://codeforces.com/problemset/problem/794/B
+802,  M,  1200,  April Fools' Problem (easy),  https://codeforces.com/problemset/problem/802/M
+803,  B,  1200,  Distances to Zero,  https://codeforces.com/problemset/problem/803/B
+811,  B,  1200,  Vladik and Complicated Book,  https://codeforces.com/problemset/problem/811/B
+812,  A,  1200,  Sagheer and Crossroads,  https://codeforces.com/problemset/problem/812/A
+812,  A,  1200,  Sagheer and Crossroads,  https://codeforces.com/problemset/problem/812/A
+817,  A,  1200,  Treasure Hunt,  https://codeforces.com/problemset/problem/817/A
+828,  A,  1200,  Restaurant Tables,  https://codeforces.com/problemset/problem/828/A
+854,  B,  1200,  Maxim Buys an Apartment,  https://codeforces.com/problemset/problem/854/B
+870,  B,  1200,  Maximum of Maximums of Minimums,  https://codeforces.com/problemset/problem/870/B
+875,  A,  1200,  Classroom Watch,  https://codeforces.com/problemset/problem/875/A
+879,  B,  1200,  Table Tennis,  https://codeforces.com/problemset/problem/879/B
+88,  A,  1200,  Chord,  https://codeforces.com/problemset/problem/88/A
+892,  B,  1200,  Wrath,  https://codeforces.com/problemset/problem/892/B
+892,  B,  1200,  Wrath,  https://codeforces.com/problemset/problem/892/B
+895,  A,  1200,  Pizza Separation,  https://codeforces.com/problemset/problem/895/A
+899,  B,  1200,  Months and Years,  https://codeforces.com/problemset/problem/899/B
+903,  B,  1200,  The Modcrab,  https://codeforces.com/problemset/problem/903/B
+903,  C,  1200,  Boxes Packing,  https://codeforces.com/problemset/problem/903/C
+908,  B,  1200,  New Year and Buggy Bot,  https://codeforces.com/problemset/problem/908/B
+911,  B,  1200,  Two Cakes,  https://codeforces.com/problemset/problem/911/B
+913,  B,  1200,  Christmas Spruce,  https://codeforces.com/problemset/problem/913/B
+913,  B,  1200,  Christmas Spruce,  https://codeforces.com/problemset/problem/913/B
+914,  B,  1200,  Conan and Agasa play a Card Game,  https://codeforces.com/problemset/problem/914/B
+920,  B,  1200,  Tea Queue,  https://codeforces.com/problemset/problem/920/B
+928,  A,  1200,  Login Verification,  https://codeforces.com/problemset/problem/928/A
+931,  B,  1200,  World Cup,  https://codeforces.com/problemset/problem/931/B
+931,  B,  1200,  World Cup,  https://codeforces.com/problemset/problem/931/B
+934,  B,  1200,  A Prosperous Lot,  https://codeforces.com/problemset/problem/934/B
+940,  A,  1200,  Points on the line,  https://codeforces.com/problemset/problem/940/A
+940,  A,  1200,  Points on the line,  https://codeforces.com/problemset/problem/940/A
+958,  C1,  1200,  Encryption (easy),  https://codeforces.com/problemset/problem/958/C1
+959,  B,  1200,  Mahmoud and Ehab and the message,  https://codeforces.com/problemset/problem/959/B
+960,  A,  1200,  Check the string,  https://codeforces.com/problemset/problem/960/A
+960,  A,  1200,  Check the string,  https://codeforces.com/problemset/problem/960/A
+961,  B,  1200,  Lecture Sleep,  https://codeforces.com/problemset/problem/961/B
+977,  C,  1200,  Less or Equal,  https://codeforces.com/problemset/problem/977/C
+982,  A,  1200,  Row,  https://codeforces.com/problemset/problem/982/A
+982,  A,  1200,  Row,  https://codeforces.com/problemset/problem/982/A
+985,  B,  1200,  Switches and Lamps,  https://codeforces.com/problemset/problem/985/B
+989,  B,  1200,  A Tide of Riverscape,  https://codeforces.com/problemset/problem/989/B
+989,  B,  1200,  A Tide of Riverscape,  https://codeforces.com/problemset/problem/989/B
+990,  B,  1200,  Micro-World,  https://codeforces.com/problemset/problem/990/B
+998,  B,  1200,  Cutting,  https://codeforces.com/problemset/problem/998/B
+998,  B,  1200,  Cutting,  https://codeforces.com/problemset/problem/998/B
+999,  C,  1200,  Alphabetic Removals,  https://codeforces.com/problemset/problem/999/C
+1004,  B,  1300,  Sonya and Exhibition,  https://codeforces.com/problemset/problem/1004/B
+1029,  A,  1300,  Many Equal Substrings,  https://codeforces.com/problemset/problem/1029/A
+1037,  C,  1300,  Equalize,  https://codeforces.com/problemset/problem/1037/C
+1157,  B,  1300,  Long Number,  https://codeforces.com/problemset/problem/1157/B
+1220,  B,  1300,  Multiplication Table,  https://codeforces.com/problemset/problem/1220/B
+1220,  B,  1300,  Multiplication Table,  https://codeforces.com/problemset/problem/1220/B
+1220,  C,  1300,  Substring Game in the Lesson,  https://codeforces.com/problemset/problem/1220/C
+1225,  B2,  1300,  TV Subscriptions (Hard Version),  https://codeforces.com/problemset/problem/1225/B2
+1225,  B2,  1300,  TV Subscriptions (Hard Version),  https://codeforces.com/problemset/problem/1225/B2
+1225,  B2,  1300,  TV Subscriptions (Hard Version),  https://codeforces.com/problemset/problem/1225/B2
+1225,  B2,  1300,  TV Subscriptions (Hard Version),  https://codeforces.com/problemset/problem/1225/B2
+1234,  B2,  1300,  Social Network (hard version),  https://codeforces.com/problemset/problem/1234/B2
+1234,  B2,  1300,  Social Network (hard version),  https://codeforces.com/problemset/problem/1234/B2
+1234,  B2,  1300,  Social Network (hard version),  https://codeforces.com/problemset/problem/1234/B2
+1236,  C,  1300,  Labs,  https://codeforces.com/problemset/problem/1236/C
+1237,  B,  1300,  Balanced Tunnel,  https://codeforces.com/problemset/problem/1237/B
+1238,  B,  1300,  Kill `Em All,  https://codeforces.com/problemset/problem/1238/B
+1249,  B2,  1300,  Books Exchange (hard version),  https://codeforces.com/problemset/problem/1249/B2
+1249,  C1,  1300,  Good Numbers (easy version),  https://codeforces.com/problemset/problem/1249/C1
+1260,  B,  1300,  Obtain Two Zeroes,  https://codeforces.com/problemset/problem/1260/B
+1265,  B,  1300,  Beautiful Numbers,  https://codeforces.com/problemset/problem/1265/B
+1265,  B,  1300,  Beautiful Numbers,  https://codeforces.com/problemset/problem/1265/B
+1271,  B,  1300,  Blocks,  https://codeforces.com/problemset/problem/1271/B
+1271,  C,  1300,  Shawarma Tent,  https://codeforces.com/problemset/problem/1271/C
+1279,  B,  1300,  Verse For Santa,  https://codeforces.com/problemset/problem/1279/B
+1285,  B,  1300,  Just Eat It!,  https://codeforces.com/problemset/problem/1285/B
+1285,  B,  1300,  Just Eat It!,  https://codeforces.com/problemset/problem/1285/B
+1291,  B,  1300,  Array Sharpening,  https://codeforces.com/problemset/problem/1291/B
+1294,  C,  1300,  Product of Three Numbers,  https://codeforces.com/problemset/problem/1294/C
+1307,  B,  1300,  Cow and Friend,  https://codeforces.com/problemset/problem/1307/B
+1311,  C,  1300,  Perform the Combo,  https://codeforces.com/problemset/problem/1311/C
+1315,  B,  1300,  Homecoming,  https://codeforces.com/problemset/problem/1315/B
+1322,  A,  1300,  Unusual Competitions,  https://codeforces.com/problemset/problem/1322/A
+1322,  A,  1300,  Unusual Competitions,  https://codeforces.com/problemset/problem/1322/A
+1322,  A,  1300,  Unusual Competitions,  https://codeforces.com/problemset/problem/1322/A
+1326,  C,  1300,  Permutation Partitions,  https://codeforces.com/problemset/problem/1326/C
+1328,  B,  1300,  K-th Beautiful String,  https://codeforces.com/problemset/problem/1328/B
+1335,  D,  1300,  Anti-Sudoku,  https://codeforces.com/problemset/problem/1335/D
+1341,  B,  1300,  Nastya and Door,  https://codeforces.com/problemset/problem/1341/B
+1352,  D,  1300,  Alice, Bob and Candies,  https://codeforces.com/problemset/problem/1352/D
+1360,  D,  1300,  Buying Shovels,  https://codeforces.com/problemset/problem/1360/D
+1360,  E,  1300,  Polygon,  https://codeforces.com/problemset/problem/1360/E
+1364,  B,  1300,  Most socially-distanced subsequence,  https://codeforces.com/problemset/problem/1364/B
+1365,  B,  1300,  Trouble Sort,  https://codeforces.com/problemset/problem/1365/B
+1366,  B,  1300,  Shuffle,  https://codeforces.com/problemset/problem/1366/B
+1366,  B,  1300,  Shuffle,  https://codeforces.com/problemset/problem/1366/B
+1367,  C,  1300,  Social Distance,  https://codeforces.com/problemset/problem/1367/C
+1371,  C,  1300,  A Cookie for You,  https://codeforces.com/problemset/problem/1371/C
+1372,  B,  1300,  Omkar and Last Class of Math,  https://codeforces.com/problemset/problem/1372/B
+1373,  C,  1300,  Pluses and Minuses,  https://codeforces.com/problemset/problem/1373/C
+1381,  A1,  1300,  Prefix Flip (Easy Version),  https://codeforces.com/problemset/problem/1381/A1
+1401,  C,  1300,  Mere Array,  https://codeforces.com/problemset/problem/1401/C
+1407,  B,  1300,  Big Vova,  https://codeforces.com/problemset/problem/1407/B
+1418,  B,  1300,  Negative Prefixes,  https://codeforces.com/problemset/problem/1418/B
+1420,  C1,  1300,  Pokémon Army (easy version),  https://codeforces.com/problemset/problem/1420/C1
+1422,  B,  1300,  Nice Matrix,  https://codeforces.com/problemset/problem/1422/B
+1433,  E,  1300,  Two Round Dances,  https://codeforces.com/problemset/problem/1433/E
+1443,  B,  1300,  Saving the City,  https://codeforces.com/problemset/problem/1443/B
+1443,  B,  1300,  Saving the City,  https://codeforces.com/problemset/problem/1443/B
+1446,  A,  1300,  Knapsack,  https://codeforces.com/problemset/problem/1446/A
+1454,  D,  1300,  Number into Sequence,  https://codeforces.com/problemset/problem/1454/D
+1459,  B,  1300,  Move and Turn,  https://codeforces.com/problemset/problem/1459/B
+1466,  C,  1300,  Canine poetry,  https://codeforces.com/problemset/problem/1466/C
+1470,  A,  1300,  Strange Birthday Party,  https://codeforces.com/problemset/problem/1470/A
+1476,  B,  1300,  Inflation,  https://codeforces.com/problemset/problem/1476/B
+1476,  B,  1300,  Inflation,  https://codeforces.com/problemset/problem/1476/B
+1476,  B,  1300,  Inflation,  https://codeforces.com/problemset/problem/1476/B
+1493,  B,  1300,  Planet Lapituletti,  https://codeforces.com/problemset/problem/1493/B
+1493,  B,  1300,  Planet Lapituletti,  https://codeforces.com/problemset/problem/1493/B
+1493,  B,  1300,  Planet Lapituletti,  https://codeforces.com/problemset/problem/1493/B
+1498,  B,  1300,  Box Fitting,  https://codeforces.com/problemset/problem/1498/B
+1498,  B,  1300,  Box Fitting,  https://codeforces.com/problemset/problem/1498/B
+1521,  B,  1300,  Nastia and a Good Array,  https://codeforces.com/problemset/problem/1521/B
+1534,  C,  1300,  Little Alawn's Puzzle,  https://codeforces.com/problemset/problem/1534/C
+1538,  C,  1300,  Number of Pairs,  https://codeforces.com/problemset/problem/1538/C
+1547,  D,  1300,  Co-growing Sequence,  https://codeforces.com/problemset/problem/1547/D
+1553,  B,  1300,  Reverse String,  https://codeforces.com/problemset/problem/1553/B
+1555,  B,  1300,  Two Tables,  https://codeforces.com/problemset/problem/1555/B
+1555,  B,  1300,  Two Tables,  https://codeforces.com/problemset/problem/1555/B
+1555,  C,  1300,  Coin Rows,  https://codeforces.com/problemset/problem/1555/C
+1556,  B,  1300,  Take Your Places!,  https://codeforces.com/problemset/problem/1556/B
+1558,  A,  1300,  Charmed by the Game,  https://codeforces.com/problemset/problem/1558/A
+1560,  D,  1300,  Make a Power of Two,  https://codeforces.com/problemset/problem/1560/D
+1561,  C,  1300,  Deep Down Below,  https://codeforces.com/problemset/problem/1561/C
+1574,  C,  1300,  Slay the Dragon,  https://codeforces.com/problemset/problem/1574/C
+1574,  C,  1300,  Slay the Dragon,  https://codeforces.com/problemset/problem/1574/C
+1574,  C,  1300,  Slay the Dragon,  https://codeforces.com/problemset/problem/1574/C
+1585,  C,  1300,  Minimize Distance,  https://codeforces.com/problemset/problem/1585/C
+1594,  E1,  1300,  Rubik's Cube Coloring (easy version),  https://codeforces.com/problemset/problem/1594/E1
+1601,  A,  1300,  Array Elimination,  https://codeforces.com/problemset/problem/1601/A
+1601,  A,  1300,  Array Elimination,  https://codeforces.com/problemset/problem/1601/A
+1601,  A,  1300,  Array Elimination,  https://codeforces.com/problemset/problem/1601/A
+1603,  A,  1300,  Di-visible Confusion,  https://codeforces.com/problemset/problem/1603/A
+1603,  A,  1300,  Di-visible Confusion,  https://codeforces.com/problemset/problem/1603/A
+1607,  D,  1300,  Blue-Red Permutation,  https://codeforces.com/problemset/problem/1607/D
+1612,  C,  1300,  Chat Ban,  https://codeforces.com/problemset/problem/1612/C
+1615,  B,  1300,  And It's Non-Zero,  https://codeforces.com/problemset/problem/1615/B
+1617,  C,  1300,  Paprika and Permutation,  https://codeforces.com/problemset/problem/1617/C
+1618,  D,  1300,  Array and Operations,  https://codeforces.com/problemset/problem/1618/D
+1618,  D,  1300,  Array and Operations,  https://codeforces.com/problemset/problem/1618/D
+1618,  D,  1300,  Array and Operations,  https://codeforces.com/problemset/problem/1618/D
+1627,  B,  1300,  Not Sitting,  https://codeforces.com/problemset/problem/1627/B
+1638,  C,  1300,  Inversion Graph,  https://codeforces.com/problemset/problem/1638/C
+1638,  C,  1300,  Inversion Graph,  https://codeforces.com/problemset/problem/1638/C
+1647,  C,  1300,  Madoka and Childish Pranks,  https://codeforces.com/problemset/problem/1647/C
+1649,  B,  1300,  Game of Ball Passing,  https://codeforces.com/problemset/problem/1649/B
+1650,  D,  1300,  Twist the Permutation,  https://codeforces.com/problemset/problem/1650/D
+1659,  B,  1300,  Bit Flipping,  https://codeforces.com/problemset/problem/1659/B
+1660,  C,  1300,  Get an Even String,  https://codeforces.com/problemset/problem/1660/C
+1661,  B,  1300,  Getting Zero,  https://codeforces.com/problemset/problem/1661/B
+1667,  A,  1300,  Make it Increasing,  https://codeforces.com/problemset/problem/1667/A
+1669,  H,  1300,  Maximal AND,  https://codeforces.com/problemset/problem/1669/H
+1675,  D,  1300,  Vertical Paths,  https://codeforces.com/problemset/problem/1675/D
+1675,  D,  1300,  Vertical Paths,  https://codeforces.com/problemset/problem/1675/D
+1676,  F,  1300,  Longest Strike,  https://codeforces.com/problemset/problem/1676/F
+1676,  G,  1300,  White-Black Balanced Subtrees,  https://codeforces.com/problemset/problem/1676/G
+1692,  F,  1300,  3SUM,  https://codeforces.com/problemset/problem/1692/F
+1693,  A,  1300,  Directional Increase,  https://codeforces.com/problemset/problem/1693/A
+1698,  C,  1300,  3SUM Closure,  https://codeforces.com/problemset/problem/1698/C
+1703,  F,  1300,  Yet Another Problem About Pairs Satisfying an Inequality,  https://codeforces.com/problemset/problem/1703/F
+1717,  C,  1300,  Madoka and Formal Statement,  https://codeforces.com/problemset/problem/1717/C
+1726,  C,  1300,  Jatayu's Balanced Bracket Sequence,  https://codeforces.com/problemset/problem/1726/C
+1733,  C,  1300,  Parity Shuffle Sorting,  https://codeforces.com/problemset/problem/1733/C
+1741,  D,  1300,  Masha and a Beautiful Tree,  https://codeforces.com/problemset/problem/1741/D
+1810,  C,  1300,  Make It Permutation,  https://codeforces.com/problemset/problem/1810/C
+192,  A,  1300,  Funky Numbers,  https://codeforces.com/problemset/problem/192/A
+222,  B,  1300,  Cosmic Tables,  https://codeforces.com/problemset/problem/222/B
+227,  A,  1300,  Where do I Turn?,  https://codeforces.com/problemset/problem/227/A
+230,  B,  1300,  T-primes,  https://codeforces.com/problemset/problem/230/B
+230,  B,  1300,  T-primes,  https://codeforces.com/problemset/problem/230/B
+230,  B,  1300,  T-primes,  https://codeforces.com/problemset/problem/230/B
+230,  B,  1300,  T-primes,  https://codeforces.com/problemset/problem/230/B
+230,  B,  1300,  T-primes,  https://codeforces.com/problemset/problem/230/B
+230,  B,  1300,  T-primes,  https://codeforces.com/problemset/problem/230/B
+234,  C,  1300,  Weather,  https://codeforces.com/problemset/problem/234/C
+236,  B,  1300,  Easy Number Challenge,  https://codeforces.com/problemset/problem/236/B
+246,  B,  1300,  Increase and Decrease,  https://codeforces.com/problemset/problem/246/B
+25,  A,  1300,  IQ test,  https://codeforces.com/problemset/problem/25/A
+251,  A,  1300,  Points on Line,  https://codeforces.com/problemset/problem/251/A
+257,  B,  1300,  Playing Cubes,  https://codeforces.com/problemset/problem/257/B
+271,  B,  1300,  Prime Matrix,  https://codeforces.com/problemset/problem/271/B
+271,  B,  1300,  Prime Matrix,  https://codeforces.com/problemset/problem/271/B
+276,  B,  1300,  Little Girl and Game,  https://codeforces.com/problemset/problem/276/B
+276,  B,  1300,  Little Girl and Game,  https://codeforces.com/problemset/problem/276/B
+288,  A,  1300,  Polo the Penguin and Strings,  https://codeforces.com/problemset/problem/288/A
+298,  A,  1300,  Snow Footprints,  https://codeforces.com/problemset/problem/298/A
+298,  A,  1300,  Snow Footprints,  https://codeforces.com/problemset/problem/298/A
+303,  A,  1300,  Lucky Permutation Triple,  https://codeforces.com/problemset/problem/303/A
+304,  B,  1300,  Calendar,  https://codeforces.com/problemset/problem/304/B
+304,  B,  1300,  Calendar,  https://codeforces.com/problemset/problem/304/B
+311,  A,  1300,  The Closest Pair,  https://codeforces.com/problemset/problem/311/A
+312,  B,  1300,  Archer,  https://codeforces.com/problemset/problem/312/B
+318,  B,  1300,  Strings of Power,  https://codeforces.com/problemset/problem/318/B
+330,  B,  1300,  Road Construction,  https://codeforces.com/problemset/problem/330/B
+347,  A,  1300,  Difference Row,  https://codeforces.com/problemset/problem/347/A
+352,  B,  1300,  Jeff and Periods,  https://codeforces.com/problemset/problem/352/B
+352,  B,  1300,  Jeff and Periods,  https://codeforces.com/problemset/problem/352/B
+371,  B,  1300,  Fox Dividing Cheese,  https://codeforces.com/problemset/problem/371/B
+376,  B,  1300,  I.O.U.,  https://codeforces.com/problemset/problem/376/B
+378,  B,  1300,  Semifinals,  https://codeforces.com/problemset/problem/378/B
+378,  B,  1300,  Semifinals,  https://codeforces.com/problemset/problem/378/B
+378,  B,  1300,  Semifinals,  https://codeforces.com/problemset/problem/378/B
+416,  B,  1300,  Art Union,  https://codeforces.com/problemset/problem/416/B
+416,  B,  1300,  Art Union,  https://codeforces.com/problemset/problem/416/B
+426,  B,  1300,  Sereja and Mirroring,  https://codeforces.com/problemset/problem/426/B
+437,  A,  1300,  The Child and Homework,  https://codeforces.com/problemset/problem/437/A
+450,  B,  1300,  Jzzhu and Sequences,  https://codeforces.com/problemset/problem/450/B
+450,  B,  1300,  Jzzhu and Sequences,  https://codeforces.com/problemset/problem/450/B
+451,  B,  1300,  Sort the Array,  https://codeforces.com/problemset/problem/451/B
+451,  B,  1300,  Sort the Array,  https://codeforces.com/problemset/problem/451/B
+451,  B,  1300,  Sort the Array,  https://codeforces.com/problemset/problem/451/B
+451,  B,  1300,  Sort the Array,  https://codeforces.com/problemset/problem/451/B
+451,  B,  1300,  Sort the Array,  https://codeforces.com/problemset/problem/451/B
+459,  B,  1300,  Pashmak and Flowers,  https://codeforces.com/problemset/problem/459/B
+462,  B,  1300,  Appleman and Card Game,  https://codeforces.com/problemset/problem/462/B
+462,  B,  1300,  Appleman and Card Game,  https://codeforces.com/problemset/problem/462/B
+469,  B,  1300,  Chat Online,  https://codeforces.com/problemset/problem/469/B
+469,  B,  1300,  Chat Online,  https://codeforces.com/problemset/problem/469/B
+471,  B,  1300,  MUH and Important Things,  https://codeforces.com/problemset/problem/471/B
+472,  B,  1300,  Design Tutorial: Learn from Life,  https://codeforces.com/problemset/problem/472/B
+476,  B,  1300,  Dreamoon and WiFi,  https://codeforces.com/problemset/problem/476/B
+478,  B,  1300,  Random Teams,  https://codeforces.com/problemset/problem/478/B
+485,  B,  1300,  Valuable Resources,  https://codeforces.com/problemset/problem/485/B
+486,  B,  1300,  OR in Matrix,  https://codeforces.com/problemset/problem/486/B
+493,  A,  1300,  Vasya and Football,  https://codeforces.com/problemset/problem/493/A
+508,  B,  1300,  Anton and currency you all know,  https://codeforces.com/problemset/problem/508/B
+508,  B,  1300,  Anton and currency you all know,  https://codeforces.com/problemset/problem/508/B
+508,  B,  1300,  Anton and currency you all know,  https://codeforces.com/problemset/problem/508/B
+508,  B,  1300,  Anton and currency you all know,  https://codeforces.com/problemset/problem/508/B
+509,  B,  1300,  Painting Pebbles,  https://codeforces.com/problemset/problem/509/B
+515,  B,  1300,  Drazil and His Happy Friends,  https://codeforces.com/problemset/problem/515/B
+515,  B,  1300,  Drazil and His Happy Friends,  https://codeforces.com/problemset/problem/515/B
+515,  B,  1300,  Drazil and His Happy Friends,  https://codeforces.com/problemset/problem/515/B
+515,  B,  1300,  Drazil and His Happy Friends,  https://codeforces.com/problemset/problem/515/B
+515,  B,  1300,  Drazil and His Happy Friends,  https://codeforces.com/problemset/problem/515/B
+519,  C,  1300,  A and B and Team Training,  https://codeforces.com/problemset/problem/519/C
+519,  C,  1300,  A and B and Team Training,  https://codeforces.com/problemset/problem/519/C
+526,  A,  1300,  King of Thieves,  https://codeforces.com/problemset/problem/526/A
+526,  A,  1300,  King of Thieves,  https://codeforces.com/problemset/problem/526/A
+545,  D,  1300,  Queue,  https://codeforces.com/problemset/problem/545/D
+558,  B,  1300,  Amr and The Large Array,  https://codeforces.com/problemset/problem/558/B
+567,  B,  1300,  Berland National Library,  https://codeforces.com/problemset/problem/567/B
+570,  B,  1300,  Simple Game,  https://codeforces.com/problemset/problem/570/B
+570,  B,  1300,  Simple Game,  https://codeforces.com/problemset/problem/570/B
+572,  B,  1300,  Order Book,  https://codeforces.com/problemset/problem/572/B
+573,  A,  1300,  Bear and Poker,  https://codeforces.com/problemset/problem/573/A
+579,  B,  1300,  Finding Team Member,  https://codeforces.com/problemset/problem/579/B
+586,  B,  1300,  Laurenty and Shop,  https://codeforces.com/problemset/problem/586/B
+588,  B,  1300,  Duff in Love,  https://codeforces.com/problemset/problem/588/B
+598,  B,  1300,  Queries on a String,  https://codeforces.com/problemset/problem/598/B
+600,  B,  1300,  Queries about less or equal elements,  https://codeforces.com/problemset/problem/600/B
+610,  B,  1300,  Vika and Squares,  https://codeforces.com/problemset/problem/610/B
+611,  B,  1300,  New Year and Old Property,  https://codeforces.com/problemset/problem/611/B
+611,  B,  1300,  New Year and Old Property,  https://codeforces.com/problemset/problem/611/B
+612,  A,  1300,  The Text Splitting,  https://codeforces.com/problemset/problem/612/A
+617,  B,  1300,  Chocolate,  https://codeforces.com/problemset/problem/617/B
+621,  B,  1300,  Wet Shark and Bishops,  https://codeforces.com/problemset/problem/621/B
+625,  C,  1300,  K-special Tables,  https://codeforces.com/problemset/problem/625/C
+626,  B,  1300,  Cards,  https://codeforces.com/problemset/problem/626/B
+628,  B,  1300,  New Skateboard,  https://codeforces.com/problemset/problem/628/B
+628,  C,  1300,  Bear and String Distance,  https://codeforces.com/problemset/problem/628/C
+630,  F,  1300,  Selection of Personnel,  https://codeforces.com/problemset/problem/630/F
+630,  N,  1300,  Forecast,  https://codeforces.com/problemset/problem/630/N
+633,  B,  1300,  A Trivial Problem,  https://codeforces.com/problemset/problem/633/B
+634,  A,  1300,  Island Puzzle,  https://codeforces.com/problemset/problem/634/A
+634,  A,  1300,  Island Puzzle,  https://codeforces.com/problemset/problem/634/A
+659,  B,  1300,  Qualifying Contest,  https://codeforces.com/problemset/problem/659/B
+665,  C,  1300,  Simple Strings,  https://codeforces.com/problemset/problem/665/C
+670,  C,  1300,  Cinema,  https://codeforces.com/problemset/problem/670/C
+681,  B,  1300,  Economy Game,  https://codeforces.com/problemset/problem/681/B
+716,  B,  1300,  Complete the Word,  https://codeforces.com/problemset/problem/716/B
+716,  B,  1300,  Complete the Word,  https://codeforces.com/problemset/problem/716/B
+722,  A,  1300,  Broken Clock,  https://codeforces.com/problemset/problem/722/A
+740,  A,  1300,  Alyona and copybooks,  https://codeforces.com/problemset/problem/740/A
+747,  C,  1300,  Servers,  https://codeforces.com/problemset/problem/747/C
+750,  B,  1300,  New Year and North Pole,  https://codeforces.com/problemset/problem/750/B
+761,  B,  1300,  Dasha and friends,  https://codeforces.com/problemset/problem/761/B
+770,  B,  1300,  Maximize Sum of Digits,  https://codeforces.com/problemset/problem/770/B
+777,  B,  1300,  Game of Credit Cards,  https://codeforces.com/problemset/problem/777/B
+787,  B,  1300,  Not Afraid,  https://codeforces.com/problemset/problem/787/B
+792,  B,  1300,  Counting-out Rhyme,  https://codeforces.com/problemset/problem/792/B
+796,  B,  1300,  Find The Bone,  https://codeforces.com/problemset/problem/796/B
+798,  B,  1300,  Mike and strings,  https://codeforces.com/problemset/problem/798/B
+808,  B,  1300,  Average Sleep Time,  https://codeforces.com/problemset/problem/808/B
+821,  B,  1300,  Okabe and Banana Trees,  https://codeforces.com/problemset/problem/821/B
+828,  B,  1300,  Black Square,  https://codeforces.com/problemset/problem/828/B
+844,  B,  1300,  Rectangles,  https://codeforces.com/problemset/problem/844/B
+862,  B,  1300,  Mahmoud and Ehab and the bipartiteness,  https://codeforces.com/problemset/problem/862/B
+870,  C,  1300,  Maximum splitting,  https://codeforces.com/problemset/problem/870/C
+893,  C,  1300,  Rumor,  https://codeforces.com/problemset/problem/893/C
+982,  B,  1300,  Bus of Characters,  https://codeforces.com/problemset/problem/982/B
+996,  B,  1300,  World Cup,  https://codeforces.com/problemset/problem/996/B
+1805,  C,  1400,  Place for a Selfie,  https://codeforces.com/problemset/problem/1805/C
+1805,  C,  1400,  Place for a Selfie,  https://codeforces.com/problemset/problem/1805/C
+279,  B,  1400,  Books,  https://codeforces.com/problemset/problem/279/B
+279,  B,  1400,  Books,  https://codeforces.com/problemset/problem/279/B
+358,  A,  1400,  Dima and Continuous Line,  https://codeforces.com/problemset/problem/358/A
+416,  A,  1400,  Guess a number!,  https://codeforces.com/problemset/problem/416/A
+507,  B,  1400,  Amr and Pins,  https://codeforces.com/problemset/problem/507/B
+1811,  E,  1500,  Living Sequence,  https://codeforces.com/problemset/problem/1811/E
+1798,  D,  1600,  Shocking Arrangement,  https://codeforces.com/problemset/problem/1798/D
+197,  A,  1600,  Plate Game,  https://codeforces.com/problemset/problem/197/A
+1798,  C,  1700,  Candy Store,  https://codeforces.com/problemset/problem/1798/C
+1798,  C,  1700,  Candy Store,  https://codeforces.com/problemset/problem/1798/C
+1807,  F,  1700,  Bouncy Ball,  https://codeforces.com/problemset/problem/1807/F

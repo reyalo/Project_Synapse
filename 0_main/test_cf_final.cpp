@@ -74,6 +74,7 @@ typedef map<string, string> mss;
 #define csrt(aaaaa, C) sort(aaaaa.begin(), aaaaa.end(), C)
 #define rvrs(aaaaa) reverse(aaaaa.begin(), aaaaa.end())
 #define all(aaaaa) (aaaaa).begin(), (aaaaa).end()
+// #define rsrt(vec) sort(vec.rbegin(), vec.rend())
 
 
 /**Define Bitwise operation**/
@@ -234,9 +235,8 @@ ll decimalToOctal(ll n)
 }
 
 void eye() {
-    
+
   
-    
 }
 
 int main()

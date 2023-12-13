@@ -83,7 +83,7 @@ typedef map<ll, ll>::iterator mlitr;
 #define frk(a, b) for (auto k = (a); (k) < (b); ++(k))
 #define FOR(a, b, c) for (auto a = (b); (a) < (c); ++(a))
 #define F0R(a, b) FOR(a, 0, (b))
-#define fx(a) for (auto x : a)
+#define fx(a) for(auto x:a)
 
 // testing for-loop default parameter
 #define FUNC_CHOOSER(_f1, _f2, _f3, _f4, ...) _f4
@@ -97,6 +97,7 @@ typedef map<ll, ll>::iterator mlitr;
 #define CHOOSE_FROM_ARG_COUNT_J(...) FUNC_RECOMPOSER_J((__VA_ARGS__, frjc, frj, frjn, ))
 #define MACRO_CHOOSER_J(...) CHOOSE_FROM_ARG_COUNT_J(NO_ARG_EXPANDER __VA_ARGS__())
 #define fj(...) MACRO_CHOOSER_J(__VA_ARGS__)(__VA_ARGS__)
+
 
 // end testing for-loop default parameter for
 
@@ -119,12 +120,12 @@ typedef map<ll, ll>::iterator mlitr;
 #define sqr(x) ((x) * (x))
 #define find_dist(a, b) sqrt(sqr(a.x - b.x) + sqr(a.y - b.y))
 #define maxe(vec) *max_element(all(vec))
-#define maxi(vec) max_element(all(vec)) - vec.bn
+#define maxi(vec) max_element(all(vec))-vec.bn
 #define mine(vec) *min_element(all(vec))
-#define mini(vec) min_element(all(vec)) - vec.bn
-#define lobi(vec, b) lower_bound(vec.begin(), vec.end(), b) - vec.begin() - 1 // return -1 for no match
-#define upbi(vec, b) upper_bound(vec.begin(), vec.end(), b) - vec.begin()     // return n for no match
-#define inp(a) fi(a.sz) cin >> a[i]
+#define mini(vec) min_element(all(vec))-vec.bn
+#define lobi(vec,b) lower_bound(vec.begin(), vec.end(), b) - vec.begin()-1  // return -1 for no match
+#define upbi(vec,b) upper_bound(vec.begin(), vec.end(), b) - vec.begin()   // return n for no match
+#define inp(a) fi(a.sz)cin>>a[i]
 
 /**Define Bitwise operation**/
 #define cbit(n, pos) (n & (1 << (pos)))
@@ -144,22 +145,10 @@ enum
 };
 // vi month={31,28,31,30,31,30,31,31,30,31,30,31};
 
-// data show
-void show(vi a)
-{
-  fi(a.sz) cout << a[i] << sp;
-  cout << el;
-}
-void showl(vl a)
-{
-  fi(a.sz) cout << a[i] << sp;
-  cout << el;
-}
-void show_mp(mii a)
-{
-  for (auto x : a)
-    cout << x.ft << sp << x.sd << el;
-}
+//data show
+void show(vi a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
+void showl(vl a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
+void show_mp(mii a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 
 /**Debug tools**/
 #define debt(x) cerr << (#x) << "=" << x << sp << sp  // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
@@ -169,55 +158,44 @@ void show_mp(mii a)
 //_______________________________THINK SYSTEMATIC AWAY_______________________________________
 //_______________________________No need Optimize first_______________________________________
 // #####################################################################################################
-ll power(ll a, ll b)
-{
-  ll ans = 1;
-  while (b--)
-    ans *= a;
+ll power(ll a,ll b){
+  ll ans=1;
+  while(b--)ans*=a;
   return ans;
 }
-#define m_prime 1000010 // it provide <m*m all primes
-vl primes;
-bool siv[m_prime];
+#define m_prime 1000010  // it provide <m*m all primes
+vl primes;bool siv[m_prime];
 void sieve()
 {
-  primes.pb(2);
-  fric(ll(3), m_prime, 2) if (!siv[i]) frjc(i * i, m_prime, i + i) siv[j] = 1; // explain in cp_necessary
-  fric(3, m_prime, 2) if (!siv[i]) primes.pb(ll(i));
-
-  // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
+    primes.pb(2);
+    fric(ll(3),m_prime,2)if(!siv[i])frjc(i*i,m_prime,i+i)siv[j]=1;                // explain in cp_necessary
+    fric(3,m_prime,2)if(!siv[i])primes.pb(ll(i));
+    
+    // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
 }
-ll lcm(ll a, ll b) { return (a * b) / __gcd(a, b); }
+ll lcm(ll a,ll b){return (a*b)/__gcd(a,b);}
 
-int power_of_prime(ll p, ll n)
-{ // p=prime number,n=for which number
-  int cnt = 0;
-  while (n % p == 0 && n > 1)
-  {
-    n /= p, cnt++;
-  }
+int power_of_prime(ll p,ll n){  // p=prime number,n=for which number
+  int cnt=0;
+  while (n%p==0&&n>1){n/=p,cnt++;}
   return cnt;
 }
-ll combi(ll n, ll k)
+ll combi(ll n,ll k)
 {
-  ll ans = 1;
-  k = k > n - k ? n - k : k;
-  ll j = 1;
-  for (; j <= k; j++, n--)
-  {
-    if (n % j == 0)
-      ans *= n / j;
-    else if (ans % j == 0)
-      ans = ans / j * n;
-    else
-      ans = (ans * n) / j;
-  }
-  return ans;
+    ll ans=1;
+    k=k>n-k?n-k:k;
+    ll j=1;
+    for(;j<=k;j++,n--)
+    {
+        if(n%j==0)ans*=n/j;
+        else if(ans%j==0)ans=ans/j*n;
+        else ans=(ans*n)/j;
+    }
+    return ans;
 }
 
-void presum(vi &a)
-{
-  fi(1, a.sz) a[i] += a[i - 1];
+void presum(vi &a){
+  fi(1,a.sz)a[i]+=a[i-1];
 }
 
 ll decimalToOctal(ll n)
@@ -227,80 +205,89 @@ ll decimalToOctal(ll n)
 
   while (n != 0)
   {
-    remainder = n % 9;
-    n = n / 9;
-    octal = octal + (remainder * i);
-    i = i * 10;
+        remainder = n % 9;
+        n = n / 9;
+        octal = octal + (remainder * i);
+        i = i * 10;
   }
   return octal;
 }
 
-ddd quadratic_root(int a, int b, int c)
-{
+ddd quadratic_root(int a,int b,int c){
   ddd ans;
-  double d = sqrt(1.0 * b * b - 1.0 * 4 * a * c);
-  ans.ft = (-b + d) / (1.0 * 2 * a);
-  ans.sd = (-b - d) / (1.0 * 2 * a);
+  double d=sqrt(1.0*b*b-1.0*4*a*c);
+  ans.ft=(-b+d)/(1.0*2*a);
+  ans.sd=(-b-d)/(1.0*2*a);
   return ans;
 }
-int sumdigit(string s)
-{
-  int sum = 0;
-  fi(s.sz)
-  {
-    sum += s[i] - '0';
+int sumdigit(string s){
+  int sum=0;
+  fi(s.sz){
+    sum+=s[i]-'0';
   }
   return sum;
 }
 
+ll log2_ceil(ll n){
+  ll i;
+  for (i = 0; (1ll << i) <= n; i++);
+  return i;
+}
+
 void solve()
 {
-  int n, a, b, at, bt;
-  cin >> n >> a >> b;
-  at = a, bt = b;
-  string s;
-  cin >> s;
-  vi aa;
-  fi(n)
-  {
-    int pos = i;
-    while (pos < n && s[pos] == '.')
-      pos++;
-    if (pos - i)
-      aa.pb(pos - i);
-    i = max(i, pos - 1);
+  ll n,ans=0,sa=0,sb=0;
+  cin>>n;
+  vi a(n),b(n);
+  inp(a);
+  inp(b);
+  srt(a);
+  srt(b);
+  int i=0;
+  while(i<2*n){
+    if(i%2==0){
+      if(a.back()<b.back()){
+      	b.pop_back();
+      }else {
+      	sa+=a.back();
+      	a.pop_back();
+
+      }
+    }else {
+      if(b.back()<a.back()){
+        a.pop_back();
+      }else {
+        sb+=b.back();
+        b.pop_back();
+      }
+    }
+    i++;
+    if(a.sz==0||b.sz==0)break;
+
   }
-  int l = 0;
-  // fi(n){
-  //   if(s[i]=='*'){
-  //     if(l)ab.pb(l);
-  //     l=0;
-  //   }
-  //   else l++;
-  // }
-  // if(l)ab.pb(l);
-
-  // show(aa);
-  // show(ab);
-
-  ll ans = 0;
-
-  srt(aa);
-  fi(aa.sz)
-  {
-    int x = aa[i] / 2, y = (aa[i] + 1) / 2;
-
-    if (a > b)
-      swap(a, b);
-
-    ans += min(a, x);
-    a -= min(a, x);
-    ans += min(b, y);
-    b -= min(b, y);
+  if(a.sz){
+    while(i<2*n){
+      if(i%2==0){
+      sa+=a.back();
+      a.pop_back();
+      }else a.pop_back();
+      i++;
+    }
+  }else if(b.sz){
+    while(i<2*n){
+      if(i%2==1){
+        sb+=b.back();
+        b.pop_back();
+      }else b.pop_back();
+      i++;
+    }
   }
+  // cout<<sa<<sp<<sb<<el<<el;
+  cout<<sa-sb<<el;
 
-  cout << ans << el;
 }
+
+
 
 int main()
 {
@@ -308,14 +295,15 @@ int main()
 
 #ifndef ONLINE_JUDGE
   f_input
-      f_output
+  f_output
 #endif
-      // sieve();
-      // clock_t z = clock();
-      // int _;cin >> _;while (_--){
-      // int _;scanf("%d",&_);while (_--){
-      solve();
+    // sieve();
 
-  // cout << "Run Time : " << fixed << setprecision(6) << ((double)(clock() - z) / CLOCKS_PER_SEC);
-  // }
+    int _;cin >> _;while (_--){
+    // int _=1;while (_--){
+    // int _;scanf("%d",&_);while (_--){
+    solve();
+
+    // cout << fixed << setprecision(6) ;
+  }
 }

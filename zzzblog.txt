@@ -1,0 +1,64 @@
+1.combinatorics 
+  1 _ _ _ _ 2 _ _ _ 3 
+  q. how many away they can be arrange without changing numbers order
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.implementation
+
+  1. vi a(n);int l=0,r=n-1;
+    while(l<r) or while(l<=r) which is right????
+
+
+  ans: l,r point to next_taken value so l <= right 
+
+
+
+
+
+
+3. local minima and maxima
+  1. most socially distance on array elements
+  2. max sum (a1 - a2 + a3 - a4 + a5.....)
+    where a1,a2,a3 is the subsequence element of array Main
+
+
+    
+
+  examples:1420c1
+
+
+4. Iteration of array care about boundary of index;
+
+
+  example: fi(n)if(a[ix]<0 ix++) // if array size less n then it can be out of boundary
+
+
+
+
+
+5. Overflow:
+  1.be careful int array presum
+  2.(a*b) overflow if int a,b ==10^9 
+    solution: (1LL*a*b)
+
+
+6.bitwise and:
+    1.
+      let, an array a1,a2.....,an;
+      total_and<=min({a});
+      partial_and<=total_and (partial and=a1&a2&a3 etc)
+    2. 

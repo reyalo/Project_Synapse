@@ -148,12 +148,20 @@ ll prm[101][101];
 
 //###############################################################################################
 //! 1.
-bool cmp(ii &a, ii &b){return a.sd < b.sd;}
+bool cmp(ii &a, ii &b){return a.sd < b.sd;} //if return true then no swap(a,b);
 bool cmp2(const ii &a, const ii &b)
 {
   if (a.ft == b.ft)
     return a.sd < b.sd;
   return a.ft > b.ft;
+}
+//! kmp length
+int kmp_period(string s){
+  int n=s.sz,kmp=0;
+  fi(1,n){
+    if(s.substr(0,i)==s.substr(n-i,i))kmp=i;
+  }
+  return kmp;
 }
 //! 2.
 // string ans = "";
@@ -271,6 +279,10 @@ ll decimalToOctal(ll n)
   return octal;
 }
 
+bool intersect(int ref_x,int ref_y,int gvn_x,int gvn_y){
+      return (max(ref_x,gvn_x)<=min(ref_y,gvn_y)?true:false);
+}
+
 //! long_division
 
 void long_division(int a,int b){
@@ -316,6 +328,51 @@ int power_of_prime1(ll p,ll n){  //
   while (n%p==0&&n>1){n/=p,cnt*=p;}
   return cnt;
 }
+
+//! 7.1 single value prime factorization 
+
+void prime_factor_single(mii &mm,int x){   // too fast
+
+  for(int i=2;i*i<=x;i++){
+    if(x%i==0){
+      mm[i]++;
+
+      while(x%i==0)x/=i;
+    }
+  }
+
+  if(x>1)mm[x]++;  // remain number is prime
+
+}
+// i*i<=variable value
+void prime_fact(ll n,vii &ans){        //! it is too fast
+    for(ll i=2;i*i<=n;i++){
+    int cnt=0;
+    while(n>0&&n%i==0){
+      n/=i;cnt++;
+    }
+    if(cnt>0)ans.pb(mp(i,cnt));
+
+  }
+    if(n>1)ans.pb(mp(n,1));
+}
+// only difference in i*i<=constant value
+void prime_fact_2(ll n,vii &ans){        //! it is not too fast
+    ll m=n;
+    for(ll i=2;i*i<=m;i++){
+    int cnt=0;
+    while(n>0&&n%i==0){
+      n/=i;cnt++;
+    }
+    if(cnt>0)ans.pb(mp(i,cnt));
+
+  }
+    if(n>1)ans.pb(mp(n,1));
+}
+
+
+
+
 //! 8.
 void prime_factorization(ll n){
   ll m=n,x;
@@ -340,6 +397,48 @@ void prime_fact_psm(){
     prime_factorization(i);
   }
 }
+//! most efficient ncr
+long long ncr(int n, int r)
+{
+  long long ans = 1;
+  if (r > n - r)
+  {
+    r = n - r;
+  }
+  for (int i = 1; i <= r; i++)
+  {
+    ans *= n - r + i;
+    ans /= i;
+  }
+  return ans;
+}
+
+//!big mod
+ll bigmod(ll a, ll b, ll m)
+{
+  if (!b)return 1;
+  ll ans = bigmod(a, b / 2, m);
+  ans = (ans * ans) % m;
+  if (b & 1)return (ans * a) % m;
+  return ans;
+}
+
+
+//! it return maximum possible book read;
+//! i is left most value index of valid range
+//! r is right most value index+1 of valid range
+int two_pointer1(vi &a,int ref){ 
+  int r=0,ans=0,n=a.sz;          
+  ll sum=0;
+  fi(n){
+    if(i>0)sum-=a[i-1];  // sub prev value
+
+    while(r<n&&sum+a[r]<=ref)sum+=a[r++];  
+
+    ans=max(ans,r-i);
+  }
+  return ans;
+}
 
 //! 10
 ll divisor_number_single(ll n){
@@ -357,6 +456,69 @@ ll divisor_number_single(ll n){
   if(n!=1)ans*=(1+1); // if this number self is prime then it also a divisor
   return ans;
 }
+bool is_subsequence(string& s1, string& s2)
+{
+    int n = s1.length(), m = s2.length();
+    int i = 0, j = 0;
+    while (i < n && j < m) {
+        if (s1[i] == s2[j])
+            i++;
+        j++;
+    }
+    /*If i reaches end of s1,that mean we found all
+    characters of s1 in s2,
+    so s1 is subsequence of s2, else not*/
+    return i == n;
+}
+
+//! dsu
+int leader_finder(vi &ar,int x){
+  if(ar[x]==x)return x;
+
+  return ar[x]=leader_finder(ar,ar[x]); // it make ar[x]=leader
+}
+
+//! cycle finding
+void cycle_find(vi &b,vvi &ans){  //b -> index array, ans->store every cycle index
+  int n=b.sz;
+  vi used(n);
+  fi(n){
+    if(used[i]==1)continue;
+
+    int x=i;
+    vi cle;              // store a cycle
+    while(used[x]==0){   //find a cycle
+      used[x]=1;
+      cle.pb(x+1);
+      x=b[x];
+    }
+
+    ans.pb(cle);
+  }
+}
+
+string palindrome_prefix(const string& s)
+{
+  int c=0,n;
+
+  string a = s;
+  rvrs(a);
+  a = s + "#" + a;
+  n = a.sz;
+  vi pref(n + 5);
+
+  for (int i = 1; i < n; i++){
+
+    while (c != 0 && a[c] != a[i])
+      c = pref[c - 1];
+    if (a[c] == a[i])
+      c++;
+    pref[i] = c;
+  }
+
+  return s.substr(0, c);
+}
+
 
 //!11
 vi LPS(string s) {
@@ -455,6 +617,19 @@ void KMP(string text, string pattern) {
 
     // if (!found) cout << "not found" << endl;
     // c++;
+}
+
+string rmv_dup_char(string s){
+  int n = s.sz;
+  unordered_map<char,int> mm;
+  fi(n) {
+    mm[s[i]]++;
+  }
+  string ans;
+  for(auto ch:mm){
+    ans += ch.ft;
+  }
+  return ans;
 }
 //!__________________SEGMENT___TREE______________________
 // #define mx 100001

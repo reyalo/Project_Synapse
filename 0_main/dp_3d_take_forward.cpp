@@ -49,21 +49,8 @@ typedef map<string, int> msi;
 typedef map<char, int> mci;
 typedef map<char, char> mcc;
 typedef map<string, string> mss;
-typedef unordered_map<int, int> umii;
-typedef unordered_map<double, int> umdi;
-typedef unordered_map<int, ii> umiii;
-typedef unordered_map<ii, int> umii_i;
-typedef unordered_map<int, vi> umivi;
-typedef unordered_map<ll, ll> umll;
-typedef unordered_map<int, string> umis;
-typedef unordered_map<string, int> umsi;
-typedef unordered_map<char, int> umci;
-typedef unordered_map<char, char> umcc;
-typedef unordered_map<string, string> umss;
-typedef unordered_map<int, int>::iterator mitr;
-typedef unordered_map<ll, ll>::iterator mlitr;
-typedef priority_queue<int, vector<int>, greater<int>> prq_min;
-typedef priority_queue<int> prq_max;
+typedef map<int, int>::iterator mitr;
+typedef map<ll, ll>::iterator mlitr;
 #define fastio                      \
   ios_base::sync_with_stdio(false); \
   cin.tie(0);
@@ -76,7 +63,6 @@ typedef priority_queue<int> prq_max;
 #define Ys cout<<"Yes"<<el;
 #define no cout<<"NO"<<el;
 #define No cout<<"No"<<el;
-#define nl cout<<el;
 #define bn begin()
 #define en end()
 #define bk back()
@@ -139,22 +125,19 @@ typedef priority_queue<int> prq_max;
 // end testing for-loop default parameter for
 
 #define f_input freopen("input.txt", "r", stdin);
-#define f_input2 freopen("input2.txt", "r", stdin);
 #define f_output freopen("output.txt", "w", stdout);
 /**Define constant value**/
 #define ERR 1e-9
-#define lmax 1e18
-#define infl 1e18
-#define lmin -1e18
-#define imax 1e9
-#define inf 1000000005
-#define imin -1e9
+#define lmax INT64_MAX
+#define lmin INT64_MIN
+#define imax INT_MAX
+#define imin INT_MIN
 #define pi (2 * acos(0))
 #define PI 3.14159265358979323846
 // ll mdl = 1000003;
-#define mdl63 1000003
-#define mdl77 10000007
-#define mdl97 1000000007
+#define mdl63 1000003;
+#define mdl77 10000007;
+#define mdl97 1000000007;
 
 /**Define function and object**/
 #define srt(vec) sort(vec.begin(), vec.end())
@@ -226,31 +209,17 @@ template < typename T > ostream &operator << (ostream &out, vector < T > &v) {
 
 void show(int &a){cout<<a<<el;}
 void show(vi &a){fi(a.sz) cout << a[i] << sp;cout << el;}
-void show(vd &a){fi(a.sz) cout << a[i] << sp;cout << el;}
 void show(vvi &a){fi(a.sz){ fj(a[i].sz){cout << a[i][j] << sp;} cout << el;} }
-void show(vvl &a){fi(a.sz){ fj(a[i].sz){cout << a[i][j] << sp;} cout << el;} }
 // void show(vvi &a){int n=a.sz,m=a[0].sz;fi(n){ fj(m){cout << a[i][j] << sp;} cout << el;} }
 void show(vl &a){fi(a.sz) cout << a[i] << sp;cout << el;}
 void show(vii &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
 void show(mii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
-void show(umii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
-void show(umll &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 
 
 
 
 //######################################################################################################
 ll lcm(ll a,ll b){return (a*b)/__gcd(a,b);}
-
-//set_bit_count
-int bit_count(ll n){
-  int cnt = 0;
-  while(n){
-    if(n&1)cnt++;
-    n /= 2;
-  }
-  return cnt;
-}
 
 
 
@@ -260,18 +229,15 @@ int bit_count(ll n){
 // #####################################################################################################
 int tc;
 
-//! sign greater side greater value and less side smaller value
-// bool cmp(int a,int b){return a>b;}
-
-//***************************____START_NUMBER_THEORY____**************************
-
+//!sign greater side greater value and less side smaller value
+bool cmp(ii &a, ii &b){return a.sd > b.sd;}
+// bool cmp(li &a, li &b){return a.sd < b.sd;}
 
 ll power(ll a,ll b){
   ll ans=1;
   while(b--)ans*=a;
   return ans;
 }
-
 #define m_prime 1000010  // it provide <m*m all primes
 vl primes;bool siv[m_prime];
 void sieve()
@@ -303,9 +269,6 @@ ll combi(ll n,ll k)
     return ans;
 }
 
-
-//? presum array always take 1 indexes;
-
 void presum(vi &a){
   fi(1,a.sz)a[i]+=a[i-1];
 }
@@ -335,15 +298,14 @@ ddd quadratic_root(ll a,ll b,ll c){
   ans.sd=(-b-d)/(1.0*2*a);
   return ans;
 }
-
-int sum_of_digit(string s){
+int sumdigit(string s){
   int sum=0;
   fi(s.sz){
     sum+=s[i]-'0';
   }
   return sum;
 }
-int sum_of_digit(ll n){
+int sumdigit(ll n){
   int sum=0;
   while(n){
     sum+=n%10;
@@ -354,7 +316,7 @@ int sum_of_digit(ll n){
 
 ll log2_ceil(ll n){
   ll i;
-  for (i = 0; (1ll << i) < n; i++);
+  for (i = 0; (1ll << i) <= n; i++);
   return i;
 }
 // inclusive
@@ -370,7 +332,7 @@ bool inside_ex(int a,int b,int ix){
 //--------
 //  ------
 // this case return 1;
-bool intersect_in(int ref_x,int ref_y,int gvn_x,int gvn_y){
+bool intersect(int ref_x,int ref_y,int gvn_x,int gvn_y){
       return (max(ref_x,gvn_x)<=min(ref_y,gvn_y)?true:false);
 }
 //--------
@@ -380,14 +342,6 @@ bool intersect_m(int x,int y,int xx,int yy){
   if(x>y)swap(x,y);
   if(xx>yy)swap(xx,yy);
   return (inside_ex(xx, yy, x) && yy < y) || ((inside_ex(xx, yy, y) && x < xx));
-}
-
-ii intersect_range(int ref_x,int ref_y,int gvn_x,int gvn_y){
-
-    int l = max(ref_x, gvn_x);
-    int r = min(ref_y, gvn_y);
-
-  return ii(l, r);
 }
 
 
@@ -409,18 +363,9 @@ ll factorial(ll n)
     fact *= n--;
   return fact;
 }
-ll factorial(ll n, ll mod)
-{
-  ll fact = 1;
-  while (n){
-    fact *= n--;
-    fact %= mod;
-  }
-  return fact;
-}
-bool isPrime(ll x) {
+bool isPrime(int x) {
 	if (x < 2) return false;
-	for (ll y = 2; y * y <= x; y++)
+	for (int y = 2; y * y <= x; y++)
 		if (x % y == 0)
 			return false;
 	return true;
@@ -439,6 +384,7 @@ void prime_fact(ll n,vii &ans){        //! it is too fast
 
 
 
+
 ll bigmod(ll a, ll b, ll m)
 {
   if (!b)return 1;
@@ -447,41 +393,6 @@ ll bigmod(ll a, ll b, ll m)
   if (b & 1)return (ans * a) % m;
   return ans;
 }
-
-ll mod_inverse(ll a,ll mod){      // also known as multiplicative inverse
-  return bigmod(a, mod - 2, mod);
-}
-
-ll ncr_frac(ll n, ll r, ll mod){
-
-  ll nn, rr, nr, rr_inverse, nr_inverse, ans;
-
-  nn = factorial(n, mod);
-  rr = factorial(r, mod);
-  nr = factorial(n-r, mod);
-
-  rr_inverse = bigmod(rr, mod - 2, mod); // a^-1 = a^(m-2)%m
-  nr_inverse = bigmod(nr, mod - 2, mod);
-
-  ans = ((nn * rr_inverse) % mod * nr_inverse) % mod;
-
-  return ans;
-}
-
-
-
-
-
-//***************************____END_NUMBER_THEORY____**************************
-
-
-
-
-
-
-
-
-
 // it return maximum possible book read;
 // In valid range i=left index,r=right index+1;
 int two_pointer1(vi &a,int ref){ 
@@ -553,20 +464,13 @@ ll string_to_num(string s){
   }
   return ans;
 }
+// bool cmp(il &a, il &b){
 
-string rmv_dup_char(string s){
-  int n = s.sz;
-  unordered_map<char,int> mm;
-  fi(n) {
-    mm[s[i]]++;
-  }
-  string ans;
-  for(auto ch:mm){
-    ans += ch.ft;
-  }
-  return ans;
-}
-
+//   if(a.ft!=b.ft)return a.ft>b.ft;
+//   return a.sd<b.sd;
+  
+  
+//   }
 int cx[4]={1,-1,0,0};
 int cy[4]={0,0,1,-1};
 // int vis[100][100];
@@ -605,144 +509,94 @@ int cy[4]={0,0,1,-1};
 
 // }
 
-
-
-
 ll cl(ll a,ll b){
   return (a-1)/b+1;
 }
 
-void fn(ll n,vi &ans){
-
-  fi(32){
-    ans[i] += (n % 2);
-    n = n >> 1;
-  }
-}
-
-string palindrome_prefix(const string& s)
-{
-  int c=0,n;
-
-  string a = s;
-  rvrs(a);
-  a = s + "#" + a;
-  n = a.sz;
-  vi pref(n + 5);
-
-  for (int i = 1; i < n; i++){
-
-    while (c != 0 && a[c] != a[i])
-      c = pref[c - 1];
-    if (a[c] == a[i])
-      c++;
-    pref[i] = c;
-  }
-
-  return s.substr(0, c);
-}
-
-void g_inp(vvi &g,int m){
-  int x,y;
-
-  while(m--){
-    cin >> x >> y;
-    g[x].pb(y);
-    g[y].pb(x);
-  }
-}
 
 
-ll seg_xor(vi &a,int l,int r){
-  return a[l-1] ^ a[r];
-}
-
-ii ratio_int(int a,int b){
-  int g = __gcd(a, b);
-  a /= g;
-  b /= g;
-  return ii(a, b);
-}
-
-/*
-
-//
-
-//
-
-//
 
 
-//
-
-//
 
 
-*/
 
 
 
 void solve(){
 
-  ll m, x, val, ix;
-  cin >> m >> x;
-  vi a(400005),c(x);
+  int n, m;
+  cin >> n >> m;
 
-  ll l = 0;
+  vvi a(n+5,vi(m+5));
+
+  fi(n){
+    fj(m)cin>>a[i][j];
+  }
+
+  vector<vvi> dp(n+5,vvi(m+5,vi(m+5,0)));
+
 
   fi(m){
-    cin >> val;
-    val %= x;
-    ix = x * c[val] + val;
-    
-    if (ix <= m)
-    {
-      a[ix] = 1;
+    fj(m){
+      if(i==j){
+        dp[n-1][i][j]=a[n-1][i];
+      }else{
+        dp[n-1][i][j]=a[n-1][i]+a[n-1][j];
+      }
     }
-
-    c[val]++;
-    
-    while(a[l]!=0)l++;
-
-    cout << l << el;
   }
+
+  // same as 1D dp frog1;
+
+  for (int i = n - 2; i >= 0; i--)
+  {
+    for(int j1=0;j1<m;j1++){
+      for(int j2=0;j2<m;j2++){
+        
+        // take from back(that means take value from previous available dp)
+        int val1 = 0, val2 = 0;
+
+        // current cell value
+        if(j1 == j2) val1 = a[i][j1];
+        else val1 = a[i][j1] + a[i][j2];
+
+        // take max available before value;
+        for (int k1 = -1; k1 < 2; k1++)
+        {
+          for (int k2 = -1; k2 < 2; k2++){
+
+            int dj1 = j1 + k1, dj2 = j2 + k2;
+
+            if(inside(0, m-1, dj1) && inside(0, m-1, dj2)){
+              val2 = max(val2, dp[i+1][dj1][dj2]);
+            }
+          }
+        }
+
+        dp[i][j1][j2] = val1 + val2;
+      }
+    }
+  }
+
+  cout << dp[0][0][m - 1] << el;
 }
 
 int main()
 {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   fastio;
 
 #ifndef ONLINE_JUDGE
   f_input
-  // f_input2
   f_output
 #endif
-
+    // sieve();
     int _=1;
-
-  cin >> _;
-
-  // int _;scanf("%d",&_);while (_--){
-
-  for (tc = 1; tc <= _; tc++)
-  {
-
+    cin>>_;
+    // int _;cin >> _;while (_--){
+    // int _=1;while (_--){
+    // int _;scanf("%d",&_);while (_--){
+    for(tc=1;tc<=_;tc++){
     // cout<<"Case "<<tc<<": ";
-
     solve();
 
     // cout << fixed << setprecision(6) ;

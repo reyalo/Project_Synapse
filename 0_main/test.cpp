@@ -1,17 +1,11 @@
-/*
-                                      ███████╗░██╗░░░██╗███████╗░
-                                      ██╔════╝╗╚██╗░██╔╝██╔════╝╗
-                                      █████╗░░║░╚████╔╝░█████╗░░║
-                                      ██╔══╝░░║░░╚██╔╝░░██╔══╝░░║
-                                      ███████╗║░░░██║░░░███████╗║
-                                      ╚══════╝╝░░░╚═╝░░░╚══════╝╝
-
-*/
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
+typedef long double ld;
 typedef unsigned long long ull;
 typedef pair<int, int> ii;
+typedef pair<ll, int> li;
+typedef pair<int, ll> il;
 typedef pair<int, double> idd;
 typedef pair<double, int> ddi;
 typedef pair<double, double> ddd;
@@ -26,14 +20,17 @@ typedef vector<double> vd;
 typedef vector<ll> vl;
 typedef vector<llll> vll;
 typedef vector<ii> vii;
+typedef vector<li> vli;
+typedef vector<il> vil;
 typedef vector<idd> vid;
 typedef vector<ddi> vdi;
-typedef vector<is> vis;
+// typedef vector<is> vis;
 typedef vector<iii> viii; // variable.fi.fi,variable.fi.se,variable.se
 typedef vector<vi> vvi;   // 2d vector
 typedef vector<vl> vvl;   // 2d vector
 typedef vector<vii> vvii;
 typedef map<int, int> mii;
+typedef map<double, int> mdi;
 typedef map<int, ii> miii;
 typedef map<int, vi> mivi;
 typedef map<ll, ll> mll;
@@ -48,14 +45,17 @@ typedef map<ll, ll>::iterator mlitr;
   ios_base::sync_with_stdio(false); \
   cin.tie(0);
 #define sp " "
-#define ck "check-1"
-#define ckk "check-2"
-#define ckkk "check-3"
-#define ckkkk "check-4"
-#define ys "YES"
-#define no "NO"
+#define ck cout<<"check-1";
+#define ckk cout<<"check-2";
+#define ckkk cout<<"check-3";
+#define ckkkk cout<<"check-4";
+#define ys cout<<"YES"<<el;
+#define Ys cout<<"Yes"<<el;
+#define no cout<<"NO"<<el;
+#define No cout<<"No"<<el;
 #define bn begin()
 #define en end()
+#define bk back()
 #define rbn rbegin()
 #define ren rend()
 #define sz size()
@@ -79,18 +79,25 @@ typedef map<ll, ll>::iterator mlitr;
 #define frjn(b) for (auto j = (0); (j) < (b); ++(j))
 #define frj(a, b) for (auto j = (a); (j) < (b); ++(j))
 #define frjc(a, b, c) for (auto j = (a); (j) < (b); (j) += (c))
-#define rfj(a, b) for (auto j = (a); (j) >= (b); --(j))
+#define frkn(b) for (auto k = (0); (k) < (b); ++(k))
 #define frk(a, b) for (auto k = (a); (k) < (b); ++(k))
+#define frkc(a, b, c) for (auto k = (a); (k) < (b); (k) += (c))
+#define rfj(a, b) for (auto j = (a); (j) >= (b); --(j))
 #define FOR(a, b, c) for (auto a = (b); (a) < (c); ++(a))
 #define F0R(a, b) FOR(a, 0, (b))
 #define fx(a) for(auto x:a)
 
 // testing for-loop default parameter
-#define FUNC_CHOOSER(_f1, _f2, _f3, _f4, ...) _f4
+#define FUNC_CHOOSER(_fi1, _fi2, _fi3, _fi4, ...) _fi4
 #define FUNC_RECOMPOSER(argsWithParentheses) FUNC_CHOOSER argsWithParentheses
 #define CHOOSE_FROM_ARG_COUNT(...) FUNC_RECOMPOSER((__VA_ARGS__, fric, fri, frin, ))
 #define MACRO_CHOOSER(...) CHOOSE_FROM_ARG_COUNT(NO_ARG_EXPANDER __VA_ARGS__())
 #define fi(...) MACRO_CHOOSER(__VA_ARGS__)(__VA_ARGS__)
+// #define FUNC_CHOOSER(_f1, _f2, _f3, _f4, ...) _f4
+// #define FUNC_RECOMPOSER(argsWithParentheses) FUNC_CHOOSER argsWithParentheses
+// #define CHOOSE_FROM_ARG_COUNT(...) FUNC_RECOMPOSER((__VA_ARGS__, fric, fri, frin, ))
+// #define MACRO_CHOOSER(...) CHOOSE_FROM_ARG_COUNT(NO_ARG_EXPANDER __VA_ARGS__())
+// #define fi(...) MACRO_CHOOSER(__VA_ARGS__)(__VA_ARGS__)
 
 #define FUNC_CHOOSER_J(_fj1, _fj2, _fj3, _fj4, ...) _fj4
 #define FUNC_RECOMPOSER_J(argsWithParentheses_j) FUNC_CHOOSER_J argsWithParentheses_j
@@ -98,158 +105,430 @@ typedef map<ll, ll>::iterator mlitr;
 #define MACRO_CHOOSER_J(...) CHOOSE_FROM_ARG_COUNT_J(NO_ARG_EXPANDER __VA_ARGS__())
 #define fj(...) MACRO_CHOOSER_J(__VA_ARGS__)(__VA_ARGS__)
 
+#define FUNC_CHOOSER_K(_fk1, _fk2, _fk3, _fk4, ...) _fk4
+#define FUNC_RECOMPOSER_K(argsWithParentheses_k) FUNC_CHOOSER_K argsWithParentheses_k
+#define CHOOSE_FROM_ARG_COUNT_K(...) FUNC_RECOMPOSER_K((__VA_ARGS__, frkc, frk, frkn, ))
+#define MACRO_CHOOSER_K(...) CHOOSE_FROM_ARG_COUNT_K(NO_ARG_EXPANDER __VA_ARGS__())
+#define fk(...) MACRO_CHOOSER_K(__VA_ARGS__)(__VA_ARGS__)
 
-// end testing for-loop default parameter for
 
-#define f_input freopen("input.txt", "r", stdin);
-#define f_output freopen("output.txt", "w", stdout);
-/**Define constant value**/
-#define ERR 1e-9
-#define pi (2 * acos(0))
-#define PI 3.14159265358979323846
-// ll mdl = 1000003;
-// #define mdl 1000003;
-#define mdl 10000007;
 
-/**Define function and object**/
-#define srt(vec) sort(vec.begin(), vec.end())
-#define rsrt(vec) sort(vec.rbegin(), vec.rend())
-#define csrt(vec, C) sort(vec.begin(), vec.end(), C)
-#define rvrs(vec) reverse(vec.begin(), vec.end())
-#define all(vec) (vec).begin(), (vec).end()
-#define sqr(x) ((x) * (x))
-#define find_dist(a, b) sqrt(sqr(a.x - b.x) + sqr(a.y - b.y))
-#define maxe(vec) *max_element(all(vec))
-#define maxi(vec) max_element(all(vec))-vec.bn
-#define mine(vec) *min_element(all(vec))
-#define mini(vec) min_element(all(vec))-vec.bn
-#define lobi(vec,b) lower_bound(vec.begin(), vec.end(), b) - vec.begin()-1  // return -1 for no match
-#define upbi(vec,b) upper_bound(vec.begin(), vec.end(), b) - vec.begin()   // return n for no match
 
-/**Define Bitwise operation**/
-#define cbit(n, pos) (n & (1 << (pos)))
-// #define cbit(n, pos) (1 & (n >> (pos)))
-// #define bon(n, pos) (n | (1 << (pos)))
-#define bon(n, pos) (n | (1LL << (pos)))
-// #define boff(n, pos) (n & ~(1 << (pos)))
-#define boff(n, pos) (n & ~(1LL << (pos)))
-#define btog(n, pos) (n ^ (1 << (pos)))
 
-/**Define color**/
-enum
-{
-  WHITE,
-  GREY,
-  BLACK
-};
-// vi month={31,28,31,30,31,30,31,31,30,31,30,31};
 
-//data show
-void show(vi a){fi(a.sz)cout<<a[i]<<sp;cout<<el;}
-void show_mp(mii a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 
-/**Debug tools**/
-#define debt(x) cerr << (#x) << "=" << x << sp << sp  // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
-#define deb(x) cout << (#x) << "=" << x << el << endl // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
 
-// #####################################################################################################
-//_______________________________THINK SYSTEMATIC AWAY_______________________________________
-//_______________________________No need Optimize first_______________________________________
-// #####################################################################################################
-ll power(ll a,ll b){
-  ll ans=1;
-  while(b--)ans*=a;
-  return ans;
+//#######################################################################################################
+//#######################################################################################################
+
+
+
+
+vector<int> g[100];
+vi vis(100);
+
+
+//!1.graph input
+void gin(int n,int m){
+  int x,y;
+  while(m--){
+    cin>>x>>y;
+    g[x].pb(y);
+    g[y].pb(x);
+  }
 }
-#define m_prime 1000010  // it provide <m*m all primes
-vl primes;bool siv[m_prime];
-void sieve()
-{
-    primes.pb(2);
-    fric(ll(3),m_prime,2)if(!siv[i])frjc(i*i,m_prime,i+i)siv[j]=1;                // explain in cp_necessary
-    fric(3,m_prime,2)if(!siv[i])primes.pb(ll(i));
-    
-    // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
-}
-ll lcm(ll a,ll b){return (a*b)/__gcd(a,b);}
 
-int power_of_prime(ll p,ll n){  // p=prime number,n=for which number
-  int cnt=0;
-  while (n%p==0&&n>1){n/=p,cnt++;}
-  return cnt;
-}
-ll combi(ll n,ll k)
-{
-    ll ans=1;
-    k=k>n-k?n-k:k;
-    ll j=1;
-    for(;j<=k;j++,n--)
-    {
-        if(n%j==0)ans*=n/j;
-        else if(ans%j==0)ans=ans/j*n;
-        else ans=(ans*n)/j;
+
+//!2.graph show
+void gshow(int n){
+  for(int i=1;i<=n;i++){
+    for(auto val:g[i]){
+      cout<<val<<sp;
     }
-    return ans;
-}
-
-void presum(vi &a){
-  fi(1,a.sz)a[i]+=a[i-1];
-}
-
-ll decimalToOctal(ll n)
-{
-  ll remainder;
-  ll octal = 0, i = 1;
-
-  while (n != 0)
-  {
-        remainder = n % 9;
-        n = n / 9;
-        octal = octal + (remainder * i);
-        i = i * 10;
+    cout<<el;
   }
-  return octal;
 }
 
-ddd quadratic_root(int a,int b,int c){
-  ddd ans;
-  double d=sqrt(1.0*b*b-1.0*4*a*c);
-  ans.ft=(-b+d)/(1.0*2*a);
-  ans.sd=(-b-d)/(1.0*2*a);
-  return ans;
-}
-int sumdigit(string s){
-  int sum=0;
-  fi(s.sz){
-    sum+=s[i]-'0';
+//!3.basic dfs
+void dfs(int node){
+
+  vis[node]=1;
+
+  cout<<node<<sp;
+
+  for(auto child:g[node]){
+    
+    if(vis[child]==0){
+
+      dfs(child);      
+    }
   }
-  return sum;
+
+}
+//!4.counting connected component
+int con_comp(int n){
+
+  int cnt=0;
+  for(int i=1;i<=n;i++){
+
+    if(vis[i]==0){
+      cnt++;
+      dfs(i);
+    }
+
+  }
+
+  return cnt;
+
 }
 
-void solve()
+//!5 single source shortest path
+vi dis(100);
+void ssp(int node,int d){
+
+  vis[node]=1;
+  dis[node]=d;
+
+  for(auto child:g[node]){
+    if(child!=node&&vis[child]==0){
+      ssp(child, d + 1);
+    }
+  }
+
+}
+
+//! 6. bipartite_graph check;
+vi col(100);
+bool bp_check(int node, int c)
 {
-  mii a;
-  a[-1]=3;
-  a[1]=4;
-  show_mp(a);
+  // node self work
+  vis[node] = 1;
+  col[node] = c;
+  // node self work finish
+
+
+  // node child call
+  for(auto child:g[node]){
+    
+    if(vis[child]==0){
+      if(bp_check(child, c ^ 1)==false){       // if any recursive call return false then????
+        return false;                          
+      };
+    }
+    else {
+      if(col[node]==col[child]){
+        return false;
+      }
+    }
+
+  }
+  return true;
+}
+
+//! 7. cycle detection 
+
+bool c_dfs(int node,int par){
+
+  //self work
+  vis[node] = 1;
+  // end self work
+
+  // child call
+  for(auto child:g[node]){
+    if(vis[child]==0){
+      if(c_dfs(child, node)==false)
+        return false;
+    }else {
+      if(child!=par)
+        return false;
+    }
+  }
+  return true;
+}
+
+//! 8. DFS in out time
+vii timer(100);
+
+void dfs_io(int node, int &tm)
+{
+
+  // self work before child call
+  vis[node] = 1;
+  timer[node].ft = tm++;
+
+  // child call
+  for(auto child:g[node]){
+    if(vis[child]==0){
+      dfs_io(child, tm);
+    }
+  }
+
+  // self work after child call
+  timer[node].sd = tm++;
+}
+
+//! dfs longest path (calling single shortest path for two times)
+
+void lp_dfs(int node,int d){          // although this code is for single source shortest path
   
+  //self work before child call
+  vis[node] = 1;
+  dis[node] = d;
+
+  //child call
+  for(auto child:g[node]){
+    if(vis[child]==0){
+      lp_dfs(child, d + 1);
+    }
+  }
+
+}
+
+vi cld(100);
+int dfs_cnt(int node)
+{
+
+  vis[node] = 1;
+  cld[node] = 1;
+
+  // child call
+  for(auto child:g[node]){
+    if(vis[child]==0){
+      cld[node] += dfs_cnt(child);
+    }
+  }
+
+  return cld[node];
+}
+
+void show(queue<int> tp){
+    while(!tp.empty()){
+      cout << tp.front() << sp;
+      tp.pop();
+    }
+    cout << el;
+}
+
+//! BFS my structure ( in this when node pop then mark vis[node]=1)
+//! it provides some error
+
+// void bfs(int node){
+
+//   queue<int> q;
+//   q.push(node);
+//   // q.push(node);
+//   // vis[node] = 1;
+//   while (!q.empty())
+//   {
+
+//     // show(q);
+
+//     int cur = q.front();
+//     q.pop();
+//     vis[cur] = 1;
+
+//     for(auto child:g[cur]){
+//       if(vis[child]==0){
+//         q.push(child);
+//       }
+//     }
+//   }
+// }
+
+//! BFS youtube (in this structure when node is push then mark vis[node]=1)
+//! basic structure
+
+void bfs(int node){
+
+  queue<int> q;
+  q.push(node);
+  vis[node] = 1;
+
+  while(!q.empty()){
+
+    node = q.front();
+    q.pop();
+    cout << node << el;
+    for (auto child : g[node]){
+      
+      if(vis[child]==0){
+        q.push(child);
+        vis[child] = 1;
+      }
+    }
+  }
+}
+
+//! bfs distance source to every node
+
+void bfs_dis(int node){
+
+  queue<int> q;
+  q.push(node);
+  vis[node] = 1;
+
+  while(!q.empty()){
+
+    node = q.front();
+    q.pop();
+
+    for(auto child:g[node]){
+      if(vis[child]==0){
+        q.push(child);
+        vis[child] = 1;
+
+        dis[child] = dis[node] + 1;
+      }
+    }
+  }
+}
+
+//! bridge finding dfs
+//! eta porar somoy sathe figure ta open kore nibe;
+
+vi in_time(100), low_time(100);
+int tmm=1;
+void bridge_dfs(int node,int par){
+
+  // before child call task
+  vis[node] = 1;
+  in_time[node] = tmm;
+  low_time[node] = tmm;
+  tmm++;
+
+  // child call
+  for(auto child:g[node]){
+    // if child is parent then no task;
+    if(child==par)continue;
+
+    // if child is visited but not parent then check ( ei child node ta ki parent agei mul vukhondo er sathe connected kina)
+    // mul vukhonder sathe connected check korbo kemne??
+    // just chek in_times of child that means update node low_time;
+    if (vis[child] == 1){
+      // if(vis[child]==1) er mane ei node ta, purbe visit kora kuno node er sathe jukto
+      low_time[node] = min(low_time[node], in_time[child]);
+    }
+
+
+    // if child is not yet visited
+    else {
+      bridge_dfs(child, node);                          // recursive function median
+      
+      // bridge check,kemne?
+      // node er path chara r kuno path ache ki ja node er agei vumite connected??
+      // jodi connected thake tahole child er low_time node er in_time er soman/chuto hobe
+      if(in_time[node]<low_time[child]){
+        // jodi condition sotto hoy tar mane child ta ei node chara r purbe visit kora kuno child er sathe jukto na.
+        cout << node << " -> " << child << el;
+      }
+      // update node low_time
+      low_time[node] = min(low_time[node], low_time[child]);
+      // uporer line diye asole node ta most earlier node er sathe jukto ache kina ta check kore ebong update kore
+    }
+  }
+}
+
+//! topological sort
+vi ind(100),ans,task_end(100);
+
+void top_sort(){
+  int n, m,x,y;
+  cin >> n >> m;
+  fi(m){
+    cin >> x >> y;
+    g[x].pb(y);
+    ind[y]++;
+  }
+
+  // gshow(n);
+  queue<int> q;
+
+  fi(1,n+1){
+    if(ind[i]==0)q.push(i);
+  }
+
+  //bfs run
+  while(!q.empty()){
+
+    int node = q.front();
+    q.pop();
+    task_end[node] = 1;
+    cout << node << sp;
+
+    for(auto child:g[node]){
+      if(task_end[child]==0){
+        ind[child]--;
+        if(ind[child]==0)q.push(child);
+      }
+    }
+  }
+}
+
+//! longest path in directed path using top sort ans dp
+int longest_path(int n){
+
+  queue<int> q;
+  fi(1,n+1){
+    if(ind[i]==0){
+      q.push(i);
+    }
+  }
+
+  while(!q.empty()){
+    
+    int node=q.front();
+    q.pop();
+
+    for(auto child:g[node]){
+      // why vis[] no need?? said that there is no cycle,so node->child exist,child->node not exist
+      // so vis no need for parent node
+      // normally in bfs vis[] must required, because of prevent duplicate push,
+      // but in this case, when in[child]==0 then q.push(child),that means child is no more connected any other in node
+      // or no node exist from which we can go child,
+
+        ind[child]--;
+        if(ind[child]==0)q.push(child);
+        dis[child]=max(dis[child],dis[node]+1);     
+    }
+  }
+  int ans=0;
+  fi(1,n+1)ans=max(ans,dis[i]);
+
+  cout<<ans<<el;
 }
 
 
-int main()
-{
-  fastio;
 
-#ifndef ONLINE_JUDGE
-  f_input
-  f_output
-#endif
-    // sieve();
-      // clock_t z = clock();
-    int _;cin >> _;while (_--){
-    // int _;scanf("%d",&_);while (_--){
-    solve();
 
-    // cout << "Run Time : " << fixed << setprecision(6) << ((double)(clock() - z) / CLOCKS_PER_SEC);
-  }
+
+
+
+
+
+int main(){
+
+  freopen("input_tree.txt","r",stdin);
+  freopen("output.txt","w",stdout);
+
+  
+  int n,m,x,y;
+  // cin>>n>>m;
+
+  // gin(n,m);
+
+  // gshow(n);
+  // bridge_dfs(1, -1);
+
+  top_sort();
+
+  /*
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  */
+
 }
