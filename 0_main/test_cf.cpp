@@ -225,6 +225,8 @@ template < typename T > ostream &operator << (ostream &out, vector < T > &v) {
 }
 
 void show(int &a){cout<<a<<el;}
+void show(ll &a){cout<<a<<el;}
+void show(string &s){cout<<s<<el;}
 void show(vi &a){fi(a.sz) cout << a[i] << sp;cout << el;}
 void show(vd &a){fi(a.sz) cout << a[i] << sp;cout << el;}
 void show(vvi &a){fi(a.sz){ fj(a[i].sz){cout << a[i][j] << sp;} cout << el;} }
@@ -235,6 +237,11 @@ void show(vii &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
 void show(mii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 void show(umii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 void show(umll &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
+// queue
+void show(queue<int> a){while(!a.empty()){cout<<a.front()<<sp;a.pop();}nl;}
+void show(prq_min a){while(!a.empty()){cout<<a.top()<<sp;a.pop();}nl;}
+void show(prq_max a){while(!a.empty()){cout<<a.top()<<sp;a.pop();}nl;}
+
 
 
 
@@ -642,10 +649,10 @@ string palindrome_prefix(const string& s)
   return s.substr(0, c);
 }
 
-void g_inp(vvi &g,int m){
+void graph_inp(vvi &g,int edge){
   int x,y;
 
-  while(m--){
+  while(edge--){
     cin >> x >> y;
     g[x].pb(y);
     g[y].pb(x);
@@ -662,6 +669,10 @@ ii ratio_int(int a,int b){
   a /= g;
   b /= g;
   return ii(a, b);
+}
+
+void reset(vi &a,int n){
+  fi(n) a[i] = 0;
 }
 
 /*
@@ -684,28 +695,7 @@ ii ratio_int(int a,int b){
 
 void solve(){
 
-  ll m, x, val, ix;
-  cin >> m >> x;
-  vi a(400005),c(x);
-
-  ll l = 0;
-
-  fi(m){
-    cin >> val;
-    val %= x;
-    ix = x * c[val] + val;
-    
-    if (ix <= m)
-    {
-      a[ix] = 1;
-    }
-
-    c[val]++;
-    
-    while(a[l]!=0)l++;
-
-    cout << l << el;
-  }
+  
 }
 
 int main()

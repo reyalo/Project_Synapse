@@ -190,7 +190,7 @@ void ssp(int node,int d){
   dis[node]=d;
 
   for(auto child:g[node]){
-    if(child!=node&&vis[child]==0){
+    if(child != node && vis[child] == 0){
       ssp(child, d + 1);
     }
   }
@@ -495,6 +495,28 @@ int longest_path(int n){
   fi(1,n+1)ans=max(ans,dis[i]);
 
   cout<<ans<<el;
+}
+
+//! dfs number of child for every node
+
+vi cld(200005);
+
+void dfs_child_count(int node, vvi &g)
+{
+  vis[node] = 1;
+
+  int cnt = 0;
+
+  for(auto child : g[node]){
+
+    if( vis[child] == 0){
+      dfs_child_count(child, g);
+
+      cnt += cld[child];
+    }
+  }
+
+  cld[node] = cnt + 1;
 }
 
 

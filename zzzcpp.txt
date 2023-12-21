@@ -230,7 +230,7 @@ c=count(s.bn,s.en,'1');
     getline(cin>>ws,s);
 
     istringstream ss(s);
-    while(ss>>wrd)cout<<wrd<<el;
+    while(ss>>wrd)cout<<wrd<<el; <>
     
 12. printf string in cpp
     printf("%s",s.c_str());
@@ -324,6 +324,9 @@ c=count(s.bn,s.en,'1');
 multiset:
     st.erase(x)// delete all occurrence
     st.erase(st.find(x)) delte single element
+
+    
+*** set also can be used for priority queue.
 
 
 
