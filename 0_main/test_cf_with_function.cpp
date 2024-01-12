@@ -759,6 +759,40 @@ string rmv_dup_char(string s){
 //#####################################################################################################
 
 
+//*________________________________DP___________________________________
+
+// 1. each item single
+// 2. weight given, cost given,
+// 2. capacity given
+
+
+ll dp_1(vi &w, vi &ct, int k){       
+
+    int n = w.sz;
+
+    vl dp(k + 2);
+
+    fi(1, n+1){
+
+        ll wt = w[i - 1];
+        ll cost = ct[i - 1];
+
+        for (int j = k; j >= 0;j--){
+
+            int ix = j - wt;
+
+            if(ix>=0){
+
+                dp[j] = max(dp[j], dp[ix] + cost);
+
+            }
+            
+        }
+    }
+
+    return dp[k];
+}
+
 void solve()
 {
     ll n,l;

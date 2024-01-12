@@ -1,10 +1,13 @@
 /*
-                                      ███████╗░██╗░░░██╗███████╗░
-                                      ██╔════╝╗╚██╗░██╔╝██╔════╝╗
-                                      █████╗░░║░╚████╔╝░█████╗░░║
-                                      ██╔══╝░░║░░╚██╔╝░░██╔══╝░░║
-                                      ███████╗║░░░██║░░░███████╗║
-                                      ╚══════╝╝░░░╚═╝░░░╚══════╝╝
+
+                                    ███████╗░██╗░░░██╗███████╗░
+                                    ██╔════╝╗╚██╗░██╔╝██╔════╝╗
+                                    █████╗░░║░╚████╔╝░█████╗░░║
+                                    ██╔══╝░░║░░╚██╔╝░░██╔══╝░░║
+                                    ███████╗║░░░██║░░░███████╗║
+                                    ╚══════╝╝░░░╚═╝░░░╚══════╝╝
+author  : modhu_khalifa
+
 
 */
 #include <bits/stdc++.h>
@@ -64,9 +67,11 @@ typedef unordered_map<int, int>::iterator mitr;
 typedef unordered_map<ll, ll>::iterator mlitr;
 typedef priority_queue<int, vector<int>, greater<int>> prq_min;
 typedef priority_queue<int> prq_max;
+typedef priority_queue<ii> prqii_max;
+typedef vector<set<int>> vseti;
 #define fastio                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);
+    ios_base::sync_with_stdio(false); \
+    cin.tie(0);
 #define sp " "
 #define ck cout<<"check-1";
 #define ckk cout<<"check-2";
@@ -157,6 +162,8 @@ typedef priority_queue<int> prq_max;
 #define mdl97 1000000007
 
 /**Define function and object**/
+#define rol(vec,d) rotate(vec.begin(),vec.begin() + d, vec.end())
+#define ror(vec,d) rotate(vec.begin(),vec.begin() + (vec.sz-d), vec.end())
 #define srt(vec) sort(vec.begin(), vec.end())
 #define srts(vec) sort(vec.begin(), vec.end(), [](auto &l, auto &r) {return l.sd < r.sd;});
 #define rsrt(vec) sort(vec.rbegin(), vec.rend())
@@ -203,9 +210,9 @@ typedef priority_queue<int> prq_max;
 /**Define color**/
 enum
 {
-  WHITE,
-  GREY,
-  BLACK
+    WHITE,
+    GREY,
+    BLACK
 };
 // vi month={31,28,31,30,31,30,31,31,30,31,30,31};
 
@@ -234,36 +241,70 @@ void show(vvl &a){fi(a.sz){ fj(a[i].sz){cout << a[i][j] << sp;} cout << el;} }
 // void show(vvi &a){int n=a.sz,m=a[0].sz;fi(n){ fj(m){cout << a[i][j] << sp;} cout << el;} }
 void show(vl &a){fi(a.sz) cout << a[i] << sp;cout << el;}
 void show(vii &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
+void show(vll &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
 void show(mii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 void show(umii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 void show(umll &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
+
+// set
+void show(set<int> &a){{for(auto x:a)cout<<x<<sp;}nl;}
+void show(vseti &a){for(auto x:a){{for(auto y:x)cout<<y<<sp;}nl;}}
 // queue
 void show(queue<int> a){while(!a.empty()){cout<<a.front()<<sp;a.pop();}nl;}
 void show(prq_min a){while(!a.empty()){cout<<a.top()<<sp;a.pop();}nl;}
 void show(prq_max a){while(!a.empty()){cout<<a.top()<<sp;a.pop();}nl;}
+void show(prqii_max a){while(!a.empty()){cout<<a.top().ft<<sp<<a.top().sd<<el;a.pop();}nl;}
 
 
 
 
 
 //######################################################################################################
+
+
 ll lcm(ll a,ll b){return (a*b)/__gcd(a,b);}
 
 //set_bit_count
 int bit_count(ll n){
-  int cnt = 0;
-  while(n){
-    if(n&1)cnt++;
-    n /= 2;
-  }
-  return cnt;
+    int cnt = 0;
+    while(n){
+        if(n&1)cnt++;
+        n /= 2;
+    }
+    return cnt;
+}
+
+
+//! modular arithmetic
+
+const ll MOD = (ll)1e9 + 7;
+ll add(ll x, ll y) {
+	x += y;
+	if (x >= MOD) return x - MOD;
+	return x;
+}
+ll sub(ll x, ll y) {
+	x -= y;
+	if (x < 0) return x + MOD;
+	return x;
+}
+ll mult(ll x, ll y) {
+	return (x * y) % MOD;
+}
+ll bin_pow(ll x, ll p) {
+	if (p == 0) return 1;
+	if (p & 1) return mult(x, bin_pow(x, p - 1));
+	return bin_pow(mult(x, x), p / 2);
+}
+ll rev(ll x) {
+	return bin_pow(x, MOD - 2);
 }
 
 
 
 // #####################################################################################################
 //_______________________________THINK SYSTEMATIC AWAY_______________________________________
-//_______________________________No need Optimize first_______________________________________
+//_______________________________Non eedop timi zefi rst_______________________________________
 // #####################################################################################################
 int tc;
 
@@ -274,27 +315,32 @@ int tc;
 
 
 ll power(ll a,ll b){
-  ll ans=1;
-  while(b--)ans*=a;
-  return ans;
+    ll ans=1;
+    while(b--)ans*=a;
+    return ans;
 }
 
 #define m_prime 1000010  // it provide <m*m all primes
 vl primes;bool siv[m_prime];
 void sieve()
 {
-    primes.pb(2);
-    fric(ll(3),m_prime,2)if(!siv[i])frjc(i*i,m_prime,i+i)siv[j]=1;                // explain in cp_necessary
-    fric(3,m_prime,2)if(!siv[i])primes.pb(ll(i));
-    
-    // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
+        primes.pb(2);
+        fric(3LL, m_prime, 2){
+
+        if(siv[i] == 0){
+            frjc(i*i, m_prime, i + i) siv[j] = 1;
+        }
+        }                // explain in cp_necessary
+        fric(3,m_prime,2)if(!siv[i])primes.pb(ll(i));
+        
+        // fric(4,m_prime,2)siv[i]=1;                          // its for check a number is prime?
 }
 
 
 int power_of_prime(ll p,ll n){  // p=prime number,n=for which number
-  int cnt=0;
-  while (n%p==0&&n>1){n/=p,cnt++;}
-  return cnt;
+    int cnt=0;
+    while (n%p==0&&n>1){n/=p,cnt++;}
+    return cnt;
 }
 ll combi(ll n,ll k)
 {
@@ -314,79 +360,79 @@ ll combi(ll n,ll k)
 //? presum array always take 1 indexes;
 
 void presum(vi &a){
-  fi(1,a.sz)a[i]+=a[i-1];
+    fi(1,a.sz)a[i]+=a[i-1];
 }
 void presum(vl &a){
-  fi(1,a.sz)a[i]+=a[i-1];
+    fi(1,a.sz)a[i]+=a[i-1];
 }
 
 ll decimalToOctal(ll n)
 {
-  ll remainder;
-  ll octal = 0, i = 1;
+    ll remainder;
+    ll octal = 0, i = 1;
 
-  while (n != 0)
-  {
-        remainder = n % 9;
-        n = n / 9;
-        octal = octal + (remainder * i);
-        i = i * 10;
-  }
-  return octal;
+    while (n != 0)
+    {
+            remainder = n % 9;
+            n = n / 9;
+            octal = octal + (remainder * i);
+            i = i * 10;
+    }
+    return octal;
 }
 
 ddd quadratic_root(ll a,ll b,ll c){
-  ddd ans;
-  double d=sqrt(1.0*b*b-1.0*4*a*c);
-  ans.ft=(-b+d)/(1.0*2*a);
-  ans.sd=(-b-d)/(1.0*2*a);
-  return ans;
+    ddd ans;
+    double d=sqrt(1.0*b*b-1.0*4*a*c);
+    ans.ft=(-b+d)/(1.0*2*a);
+    ans.sd=(-b-d)/(1.0*2*a);
+    return ans;
 }
 
 int sum_of_digit(string s){
-  int sum=0;
-  fi(s.sz){
-    sum+=s[i]-'0';
-  }
-  return sum;
+    int sum=0;
+    fi(s.sz){
+        sum+=s[i]-'0';
+    }
+    return sum;
 }
 int sum_of_digit(ll n){
-  int sum=0;
-  while(n){
-    sum+=n%10;
-    n/=10;
-  }
-  return sum;
+    int sum=0;
+    while(n){
+        sum+=n%10;
+        n/=10;
+    }
+    return sum;
 }
 
 ll log2_ceil(ll n){
-  ll i;
-  for (i = 0; (1ll << i) < n; i++);
-  return i;
+    ll i;
+    for (i = 0; (1ll << i) < n; i++);
+    return i;
 }
 // inclusive
 bool inside(int a,int b,int ix){
-  if(a<=ix&&ix<=b)return true;
+    if(a<=ix&&ix<=b)return true;
 
-  return false;
+    return false;
 }
 // exclusive
 bool inside_ex(int a,int b,int ix){
-  return (a < ix && ix < b)?true:false;
+    return (a < ix && ix < b)?true:false;
 }
 //--------
 //  ------
 // this case return 1;
 bool intersect_in(int ref_x,int ref_y,int gvn_x,int gvn_y){
-      return (max(ref_x,gvn_x)<=min(ref_y,gvn_y)?true:false);
+    return (max(ref_x,gvn_x)<=min(ref_y,gvn_y)?true:false);
 }
 //--------
 //  ------
 // this case return 0;
 bool intersect_m(int x,int y,int xx,int yy){
-  if(x>y)swap(x,y);
-  if(xx>yy)swap(xx,yy);
-  return (inside_ex(xx, yy, x) && yy < y) || ((inside_ex(xx, yy, y) && x < xx));
+    if(x>y)swap(x,y);
+    if(xx>yy)swap(xx,yy);
+    return (inside_ex(xx, yy, x) && yy < y) || ((inside_ex(xx, yy, y) && x < xx));
 }
 
 ii intersect_range(int ref_x,int ref_y,int gvn_x,int gvn_y){
@@ -394,36 +440,36 @@ ii intersect_range(int ref_x,int ref_y,int gvn_x,int gvn_y){
     int l = max(ref_x, gvn_x);
     int r = min(ref_y, gvn_y);
 
-  return ii(l, r);
+    return ii(l, r);
 }
 
 
 ll total(vi &a){
-  ll n=a.sz,ttl=0;
-  fi(n)ttl+=a[i];
-  return ttl;
+    ll n=a.sz,ttl=0;
+    fi(n)ttl+=a[i];
+    return ttl;
 }
 ll total(vl &a){
-  ll n=a.sz,ttl=0;
-  fi(n)ttl+=a[i];
-  return ttl;
+    ll n=a.sz,ttl=0;
+    fi(n)ttl+=a[i];
+    return ttl;
 }
 
 ll factorial(ll n)
 {
-  ll fact = 1;
-  while (n)
-    fact *= n--;
-  return fact;
+    ll fact = 1;
+    while (n)
+        fact *= n--;
+    return fact;
 }
 ll factorial(ll n, ll mod)
 {
-  ll fact = 1;
-  while (n){
-    fact *= n--;
-    fact %= mod;
-  }
-  return fact;
+    ll fact = 1;
+    while (n){
+        fact *= n--;
+        fact %= mod;
+    }
+    return fact;
 }
 bool isPrime(ll x) {
 	if (x < 2) return false;
@@ -433,46 +479,50 @@ bool isPrime(ll x) {
 	return true;
 }
 void prime_fact(ll n,vii &ans){        //! it is too fast
-    for(ll i=2;i*i<=n;i++){
-    int cnt=0;
-    while(n>0&&n%i==0){
-      n/=i;cnt++;
-    }
-    if(cnt>0)ans.pb(mp(i,cnt));
+        for(ll i=2;i*i<=n;i++){
+        int cnt=0;
+        while(n>0&&n%i==0){
+        n/=i;cnt++;
+        }
+        if(cnt>0)ans.pb(mp(i,cnt));
 
-  }
-    if(n>1)ans.pb(mp(n,1));
+    }
+        if(n>1)ans.pb(mp(n,1));
 }
 
 
 
-ll bigmod(ll a, ll b, ll m)
+ll bigmod(ll base, ll power, ll m)
 {
-  if (!b)return 1;
-  ll ans = bigmod(a, b / 2, m);
-  ans = (ans * ans) % m;
-  if (b & 1)return (ans * a) % m;
-  return ans;
+    if (!power)return 1;
+
+    ll ans = bigmod(base, power / 2, m); // 5 = clac(1) * calc(2) * clac(2);
+
+    ans = (ans * ans) % m;
+
+    if (power & 1)return (ans * base) % m;
+
+    return ans;
 }
 
 ll mod_inverse(ll a,ll mod){      // also known as multiplicative inverse
-  return bigmod(a, mod - 2, mod);
+    return bigmod(a, mod - 2, mod);
 }
 
 ll ncr_frac(ll n, ll r, ll mod){
 
-  ll nn, rr, nr, rr_inverse, nr_inverse, ans;
+    ll nn, rr, nr, rr_inverse, nr_inverse, ans;
 
-  nn = factorial(n, mod);
-  rr = factorial(r, mod);
-  nr = factorial(n-r, mod);
+    nn = factorial(n, mod);
+    rr = factorial(r, mod);
+    nr = factorial(n-r, mod);
 
-  rr_inverse = bigmod(rr, mod - 2, mod); // a^-1 = a^(m-2)%m
-  nr_inverse = bigmod(nr, mod - 2, mod);
+    rr_inverse = bigmod(rr, mod - 2, mod); // a^-1 = a^(m-2)%m
+    nr_inverse = bigmod(nr, mod - 2, mod);
 
-  ans = ((nn * rr_inverse) % mod * nr_inverse) % mod;
+    ans = ((nn * rr_inverse) % mod * nr_inverse) % mod;
 
-  return ans;
+    return ans;
 }
 
 
@@ -492,20 +542,20 @@ ll ncr_frac(ll n, ll r, ll mod){
 // it return maximum possible book read;
 // In valid range i=left index,r=right index+1;
 int two_pointer1(vi &a,int ref){ 
-  int r=0,ans=0,n=a.sz;          
-  ll sum=0;
-  fi(n){
-    if(i>0)sum-=a[i-1];  // sub prev value
+    int r=0,ans=0,n=a.sz;          
+    ll sum=0;
+    fi(n){
+        if(i>0)sum-=a[i-1];  // sub prev value
 
-    while(r<n&&sum+a[r]<=ref)sum+=a[r++];  
+        while(r<n&&sum+a[r]<=ref)sum+=a[r++];  
 
-    ans=max(ans,r-i);
-  }
-  return ans;
+        ans=max(ans,r-i);
+    }
+    return ans;
 }
 
 ll ceil_(ll dividend,ll divisor){
-  return (dividend+divisor-1)/divisor;
+    return (dividend+divisor-1)/divisor;
 }
 
 // ll abs_c(ll a){
@@ -513,7 +563,7 @@ ll ceil_(ll dividend,ll divisor){
 //   return a;
 // }
 int leader_finder(vi &ar,int x){
-  if(ar[x]==x)return x;
+    if(ar[x]==x)return x;
 
   return ar[x]=leader_finder(ar,ar[x]); // it make ar[x]=leader
 }
@@ -538,40 +588,40 @@ bool is_subsequence(string& s1, string& s2)
 
 long long ncr(int n, int r)
 {
-  if(n<r)return 0;
+    if(n<r)return 0;
 
-  long long ans = 1;
-  if (r > n - r)
-  {
-    r = n - r;
-  }
-  for (int i = 1; i <= r; i++)
-  {
-    ans *= n - r + i;
-    ans /= i;
-  }
-  return ans;
+    long long ans = 1;
+    if (r > n - r)
+    {
+        r = n - r;
+    }
+    for (int i = 1; i <= r; i++)
+    {
+        ans *= n - r + i;
+        ans /= i;
+    }
+    return ans;
 }
 ll string_to_num(string s){
-  ll ans=0;
-  int n=s.sz;
-  fi(n){
-    ans=ans*10+s[i]-'0';
-  }
-  return ans;
+    ll ans=0;
+    int n=s.sz;
+    fi(n){
+        ans=ans*10+s[i]-'0';
+    }
+    return ans;
 }
 
 string rmv_dup_char(string s){
-  int n = s.sz;
-  unordered_map<char,int> mm;
-  fi(n) {
-    mm[s[i]]++;
-  }
-  string ans;
-  for(auto ch:mm){
-    ans += ch.ft;
-  }
-  return ans;
+    int n = s.sz;
+    unordered_map<char,int> mm;
+    fi(n) {
+        mm[s[i]]++;
+    }
+    string ans;
+    for(auto ch:mm){
+        ans += ch.ft;
+    }
+    return ans;
 }
 
 int cx[4]={1,-1,0,0};
@@ -616,63 +666,76 @@ int cy[4]={0,0,1,-1};
 
 
 ll cl(ll a,ll b){
-  return (a-1)/b+1;
+    return (a-1)/b+1;
 }
 
-void fn(ll n,vi &ans){
+ll floor_all(ll a, ll b){
 
-  fi(32){
-    ans[i] += (n % 2);
-    n = n >> 1;
-  }
+    ll ans = a / b;
+    while(ans * b > a){
+        ans--;
+    }
+
+    return ans;
 }
+
+
 
 string palindrome_prefix(const string& s)
 {
-  int c=0,n;
+    int c=0,n;
 
-  string a = s;
-  rvrs(a);
-  a = s + "#" + a;
-  n = a.sz;
-  vi pref(n + 5);
+    string a = s;
+    rvrs(a);
+    a = s + "#" + a;
+    n = a.sz;
+    vi pref(n + 5);
 
-  for (int i = 1; i < n; i++){
+    for (int i = 1; i < n; i++){
 
-    while (c != 0 && a[c] != a[i])
-      c = pref[c - 1];
-    if (a[c] == a[i])
-      c++;
-    pref[i] = c;
-  }
+        while (c != 0 && a[c] != a[i])
+        c = pref[c - 1];
+        if (a[c] == a[i])
+        c++;
+        pref[i] = c;
+    }
 
-  return s.substr(0, c);
+    return s.substr(0, c);
 }
 
 void graph_inp(vvi &g,int edge){
-  int x,y;
+    int x,y;
 
-  while(edge--){
-    cin >> x >> y;
-    g[x].pb(y);
-    g[y].pb(x);
-  }
+    while(edge--){
+        cin >> x >> y;
+        g[x].pb(y);
+        g[y].pb(x);
+    }
+}
+void graph_inp(vector<set<int>> &g,int edge){
+    int x,y;
+
+    while(edge--){
+        cin >> x >> y;
+        g[x].insert(y);
+        g[y].insert(x);
+    }
 }
 
 
 ll seg_xor(vi &a,int l,int r){
-  return a[l-1] ^ a[r];
+    return a[l-1] ^ a[r];
 }
 
 ii ratio_int(int a,int b){
-  int g = __gcd(a, b);
-  a /= g;
-  b /= g;
-  return ii(a, b);
+    int g = __gcd(a, b);
+    a /= g;
+    b /= g;
+    return ii(a, b);
 }
 
 void reset(vi &a,int n){
-  fi(n) a[i] = 0;
+    fi(n) a[i] = 0;
 }
 
 /*
@@ -688,16 +751,109 @@ void reset(vi &a,int n){
 
 //
 
+//
+
+//
+
+
+//
+
+//
+
+//
+
+
+//
+
+
+//
+
+
+//
+
+
+//
+
+
+//
+
+
+//
+
+
+//
+
 
 */
 
 
+bool fn(vii &a, int tm){
+
+    
+    int mn_tm = a.sz + 1;
+
+    int left = 0;
+
+    fi(a.sz)
+    {
+        left += max(0, a[i].sd + i - tm);
+    }
+
+    if(left + mn_tm <= tm)
+        return true;
+    else
+        return false;
+}
 
 void solve(){
 
-  
+    int n;
+    cin >> n;
+    vi a(n - 1);
+    cin >> a;
+
+    vvi g(n + 1, vi(0));
+
+    fi(n-1){
+        g[a[i]].pb(i + 2);
+    }
+
+    vii b;
+
+    fi(1,n+1){
+        int x = g[i].sz;
+        if(x>0)
+            b.pb({i, x});
+    }
+
+    rsrts(b);
+
+    // show(g);
+
+//________________________________
+
+    int l = 0, r = n + 1;
+
+    while( l + 1 < r){
+        int md = (l + r) / 2;
+
+        if(!fn(b,md)){
+            // deb(md);
+            l = md;
+        }
+        else
+            r = md;
+    }
+
+    cout << r << el;
 }
 
+/*
+
+author  : modhu_khalifa
+created : 2024.01.13 02:38:18
+
+*/
 int main()
 {
 
@@ -713,28 +869,25 @@ int main()
 
 
 
+    fastio;
 
-  fastio;
+    #ifndef ONLINE_JUDGE
+        f_input
+        // f_input2
+        f_output
+    #endif
 
-#ifndef ONLINE_JUDGE
-  f_input
-  // f_input2
-  f_output
-#endif
+
 
     int _=1;
 
-  cin >> _;
+    cin >> _;
 
-  // int _;scanf("%d",&_);while (_--){
+    for (tc = 1; tc <= _; tc++)
+    {
 
-  for (tc = 1; tc <= _; tc++)
-  {
+        solve();
 
-    // cout<<"Case "<<tc<<": ";
-
-    solve();
-
-    // cout << fixed << setprecision(6) ;
-  }
+        // cout << fixed << setprecision(6) ;
+    }
 }

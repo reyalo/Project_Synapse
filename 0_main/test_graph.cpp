@@ -165,6 +165,26 @@ void dfs(int node){
   }
 
 }
+//! dfs traversing
+
+void dfs(int node, vvi &g, vi &vis){
+
+    vis[node] = 1;
+    
+    for(auto child:g[node]){
+
+        if(vis[child] == 0){
+            dfs(child, g, vis);
+        }
+    }
+
+    cout << node << sp;
+
+}
+
+
+
+
 //!4.counting connected component
 int con_comp(int n){
 
