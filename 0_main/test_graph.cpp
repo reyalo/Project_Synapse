@@ -165,7 +165,14 @@ void dfs(int node){
   }
 
 }
-//! dfs traversing
+//! dfs traversing and print
+
+/*     /1       pre-order traversal
+      /
+     /
+    /
+  2__________3   
+*/
 
 void dfs(int node, vvi &g, vi &vis){
 
@@ -538,12 +545,64 @@ void dfs_child_count(int node, vvi &g)
 
   cld[node] = cnt + 1;
 }
+//
+
+//
+
+//
+
+//
+
+//
+
+
+
+//*********************************************************************************************************
+//*** graph with parent array and one_directional
+
+
+
+// node = 5;
+// a = [2, 3, 2, 3, 4]
+// 
+// que1: cycle detection?
+//sol_n: use top sort(in_degree), example (241661400)
 
 
 
 
+int par_find(int node, vi &par){
 
+    if(par[node] == node)
+        return node;
+    else {
 
+        return par[node] = par_find(par[node], par); // update and adam find
+    }
+}
+
+//! dsu
+
+void dsu(int u, int v, vvi &g, vi &par){
+
+        int pu = par_find(u, par);
+        int pv = par_find(v, par);
+        
+        if(pu==pv) return;
+        
+
+        if(g[pu].sz < g[pv].sz)
+            swap(pu, pv);
+
+        // parent update
+        par[pv] = pu;
+
+        for(auto x: g[pv]){
+            g[pu].pb(x);
+        }
+        g[pv].clear();
+
+}
 
 
 

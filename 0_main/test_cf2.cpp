@@ -777,59 +777,14 @@ void reset(vi &a,int n){
 */
 
 
-
-void solve()
-{
-    ll n, k;
-    cin >> n >> k;
-    vl a(n);
-    cin >> a;
-
-    rsrt(a);
-
-    ll mn = a.back();
-
-    presum(a);
-
-    ll ttl = a.back();
-
-    ll dif = max(0LL, ttl - k);
-
-    if(dif == 0){
-        cout << 0 << el;
-        return;
-    }
-
-    ll ans = dif;
-
-    fi(n-1){
-        ll val1 = a[i] + mn - dif;
-
-        ll x;
-        if (val1 < 0)
-        {
-            x = (val1 - (i + 2 - 1)) / (i + 2);
-        }
-        else {
-            x = val1 / (i + 2);
-        }
-
-        x = min(x, mn);
-
-        ll res = mn - x + (i + 1);
-
-
-        ans = min(ans, res);
-
-    }
-
-    cout << ans << el;
+void solve() {
+    
 }
 
 /*
 
 author  : modhu_khalifa
-created : 2024.01.12 01:15:09
+created : 2024.01.14 17:13:24
 
 */
 int main()
@@ -850,8 +805,8 @@ int main()
     fastio;
 
     #ifndef ONLINE_JUDGE
-        f_input
-        // f_input2
+        // f_input
+        f_input2
         f_output
     #endif
 

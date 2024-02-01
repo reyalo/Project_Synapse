@@ -148,8 +148,8 @@ typedef vector<set<int>> vseti;
 #define f_output freopen("output.txt", "w", stdout);
 /**Define constant value**/
 #define ERR 1e-9
-#define lmax 1e18
-#define infl 1e18
+#define lmax 2e18
+#define infl 2e18+5
 #define lmin -1e18
 #define imax 1e9
 #define inf 1000000005
@@ -194,13 +194,13 @@ typedef vector<set<int>> vseti;
 #define inp(a) fi(a.sz){cin >> a[i];}
 
 /**Define Bitwise operation**/
-#define cbit(n, pos) (n & (1 << (pos))) // return 0 or not 0
-// #define cbit(n, pos) (1 & (n >> (pos)))
-// #define bon(n, pos) (n | (1 << (pos)))
+// #define cbit(n, pos) (n & (1LL << (pos))) // return 0 or not 0
+#define cbit(n, pos) (1LL & (n >> (pos)))    // return 0 or 1
+// #define bon(n, pos) (n | (1LL << (pos)))
 #define bon(n, pos) (n | (1LL << (pos)))
-// #define boff(n, pos) (n & ~(1 << (pos)))
+// #define boff(n, pos) (n & ~(1LL << (pos)))
 #define boff(n, pos) (n & ~(1LL << (pos)))
-#define btog(n, pos) (n ^ (1 << (pos)))
+#define btog(n, pos) (n ^ (1LL << (pos)))
 
 /**Debug tools**/
 #define debt(x) cerr << (#x) << "=" << x << sp << sp  // watch(pow(n,exponent));output: pow(n,exponent) is 16 //watch(n); //output : n is 4
@@ -242,12 +242,15 @@ void show(vvl &a){fi(a.sz){ fj(a[i].sz){cout << a[i][j] << sp;} cout << el;} }
 void show(vl &a){fi(a.sz) cout << a[i] << sp;cout << el;}
 void show(vii &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
 void show(vll &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
+void show(vli &a){fi(a.sz) cout << a[i].ft << sp<< a[i].sd <<el;cout << el;}
 void show(mii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 void show(umii &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 void show(umll &a){for(auto x:a)cout<<x.ft<<sp<<x.sd<<el;}
 
 // set
 void show(set<int> &a){{for(auto x:a)cout<<x<<sp;}nl;}
+void show(set<ll> &a){{for(auto x:a)cout<<x<<sp;}nl;}
+void show(multiset<int> &a){{for(auto x:a)cout<<x<<sp;}nl;}
 void show(vseti &a){for(auto x:a){{for(auto y:x)cout<<y<<sp;}nl;}}
 // queue
 void show(queue<int> a){while(!a.empty()){cout<<a.front()<<sp;a.pop();}nl;}
@@ -265,13 +268,25 @@ void show(prqii_max a){while(!a.empty()){cout<<a.top().ft<<sp<<a.top().sd<<el;a.
 ll lcm(ll a,ll b){return (a*b)/__gcd(a,b);}
 
 //set_bit_count
-int bit_count(ll n){
-    int cnt = 0;
+ll bit_count(ll n){
+    ll cnt = 0;
     while(n){
         if(n&1)cnt++;
         n /= 2;
     }
     return cnt;
+}
+
+string dtob(ll num)
+{
+    string str;
+    ll n = 63;
+    while (n--)
+    {
+        str=num&1?'1' + str:'0' + str;
+        num >>= 1; // Right Shift by 1
+    }
+    return str;
 }
 
 
@@ -300,16 +315,24 @@ ll rev(ll x) {
 	return bin_pow(x, MOD - 2);
 }
 
+ll over_mul_check(ll a, ll b){
+
+    if((long double) a * b > infl)
+        return infl;
+
+    return a * b;
+}
+
 
 
 // #####################################################################################################
 //_______________________________THINK SYSTEMATIC AWAY_______________________________________
 //_______________________________Non eedop timi zefi rst_______________________________________
 // #####################################################################################################
-int tc;
+ll tc;
 
 //! sign greater side greater value and less side smaller value
-// bool cmp(int a,int b){return a>b;}
+// bool cmp(ll a,ll b){return a>b;}
 
 //***************************____START_NUMBER_THEORY____**************************
 
@@ -337,8 +360,8 @@ void sieve()
 }
 
 
-int power_of_prime(ll p,ll n){  // p=prime number,n=for which number
-    int cnt=0;
+ll power_of_prime(ll p,ll n){  // p=prime number,n=for which number
+    ll cnt=0;
     while (n%p==0&&n>1){n/=p,cnt++;}
     return cnt;
 }
@@ -389,15 +412,15 @@ ddd quadratic_root(ll a,ll b,ll c){
     return ans;
 }
 
-int sum_of_digit(string s){
-    int sum=0;
+ll sum_of_digit(string s){
+    ll sum=0;
     fi(s.sz){
         sum+=s[i]-'0';
     }
     return sum;
 }
-int sum_of_digit(ll n){
-    int sum=0;
+ll sum_of_digit(ll n){
+    ll sum=0;
     while(n){
         sum+=n%10;
         n/=10;
@@ -411,34 +434,34 @@ ll log2_ceil(ll n){
     return i;
 }
 // inclusive
-bool inside(int a,int b,int ix){
+bool inside(ll a,ll b,ll ix){
     if(a<=ix&&ix<=b)return true;
 
     return false;
 }
 // exclusive
-bool inside_ex(int a,int b,int ix){
+bool inside_ex(ll a,ll b,ll ix){
     return (a < ix && ix < b)?true:false;
 }
 //--------
 //  ------
 // this case return 1;
-bool intersect_in(int ref_x,int ref_y,int gvn_x,int gvn_y){
+bool intersect_in(ll ref_x,ll ref_y,ll gvn_x,ll gvn_y){
     return (max(ref_x,gvn_x)<=min(ref_y,gvn_y)?true:false);
 }
 //--------
 //  ------
 // this case return 0;
-bool intersect_m(int x,int y,int xx,int yy){
+bool intersect_m(ll x,ll y,ll xx,ll yy){
     if(x>y)swap(x,y);
     if(xx>yy)swap(xx,yy);
     return (inside_ex(xx, yy, x) && yy < y) || ((inside_ex(xx, yy, y) && x < xx));
 }
 
-ii intersect_range(int ref_x,int ref_y,int gvn_x,int gvn_y){
+ii intersect_range(ll ref_x,ll ref_y,ll gvn_x,ll gvn_y){
 
-    int l = max(ref_x, gvn_x);
-    int r = min(ref_y, gvn_y);
+    ll l = max(ref_x, gvn_x);
+    ll r = min(ref_y, gvn_y);
 
     return ii(l, r);
 }
@@ -478,16 +501,23 @@ bool isPrime(ll x) {
 			return false;
 	return true;
 }
-void prime_fact(ll n,vii &ans){        //! it is too fast
-        for(ll i=2;i*i<=n;i++){
-        int cnt=0;
-        while(n>0&&n%i==0){
-        n/=i;cnt++;
+
+void prime_fact(ll n,vll &ans){        //! it is too fast
+
+    for(ll i = 2; i*i<=n;i++){
+
+        ll cnt=0;
+
+        while(n > 0 && n%i == 0){
+            n /= i;
+            cnt++;
         }
-        if(cnt>0)ans.pb(mp(i,cnt));
+
+            if(cnt > 0)ans.pb({i, cnt});
 
     }
-        if(n>1)ans.pb(mp(n,1));
+
+    if(n>1)ans.pb(mp(n,1));
 }
 
 
@@ -507,6 +537,11 @@ ll bigmod(ll base, ll power, ll m)
 
 ll mod_inverse(ll a,ll mod){      // also known as multiplicative inverse
     return bigmod(a, mod - 2, mod);
+}
+
+ll p_inv_q_mod(ll p, ll q, ll mod){
+
+    return (p * bigmod(q, mod - 2, mod)) % mod;
 }
 
 ll ncr_frac(ll n, ll r, ll mod){
@@ -541,8 +576,8 @@ ll ncr_frac(ll n, ll r, ll mod){
 
 // it return maximum possible book read;
 // In valid range i=left index,r=right index+1;
-int two_pointer1(vi &a,int ref){ 
-    int r=0,ans=0,n=a.sz;          
+ll two_pointer1(vi &a,ll ref){ 
+    ll r=0,ans=0,n=a.sz;          
     ll sum=0;
     fi(n){
         if(i>0)sum-=a[i-1];  // sub prev value
@@ -562,7 +597,7 @@ ll ceil_(ll dividend,ll divisor){
 //   if(a<0)return a+INT64_MAX;
 //   return a;
 // }
-int leader_finder(vi &ar,int x){
+ll leader_finder(vi &ar,ll x){
     if(ar[x]==x)return x;
 
   return ar[x]=leader_finder(ar,ar[x]); // it make ar[x]=leader
@@ -572,8 +607,8 @@ int leader_finder(vi &ar,int x){
 
 bool is_subsequence(string& s1, string& s2)
 {
-    int n = s1.length(), m = s2.length();
-    int i = 0, j = 0;
+    ll n = s1.length(), m = s2.length();
+    ll i = 0, j = 0;
     while (i < n && j < m) {
         if (s1[i] == s2[j])
             i++;
@@ -586,7 +621,7 @@ bool is_subsequence(string& s1, string& s2)
 }
 
 
-long long ncr(int n, int r)
+long long ncr(ll n, ll r)
 {
     if(n<r)return 0;
 
@@ -595,7 +630,7 @@ long long ncr(int n, int r)
     {
         r = n - r;
     }
-    for (int i = 1; i <= r; i++)
+    for (ll i = 1; i <= r; i++)
     {
         ans *= n - r + i;
         ans /= i;
@@ -604,7 +639,7 @@ long long ncr(int n, int r)
 }
 ll string_to_num(string s){
     ll ans=0;
-    int n=s.sz;
+    ll n=s.sz;
     fi(n){
         ans=ans*10+s[i]-'0';
     }
@@ -612,8 +647,8 @@ ll string_to_num(string s){
 }
 
 string rmv_dup_char(string s){
-    int n = s.sz;
-    unordered_map<char,int> mm;
+    ll n = s.sz;
+    unordered_map<char,ll> mm;
     fi(n) {
         mm[s[i]]++;
     }
@@ -683,7 +718,7 @@ ll floor_all(ll a, ll b){
 
 string palindrome_prefix(const string& s)
 {
-    int c=0,n;
+    ll c=0,n;
 
     string a = s;
     rvrs(a);
@@ -691,7 +726,7 @@ string palindrome_prefix(const string& s)
     n = a.sz;
     vi pref(n + 5);
 
-    for (int i = 1; i < n; i++){
+    for (ll i = 1; i < n; i++){
 
         while (c != 0 && a[c] != a[i])
         c = pref[c - 1];
@@ -703,8 +738,8 @@ string palindrome_prefix(const string& s)
     return s.substr(0, c);
 }
 
-void graph_inp(vvi &g,int edge){
-    int x,y;
+void graph_inp(vvi &g,ll edge){
+    ll x,y;
 
     while(edge--){
         cin >> x >> y;
@@ -712,7 +747,7 @@ void graph_inp(vvi &g,int edge){
         g[y].pb(x);
     }
 }
-void graph_inp(vector<set<int>> &g,int edge){
+void graph_inp(vector<set<int>> &g,ll edge){
     int x,y;
 
     while(edge--){
@@ -723,44 +758,88 @@ void graph_inp(vector<set<int>> &g,int edge){
 }
 
 
-ll seg_xor(vi &a,int l,int r){
+ll seg_xor(vi &a,ll l,ll r){
     return a[l-1] ^ a[r];
 }
 
-ii ratio_int(int a,int b){
-    int g = __gcd(a, b);
+ii ratio_ll(ll a,ll b){
+    ll g = __gcd(a, b);
     a /= g;
     b /= g;
     return ii(a, b);
 }
 
-void reset(vi &a,int n){
+void reset(vi &a,ll n){
     fi(n) a[i] = 0;
 }
 
+ll par_find(ll node, vi &par){
+
+    if(par[node] == node)
+        return node;
+    else {
+
+        return par[node] = par_find(par[node], par); // update and adam find
+    }
+}
+
+void dsu(ll u, ll v, vvi &g, vi &par){
+
+        ll pu = par_find(u, par);
+        ll pv = par_find(v, par);
+        
+        if(pu==pv) return;
+        
+
+        if(g[pu].sz < g[pv].sz)
+            swap(pu, pv);
+
+        // parent update
+        par[pv] = pu;
+
+        for(auto x: g[pv]){
+            g[pu].pb(x);
+        }
+        g[pv].clear();
+
+}
+
+
+//! hashing
+
+const ll N = 1e6 + 5;
+const ll base = 11111;
+
+ll p[N], h[N];
+
+
+void make_hash(string s){
+
+    ll n = s.sz;
+    s = ' ' + s;
+
+
+    p[0] = 1, h[0] = 0;
+
+    fi(1, n+1){
+        p[i] = p[i - 1] * base;
+
+        h[i] = h[i - 1] * base + s[i];
+    }
+}
+
+ll get_hash_value(ll l, ll r) {
+
+    return h[r] - h[l-1] * p[r - l + 1];
+}
+
+
+
 /*
 
-//
-
-//
-
-//
 
 
-//
 
-//
-
-//
-
-//
-
-
-//
-
-//
-
-//
 
 
 //
@@ -768,90 +847,21 @@ void reset(vi &a,int n){
 
 //
 
-
-//
-
-
-//
-
-
-//
-
-
-//
-
-
-//
 
 
 */
 
 
-bool fn(vii &a, int tm){
-
-    
-    int mn_tm = a.sz + 1;
-
-    int left = 0;
-
-    fi(a.sz)
-    {
-        left += max(0, a[i].sd + i - tm);
-    }
-
-    if(left + mn_tm <= tm)
-        return true;
-    else
-        return false;
-}
 
 void solve(){
 
-    int n;
-    cin >> n;
-    vi a(n - 1);
-    cin >> a;
-
-    vvi g(n + 1, vi(0));
-
-    fi(n-1){
-        g[a[i]].pb(i + 2);
-    }
-
-    vii b;
-
-    fi(1,n+1){
-        int x = g[i].sz;
-        if(x>0)
-            b.pb({i, x});
-    }
-
-    rsrts(b);
-
-    // show(g);
-
-//________________________________
-
-    int l = 0, r = n + 1;
-
-    while( l + 1 < r){
-        int md = (l + r) / 2;
-
-        if(!fn(b,md)){
-            // deb(md);
-            l = md;
-        }
-        else
-            r = md;
-    }
-
-    cout << r << el;
+    
 }
 
 /*
 
 author  : modhu_khalifa
-created : 2024.01.13 02:38:18
+created : 2024.02.02 00:36:31
 
 */
 int main()
@@ -878,8 +888,7 @@ int main()
     #endif
 
 
-
-    int _=1;
+    int _ = 1;
 
     cin >> _;
 
