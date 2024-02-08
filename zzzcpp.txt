@@ -32,21 +32,67 @@ for cp:
     }
     cout<<r+1<<endl;
   
-  4.1 lower/upper_bound(a.bn,a.en,val)-a.bn return the index less then val
+4.1 
+
+4.1  arr = {3, 4, 5, 7};
+      search value x ;
+
+    lower_bound : 
+          *lb(a.bn, a.en, 3) = 3
+          *lb(a.bn, a.en, 2) = 3
+
+          lb(a.bn, a.en, 8) = END
+
+    explain: output is >= x;
+
+    upper_bound :
+          *ub(a.bn, a.en, 3) = 4;
+          *ub(a.bn, a.en, 2) = 3;
+
+          ub(a.bn, a.en, 7) = END;
+
+    explain: output is > x;
+    
+
+only lb can perform all task
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lower/upper_bound(a.bn,a.en,val)-a.bn return the index less then val
       if no match return n (upper)
       if no macth return 0 (lower)
+
+
+
+
+
+
+
+
+
+
+
 
 3.whose arg type double(sqrt,.....),if call with integer value,add 1.0* it make these integer to double
       E.g. sqrt(1.0 * m[i] * m[i]
 
-4.one scanf must all scanf.
 
 7.when input 10e5 time double data,must scanf because fastio not work here.
 
 8.!! 
 9. while(--c) if(c) valid but while(c--) if(c) not valid
-10. circle:
-    (1+25)%26          // return prev value;
 
 
 11. overlap check: 
@@ -98,6 +144,17 @@ vs perfect_num = {"6", "28", "496", "8128", "33550336", "8589869056", "137438691
 
 
 
+8.Eucludeian formula:
+
+  =>   GCD(a,md) == GCD(a mod md, md);
+
+  example:
+    1.gcd(10, 6) == 2;
+    
+      gcd(10 % 6, 6) == gcd(4, 6) ==2
+
+    2.gcd(12, 5) ==1;
+      gcd(12 % 5, 5) == gcd( 2 , 5) ==1;
 
 
 
@@ -167,8 +224,15 @@ arr[n] = INT_MAX; //! Its very very important for an array that means taken an e
 
 
 trending:
-    Subsequence problem of n^2 can be solve by nlogn time.
-    just use set/vector for every character occurrence indeces
+    1.Subsequence problem of n^2 can be solve by nlogn time.
+      just use set/vector for every character occurrence indeces
+
+    2.hashing / knp / string matching :
+
+      example:https://codeforces.com/problemset/problem/126/B
+    
+
+
     
 
 	string s="we shall over come";
@@ -179,8 +243,8 @@ trending:
     to_string()
 2. s.insert(pos,"string")
 
-2.1 t=s.substr(pos,len);    // pos=position ,len = length;
-    t=s.substr(pos)         // create substr position to last
+2.1 t = s.substr(pos,len);    // pos=position ,len = length;
+    t = s.substr(pos)         // create substr position to last
     see eg.1
     
 3. int pos = s.find(t,pos+1); //if no match return -1; // for next occurrence
@@ -212,12 +276,12 @@ trending:
 <>
 9. string to ll/double:{
   
-  #include <sstream>
-  string s = "12345.5";
-  stringstream stringNumber(s);
-  double x = 0;
-  stringNumber >> x;
- }
+    #include <sstream>
+    string s = "12345.5";
+    stringstream stringNumber(s);
+    double x = 0;
+    stringNumber >> x;
+  }
 
 10. specific character count
 c=count(s.bn,s.en,'1');
@@ -321,6 +385,10 @@ c=count(s.bn,s.en,'1');
 
 ####____________________________ SET _________________________###
 
+
+***!note[std::map, std::multimap, std::set, and std::multiset iterators are not random access, and
+    so their member lower_bound functions should be preferred.]
+
 multiset:
     st.erase(x)// delete all occurrence
     st.erase(st.find(x)) delte single element
@@ -364,7 +432,7 @@ same as:
 
 int l=-1,r=1e10; // l and r maximum 1 out of bound
 
-1.
+1.                                // best and easy to understand
   while(l+1<r){    <>
     int md=(l+r)/2;
     if(fn(md)){
@@ -384,7 +452,7 @@ ans1=ans;
 ans2=r;
 
 3. while(l<r){                       <>
-  int md=(l+r+1)/2;    // be careful adding 1 otherwise it fall in infinte
+  int md=(l+r+1)/2;    // be careful adding 1 otherwise it will fall in infinte loop
   if(fn(md)){
     l=md;
   }else r=md-1;
@@ -426,8 +494,79 @@ md   : md=(l+r+1)/2
     if((md-l)/max(1.0,md)<=0.0000001)   // 10^-6 er jonno
     break;
 
+que:
+    if valid ans come from infinite to down, what will be the code??
+
+    sol:
+    by using method 1:
+
+                while(l+1<r){    <>
+                  int md = (l + r) / 2;
+
+                  if(!fn( md )){
+                    l = md;
+                  }else r = md;
+                }
+                ans = r; // also ans = l+1;
+
+  [explaination1:
+      1. l lower theke upper dike niye jete thkabo jotokkhon porjonto invalid ans pabo
+      2. l always hold invalid ans
+      3. so obiusly r hold valid ans
+
+  explaination2:
+
+      1. if mid is valid than mid <= all value also valid.
+      2. our target is to compress r value to low.
+      3. so we have to set right bound r = mid if mid valid.
+      4. when fn() return true than execute else portion and set r = mid.
+  
+  
+  ]
 
 ####___________________________________END_BINARY_SEARCH_______________________________####
+
+
+
+
+####___________________________________TWO_POINTER_BOUNDARY_PROBLEM_______________________________####
+
+
+mehtod 1: same as lb and ub
+
+        _____
+      0 1 2 3 4 5
+        ^     ^
+        l     r
+
+    l = left boundary , r = right boundary +1 ;
+
+
+    code:
+
+        
+        fi(1, n+1)         // travarsing each element index of array (here 1 base index)
+        {
+
+          while( r <= max_ix_of_array and valid( a[r] ) ) include(a[r++]);
+
+
+          valid_range_len = r - l;
+
+        }
+
+
+
+method 2:
+
+
+
+
+
+
+
+
+####___________________________________END_TWO_POINTER_BOUNDARY_PROBLEM_______________________________####
 
 
 
@@ -437,6 +576,8 @@ md   : md=(l+r+1)/2
 ####___________________________________DP_______________________________####
 
 dp table two type: 1. dp[x][n+1] give final ans, 2.sp[x][n+1] give final result
+
+*** new tricks: if possible make small dp table by brute force then make it, observe how update value;
 
 
 
@@ -527,6 +668,7 @@ tpye5:
   prerequesties:
     1. problem should ad-hoc
     2. problems difficulty should be in range of easy.
+    3. if any possibl *SWAP*
     
 
   step:
@@ -545,6 +687,11 @@ tpye5:
 
 
 
+
+
+  1. maximum segment sum of an array:
+    => presum the array
+    => To maximize it the sum, consider all right borders and minimum value current to left
 
 
 
@@ -592,13 +739,6 @@ fabs();
   cout<<b.count();
  
 
-###_______struct______
-1.struct point
-{
-  int w, p, id;
-};
-2.sort(points.begin(), points.end(), [](point a, point b)
-        { return a.p < b.p; });
 
 
 
@@ -702,3 +842,94 @@ fi(n){
       It is two type:
       1.cause for positive indexing ( soln: calculate max index can occur)
       2.cause for negative indexing ( soln: it for int overflow, use long long)
+
+
+
+
+
+
+
+
+
+
+
+###________________________________________bitwise operation____________________________________________
+
+*** XOR :
+      1. a (xor) b <= a+b
+
+
+
+
+
+###_________________________________________Jibon_theke_neya____________________________
+  *
+  1. agei ei chinta korbe na je solution ki hobe, kivabe hobe.
+
+  2. prothome kata chera korte hobe 10-15 minute. 
+
+  3. erpor sutar naal paua jabe hoyto koyekta. 
+
+  4. sei sutar naal dhore aagate hobe.
+
+  5. je pothe agacci sei poth ta vul naki sothik ta vabar dorkar nai.
+  *
+  6. puruta implement korar por vul holeu somossa nai.
+
+  7. karon ete notun idea asbe.
+  ***
+  8. no space optimization (239471462 ei code ta space optimization korte giye 3 hours time waste hoyeche)
+  **
+  9. dp always venge venge korba, eta vul houar possibility kome jabe.
+  **
+  9. sob code sobsomoy boro kore korba, venge venge korba
+
+1 0. deadlock e pore gele( mane onk problem but kunta aage korbo bujtesi na) vul kichu diyei suru kore dau.
+1 1. karon manush onner vul ta sohoze dhorte pare.
+
+****
+1 2. for presum must use 1 base index;
+***
+1 3. for some problem, ekta result x sotto bole assume kore suttro banate hoy,seshe true/false match korate hoy
+      (onekta proof by contrapositive/contradict)
+      
+
+
+
+###___________________________________DURING_CONTEST______________________________________
+
+  1. when implement idea, that time also think and note down about all possible "Confusion (error)"
+  2. solution can be found, one of 2 or more way, but still implement the idea.
+  3. 
+
+
+
+
+
+
+
+
+
+
+
+██████╗░░███████╗░██╗░░░██╗░░█████╗░░██╗░░░░░░░██████╗░
+██╔══██╗░██╔════╝░╚██╗░██╔╝░██╔══██╗░██║░░░░░░██╔═══██╗░
+██████╔╝░█████╗░░░░╚████╔╝░░███████║░██║░░░░░░██║░░░██║░
+██╔══██╗░██╔══╝░░░░░╚██╔╝░░░██╔══██║░██║░░░░░░██║░░░██║░
+██║░░██║░███████╗░░░░██║░░░░██║░░██║░███████╗░╚██████╔╝░
+╚═╝░░╚═╝░╚══════╝░░░░╚═╝░░░░╚═╝░░╚═╝░╚══════╝░░╚═════╝░
+
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░██████╗░░███████╗░██╗░░░██╗░░█████╗░░██╗░░░░░░░██████╗░░░░
+░░░██╔══██╗░██╔════╝░║██╗░██╔╝░██╔══██╗░██║░░░░░░██╔═══██╗░░░
+░░░██║  ██║░██║     ░╚██║░██║ ░██║  ██║░██║░░░░░░██║   ██║░░░
+░░░██████╔╝░█████╗░░░░╚████╔╝░░███████║░██║░░░░░░██║░░░██║░░░
+░░░██╔══██╗░██╔══╝░░░░░║██╔╝░░░██╔══██║░██║░░░░░░██║░░░██║░░░
+░░░██║  ██║░██║   ░░░░░╚██║ ░░░██║  ██║░██║░░░░░░██║░░░██║░░░
+░░░██║░░██║░███████╗░░░░██║░░░░██║░░██║░███████╗░╚██████╔╝░░░
+░░░╚═╝░░╚═╝░╚══════╝░░░░╚═╝░░░░╚═╝░░╚═╝░╚══════╝░░╚═════╝░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+https://texteditor.com/multiline-text-art/
+

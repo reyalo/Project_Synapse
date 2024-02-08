@@ -4,3 +4,22 @@
 
   
 2.local maxima minima
+
+
+
+3.dp min-max range for next value 
+
+  example:
+    https://codeforces.com/problemset/problem/1469/C
+
+
+4.observation:
+    1. as much as possible collect feature( by kata chera );
+    2. after found "sutar nall" start solve with these collected feature;
+
+
+
+
+
+
+

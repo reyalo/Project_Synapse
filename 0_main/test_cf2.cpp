@@ -777,14 +777,18 @@ void reset(vi &a,int n){
 */
 
 
-void solve() {
+
+
+
+void solve(){
+
     
 }
 
 /*
 
 author  : modhu_khalifa
-created : 2024.01.14 17:13:24
+created : 2024.02.08 00:06:41
 
 */
 int main()

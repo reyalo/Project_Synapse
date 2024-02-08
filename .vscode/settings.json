@@ -42,7 +42,7 @@
     "regex": "cpp",
     "numeric": "cpp"
   },
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   // "editor.fontSize": 15,
   "editor.fontSize": 23,
   "editor.tokenColorCustomizations": {

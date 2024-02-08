@@ -1505,18 +1505,23 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1114,  C,  1700,  Trailing Loves (or L'oeufs?),  https://codeforces.com/problemset/problem/1114/C
 1130,  D1,  1700,  Toy Train (Simplified),  https://codeforces.com/problemset/problem/1130/D1
 1131,  F,  1700,  Asya And Kittens,  https://codeforces.com/problemset/problem/1131/F
+
+
+
 1157,  C2,  1700,  Increasing Subsequence (hard version),  https://codeforces.com/problemset/problem/1157/C2
 1157,  E,  1700,  Minimum Array,  https://codeforces.com/problemset/problem/1157/E
 1176,  E,  1700,  Cover it!,  https://codeforces.com/problemset/problem/1176/E
+
+
+
 1203,  D2,  1700,  Remove the Substring (hard version),  https://codeforces.com/problemset/problem/1203/D2
 1215,  D,  1700,  Ticket Game,  https://codeforces.com/problemset/problem/1215/D
 1228,  C,  1700,  Primes and Multiplication,  https://codeforces.com/problemset/problem/1228/C
-1228,  C,  1700,  Primes and Multiplication,  https://codeforces.com/problemset/problem/1228/C
-126,  B,  1700,  Password,  https://codeforces.com/problemset/problem/126/B
-126,  B,  1700,  Password,  https://codeforces.com/problemset/problem/126/B
-126,  B,  1700,  Password,  https://codeforces.com/problemset/problem/126/B
 126,  B,  1700,  Password,  https://codeforces.com/problemset/problem/126/B
 1260,  C,  1700,  Infinite Fence,  https://codeforces.com/problemset/problem/1260/C
+
+
+
 1325,  D,  1700,  Ehab the Xorcist,  https://codeforces.com/problemset/problem/1325/D
 1329,  B,  1700,  Dreamoon Likes Sequences,  https://codeforces.com/problemset/problem/1329/B
 1332,  D,  1700,  Walk on Matrix,  https://codeforces.com/problemset/problem/1332/D
@@ -1525,10 +1530,10 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1336,  B,  1700,  Xenia and Colorful Gems,  https://codeforces.com/problemset/problem/1336/B
 1340,  B,  1700,  Nastya and Scoreboard,  https://codeforces.com/problemset/problem/1340/B
 1343,  D,  1700,  Constant Palindrome Sum,  https://codeforces.com/problemset/problem/1343/D
-1343,  D,  1700,  Constant Palindrome Sum,  https://codeforces.com/problemset/problem/1343/D
+
+
+
 1359,  C,  1700,  Mixing Water,  https://codeforces.com/problemset/problem/1359/C
-1359,  C,  1700,  Mixing Water,  https://codeforces.com/problemset/problem/1359/C
-1360,  F,  1700,  Spy-string,  https://codeforces.com/problemset/problem/1360/F
 1360,  F,  1700,  Spy-string,  https://codeforces.com/problemset/problem/1360/F
 1361,  A,  1700,  Johnny and Contribution,  https://codeforces.com/problemset/problem/1361/A
 1365,  D,  1700,  Solve The Maze,  https://codeforces.com/problemset/problem/1365/D
@@ -1536,13 +1541,18 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1382,  C2,  1700,  Prefix Flip (Hard Version),  https://codeforces.com/problemset/problem/1382/C2
 1383,  A,  1700,  String Transformation 1,  https://codeforces.com/problemset/problem/1383/A
 1392,  D,  1700,  Omkar and Bed Wars,  https://codeforces.com/problemset/problem/1392/D
-1392,  D,  1700,  Omkar and Bed Wars,  https://codeforces.com/problemset/problem/1392/D
 1393,  C,  1700,  Pinkie Pie Eats Patty-cakes,  https://codeforces.com/problemset/problem/1393/C
+
+
+
 1400,  B,  1700,  RPG Protagonist,  https://codeforces.com/problemset/problem/1400/B
 1406,  C,  1700,  Link Cut Centroids,  https://codeforces.com/problemset/problem/1406/C
 1413,  D,  1700,  Shurikens,  https://codeforces.com/problemset/problem/1413/D
 1422,  C,  1700,  Bargain,  https://codeforces.com/problemset/problem/1422/C
 1430,  D,  1700,  String Deletion,  https://codeforces.com/problemset/problem/1430/D
+
+
+
 1451,  D,  1700,  Circle Game,  https://codeforces.com/problemset/problem/1451/D
 1453,  C,  1700,  Triangles,  https://codeforces.com/problemset/problem/1453/C
 1462,  E2,  1700,  Close Tuples (hard version),  https://codeforces.com/problemset/problem/1462/E2
@@ -1560,16 +1570,20 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1485,  C,  1700,  Floor and Mod,  https://codeforces.com/problemset/problem/1485/C
 1491,  C,  1700,  Pekora and Trampoline,  https://codeforces.com/problemset/problem/1491/C
 1497,  E1,  1700,  Square-Free Division (easy version),  https://codeforces.com/problemset/problem/1497/E1
+
+
+
 1503,  B,  1700,  3-Coloring,  https://codeforces.com/problemset/problem/1503/B
 1512,  G,  1700,  Short Task,  https://codeforces.com/problemset/problem/1512/G
 1516,  C,  1700,  Baby Ehab Partitions Again,  https://codeforces.com/problemset/problem/1516/C
 1528,  B,  1700,  Kavi on Pairing Duty,  https://codeforces.com/problemset/problem/1528/B
 1537,  D,  1700,  Deleting Divisors,  https://codeforces.com/problemset/problem/1537/D
 1538,  D,  1700,  Another Problem About Dividing Numbers,  https://codeforces.com/problemset/problem/1538/D
-1538,  D,  1700,  Another Problem About Dividing Numbers,  https://codeforces.com/problemset/problem/1538/D
-1538,  D,  1700,  Another Problem About Dividing Numbers,  https://codeforces.com/problemset/problem/1538/D
 1543,  D1,  1700,  RPD and Rap Sheet (Easy Version),  https://codeforces.com/problemset/problem/1543/D1
 1550,  C,  1700,  Manhattan Subarrays,  https://codeforces.com/problemset/problem/1550/C
+
+
+
 1551,  D1,  1700,  Domino (easy version),  https://codeforces.com/problemset/problem/1551/D1
 1554,  B,  1700,  Cobb,  https://codeforces.com/problemset/problem/1554/B
 1557,  C,  1700,  Moamen and XOR,  https://codeforces.com/problemset/problem/1557/C
@@ -1580,6 +1594,9 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1586,  C,  1700,  Omkar and Determination,  https://codeforces.com/problemset/problem/1586/C
 1594,  D,  1700,  The Number of Imposters,  https://codeforces.com/problemset/problem/1594/D
 1598,  D,  1700,  Training Session,  https://codeforces.com/problemset/problem/1598/D
+
+
+
 1618,  E,  1700,  Singers' Tour,  https://codeforces.com/problemset/problem/1618/E
 1619,  E,  1700,  MEX and Increments,  https://codeforces.com/problemset/problem/1619/E
 1625,  C,  1700,  Road Optimization,  https://codeforces.com/problemset/problem/1625/C
@@ -1596,7 +1613,9 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1694,  D,  1700,  Fake Plastic Trees,  https://codeforces.com/problemset/problem/1694/D
 1695,  C,  1700,  Zero Path,  https://codeforces.com/problemset/problem/1695/C
 1699,  C,  1700,  The Third Problem,  https://codeforces.com/problemset/problem/1699/C
-1699,  C,  1700,  The Third Problem,  https://codeforces.com/problemset/problem/1699/C
+
+
+
 1700,  C,  1700,  Helping the Nature,  https://codeforces.com/problemset/problem/1700/C
 1706,  D1,  1700,  Chopping Carrots (Easy Version),  https://codeforces.com/problemset/problem/1706/D1
 1709,  D,  1700,  Rorororobot,  https://codeforces.com/problemset/problem/1709/D
@@ -1605,6 +1624,9 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1731,  C,  1700,  Even Subarrays,  https://codeforces.com/problemset/problem/1731/C
 1731,  D,  1700,  Valiant's New Map,  https://codeforces.com/problemset/problem/1731/D
 1743,  D,  1700,  Problem with Random Tests,  https://codeforces.com/problemset/problem/1743/D
+
+
+
 1760,  G,  1700,  SlavicG's Favorite Problem,  https://codeforces.com/problemset/problem/1760/G
 1770,  C,  1700,  Koxia and Number Theory,  https://codeforces.com/problemset/problem/1770/C
 1777,  C,  1700,  Quiz Master,  https://codeforces.com/problemset/problem/1777/C
@@ -1612,17 +1634,33 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 1792,  D,  1700,  Fixed Prefix Permutations,  https://codeforces.com/problemset/problem/1792/D
 1798,  C,  1700,  Candy Store,  https://codeforces.com/problemset/problem/1798/C
 1799,  C,  1700,  Double Lexicographically Minimum,  https://codeforces.com/problemset/problem/1799/C
+
+
+
 1822,  F,  1700,  Gardening Friends,  https://codeforces.com/problemset/problem/1822/F
 1822,  G1,  1700,  Magic Triples (Easy Version),  https://codeforces.com/problemset/problem/1822/G1
 1826,  D,  1700,  Running Miles,  https://codeforces.com/problemset/problem/1826/D
 1829,  H,  1700,  Don't Blame Me,  https://codeforces.com/problemset/problem/1829/H
 1833,  F,  1700,  Ira and Flamenco,  https://codeforces.com/problemset/problem/1833/F
 1835,  A,  1700,  k-th equality,  https://codeforces.com/problemset/problem/1835/A
-295,  B,  1700,  Greg and Graph,  https://codeforces.com/problemset/problem/295/B
+
+
+
 295,  B,  1700,  Greg and Graph,  https://codeforces.com/problemset/problem/295/B
 339,  D,  1700,  Xenia and Bit Operations,  https://codeforces.com/problemset/problem/339/D
 427,  C,  1700,  Checkposts,  https://codeforces.com/problemset/problem/427/C
 582,  A,  1700,  GCD Table,  https://codeforces.com/problemset/problem/582/A
+
+
+
+
+
+
+
+
+
+
+
 1130,  D2,  1800,  Toy Train,  https://codeforces.com/problemset/problem/1130/D2
 1176,  D,  1800,  Recover it!,  https://codeforces.com/problemset/problem/1176/D
 1176,  D,  1800,  Recover it!,  https://codeforces.com/problemset/problem/1176/D
@@ -1712,18 +1750,19 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 238,  B,  1800,  Boring Partition,  https://codeforces.com/problemset/problem/238/B
 238,  B,  1800,  Boring Partition,  https://codeforces.com/problemset/problem/238/B
 459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
-459,  D,  1800,  Pashmak and Parmida's problem,  https://codeforces.com/problemset/problem/459/D
 727,  D,  1800,  T-shirts Distribution,  https://codeforces.com/problemset/problem/727/D
 777,  D,  1800,  Cloud of Hashtags,  https://codeforces.com/problemset/problem/777/D
+
+
+
+
+
+
+
+
+
+
+
 1077,  F1,  1900,  Pictures with Kittens (easy version),  https://codeforces.com/problemset/problem/1077/F1
 1105,  D,  1900,  Kilani and the Game,  https://codeforces.com/problemset/problem/1105/D
 1114,  D,  1900,  Flood Fill,  https://codeforces.com/problemset/problem/1114/D
@@ -1819,6 +1858,14 @@ Contest,  Problem,  Difficulty,  Name,  Codeforces URL
 819,  B,  1900,  Mister B and PR Shifts,  https://codeforces.com/problemset/problem/819/B
 819,  B,  1900,  Mister B and PR Shifts,  https://codeforces.com/problemset/problem/819/B
 819,  B,  1900,  Mister B and PR Shifts,  https://codeforces.com/problemset/problem/819/B
+
+
+
+
+
+
+
+
 1244,  C,  2000,  The Football Season,  https://codeforces.com/problemset/problem/1244/C
 1288,  D,  2000,  Minimax Problem,  https://codeforces.com/problemset/problem/1288/D
 1288,  E,  2000,  Messenger Simulator,  https://codeforces.com/problemset/problem/1288/E

@@ -851,17 +851,65 @@ ll get_hash_value(ll l, ll r) {
 
 */
 
+bool fn(ll n_cup, ll c, ll h, ll t){
+
+    ll tot = c * (n_cup - 1) + h * n_cup;
+    ll tt = (2 * n_cup - 1) * t;
+
+    if( tt <= tot ){
+        return true;
+    }
+    return false;
+}
+
 
 
 void solve(){
 
-    
+    int n;
+    cin >> n;
+    string s, t;
+    cin >> s >> t;
+    vi ans;
+
+
+    //________________________________________________
+
+    int ix = 0;
+    int f = 0;
+
+    for (int i = n - 1; i >= 0; --i){
+        
+        if(f==0){
+            if(s[ix] == t[i])
+                ans.pb(0);
+            
+        }
+        else{
+
+            if(s[ix] != t[i])
+            ans.pb(0);
+        }
+
+        ans.pb(i);
+
+
+        if(f) ix -= i;
+        else ix += i;
+
+        f ^= 1;
+    }
+
+    cout << ans.sz << sp;
+
+    fi(ans.sz) cout << ans[i] + 1 << sp;
+    nl;
 }
 
 /*
 
 author  : modhu_khalifa
-created : 2024.02.02 00:36:31
+created : 2024.02.08 02:22:33
 
 */
 int main()
